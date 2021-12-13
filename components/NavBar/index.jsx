@@ -8,7 +8,6 @@ export const NavBar = () => (
         <Box as="header" height="16" position="relative" color="white">
             <Box
                 height="100%"
-                // mx="auto"
                 px={{
                     base: '8',
                     md: '8',
@@ -28,7 +27,7 @@ export const NavBar = () => (
                     <motion.a href="/" whileHover={{ scale: 1.1 }}>
                         <Text
                             as="h1"
-                            className="text-dark-yellow"
+                            className="text-light-blue"
                             fontSize="3xl"
                             fontWeight="extrabold"
                             maxW="48rem"

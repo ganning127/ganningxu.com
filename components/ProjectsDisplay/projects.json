@@ -1,0 +1,57 @@
+[
+    {
+        "title": "Covid-19 Tracker",
+        "img": "./project-covid19updated.jpeg",
+        "text": "Program that texts recipients about the daily number of cases, deaths, death rate, and increase in cases from the day before.",
+        "link": "https://github.com/ganning127/covid_19_tracker",
+        "timeframe": "Summer 2020 & Spring 2021"
+    },
+    {
+        "title": "Meke",
+        "img": "/project-meke.png",
+        "alt": "Picture of Meke's addition skill being played",
+        "text": "Meke is an app designed to help students in elementary school learn math in a fun and engaging way.",
+        "link": "https://studio.code.org/projects/applab/WTJbCVKc7vU6SmHTJ3OWr61DrGmmQlDVEeZsF-Q453M",
+        "timeframe": "Summer 2020 & Spring 2021"
+    },
+    {
+        "title": "MaskUp",
+        "img": "/project-mask.png",
+        "alt": "Picture of MaskUp's live detection feature.",
+        "text": "MaskUp allows stores and organizations to check the mask status of their users. Features include a login system, live & group mask detection, symptom checking, and data visualization statistics.",
+        "link": "https://easybag98.qoom.space/~/MaskUp",
+        "timeframe": "Summer 2021"
+    },
+    {
+        "title": "Weathery",
+        "img": "/project-weathery.png",
+        "alt": "Picture of the homepage of Weathery.",
+        "text": "A clean and easy-to-use weather website. No ads, no spam, just current and hourly weather forecasts.",
+        "link": "https://github.com/ganning127/weathery",
+        "timeframe": "Summer 2021"
+    },
+    {
+        "title": "Focale",
+        "img": "./project-focale.png",
+        "alt": "Picture of the Focale chrome extension popup",
+        "text": "Focale is a chrome extension designed to help students time and pace their studies efficiently. ",
+        "link": "https://github.com/ganning127/focale",
+        "timeframe": "Summer 2021"
+    },
+    {
+        "title": "Spotion",
+        "img": "/project-spotion.png",
+        "alt": "Picture of Spotion's landing page",
+        "text": "An intelligent web app that allows you to take a live picture and get back a playlist and song recommendation based on your detected emotion.",
+        "link": "https://github.com/ganning127/spotion-ai/",
+        "timeframe": "Summer 2021"
+    },
+    {
+        "title": "LiveTranslate",
+        "img": "/project-translate.png",
+        "alt": "Picture of Spotion's landing page",
+        "text": "A web app that makes translation easier. Live Translate can translate from English into 6 different languages, in real time!",
+        "link": "https://github.com/ganning127/translate-azure",
+        "timeframe": "Summer 2021"
+    }
+]

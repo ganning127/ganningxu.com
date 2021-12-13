@@ -3,8 +3,14 @@
 @tailwind utilities;
 * {
   box-sizing: border-box;
+  background-color: black;
+  color: white;
 }
 
-html {
-  background-color: black;
+.transparent {
+  background-color: transparent;
+}
+
+.inline {
+  display: inline;
 }

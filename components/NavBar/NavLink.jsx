@@ -9,9 +9,6 @@ const DesktopNavLink = (props) => {
             borderBottom="2px"
             borderColor="transparent"
             transition="all 0.2s"
-            _hover={{
-                color: "black"
-            }}
             {...props}
         />
     )
