@@ -1,0 +1,66 @@
+[
+    {
+        "headline": "Student at Panther Creek High School",
+        "type": "school",
+        "desc": "I started my freshman year of high school at Panther Creek. Some classes I took include Python Programming I and Microsoft Excel.",
+        "date": "Aug 2019",
+        "img": "https://i.imgur.com/D2FExyY.png",
+        "alt": "Panther Creek High Logo"
+    },
+    {
+        "headline": "Co-Founded Panther Creek Aviation Club",
+        "type": "school",
+        "desc": "During fall of my sophomore year, I started the Panther Creek Aviation Club, with a mission of guiding fellow students into a career in aviation.",
+        "date": "Aug 2020",
+        "img": "https://i.imgur.com/thuyGuV.png",
+        "alt": "Panther Creek High Aviation Club Logo"
+    },
+    {
+        "headline": "Team Member at Chick-fil-A",
+        "type": "work",
+        "desc": " My first job during my sophomore year was at Chick-Fil-A. I made sandwiches, nuggets, fries, cookies, brownies. Additionally, I trained new team members about Chick-Fil-A's policies.",
+        "date": "Jan 2021",
+        "img": "https://i.imgur.com/V8GWIGw.png",
+        "alt": "Chick-Fil-A Logo"
+    },
+    {
+        "headline": "Business Development Intern at Oppti",
+        "type": "work",
+        "desc": "My first internship! Working with Oppti has both helped my interpersonal and communication skills. I've learned both marketing and business skills during this. I used to be terrified of speaking up in meetings, and this internship has helped me work better with others, and be more outgoing!",
+        "date": "Feb 2021",
+        "img": "https://i.imgur.com/msDAnzZ.png",
+        "alt": "Oppti Logo"
+    },
+    {
+        "headline": "Intern at The Coding Foundation",
+        "type": "work",
+        "desc": " <p>The Coding Foundation provided me with the opportunity to start my first Computer Science internship. I'm currently developing a curriculum to teach students in middle school JavaScript.</p>",
+        "date": "May 2021",
+        "img": "https://i.imgur.com/6w3cKWi.png",
+        "alt": "The Coding Foundation Logo"
+    },
+    {
+        "headline": "Intern at UNC-CH RENCI",
+        "type": "work",
+        "desc": "Summer 2021 intern on University of North Carolina Renaissance Computing Institute's Helping to End Addiction Long-term Team (HEAL).",
+        "date": "Jun 2021",
+        "img": "https://i.imgur.com/4BxerDj.png",
+        "alt": "UNC Logo"
+    },
+    {
+        "headline": "Qoom Creator",
+        "type": "work",
+        "desc": "Created MaskUp, a web app that features live mask detection, data visualizations, and Covid-19 symptom tracking.",
+        "date": "Jul 2021",
+        "img": "https://i.imgur.com/OiryFpf.png",
+        "alt": "Qoom Logo"
+    },
+    {
+        "headline": "North Carolina School of Science and Math",
+        "type": "school",
+        "desc": "Rising junior at NCSSM. I plan on delving deeper into the world of computer science during my junior and senior years at NCSSM.",
+        "date": "Aug 2021",
+        "img": "https://i.imgur.com/QyA78xx.png",
+        "alt": "NCSSM Logo"
+    }
+]

@@ -5,14 +5,16 @@ module.exports = {
   ],
   theme: {
     colors: {
-      "dark-yellow": "#f2e3ac",
+      "dark-yellow": "#F2E3AC",
       "light-yellow": "#ffffe0",
       "light-purple": "#BB86FC",
       "hover-purple": "#d3b0ff",
       "dark-purple": "#531987",
       "light-blue": "#00DAC4",
       "black": "#000000",
-
+      "white": "#ffffff",
+      "slate-300": "#CBD5FF",
+      "gray-600": "#333333"
     },
     fontFamily: {
       'sans': ['roboto', 'ui-sans-serif', 'system-ui']

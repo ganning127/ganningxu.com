@@ -1,0 +1,26 @@
+[
+    {
+        "title": "<span class='text-light-purple'>Python3</span>"
+    },
+    {
+        "title": "<span class='text-light-purple'>JavaScript</span>"
+    },
+    {
+        "title": "<span class='text-light-purple'>React.js & React Native</span>"
+    },
+    {
+        "title": "<span class='text-light-purple'>Bootstrap & Tailwind CSS</span>"
+    },
+    {
+        "title": "<span class='text-light-purple'>Next.js</span>"
+    },
+    {
+        "title": "<span class='text-light-purple'>C</span>"
+    },
+    {
+        "title": "<span class='text-light-purple'>Java</span>"
+    },
+    {
+        "title": "<span class='text-light-purple'>Azure Functions</span>"
+    }
+]

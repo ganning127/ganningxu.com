@@ -1,9 +1,12 @@
 import Head from 'next/head'
 import { NavBar } from '../components/NavBar'
-import { Awards } from '../components/Awards'
-import { Skills } from '../components/Skills'
+import { AutoGridHTML } from '../components/AutoGridHTML'
 import { Organizations } from '../components/Organizations'
 import { Volunteering } from '../components/Volunteering'
+import SkillList from "../data/skills.json";
+import AwardsList from "../data/awards.json";
+import CourseList from "../data/courses.json";
+import { Research } from '../components/Research'
 
 export default function Experience() {
     return (
@@ -16,8 +19,10 @@ export default function Experience() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <NavBar active="" />
-            <Awards />
-            <Skills />
+            <AutoGridHTML list={AwardsList} heading="awards" />
+            <AutoGridHTML list={SkillList} heading="languages" />
+            <AutoGridHTML list={CourseList} heading="courses" />
+            <Research />
             <Organizations />
             <Volunteering />
 
