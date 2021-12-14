@@ -3,10 +3,13 @@
 @tailwind utilities;
 * {
   box-sizing: border-box;
-  background-color: black;
-  color: white;
+  /* background-color: black; */
+  /* color: white; */
 }
 
+body {
+  background-color: black !important;
+}
 .transparent {
   background-color: transparent;
 }
