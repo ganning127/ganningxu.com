@@ -24,7 +24,7 @@ export const NavBar = () => (
                     justify="space-between"
                     height="100%"
                 >
-                    <motion.a href="/" whileHover={{ scale: 1.1 }}>
+                    <motion.a href="/" whileHover={{ scale: 1.1, }}>
                         <Text
                             as="h1"
                             className="text-light-blue"
@@ -40,6 +40,7 @@ export const NavBar = () => (
                             fontWeight="extrabold"
                             maxW="48rem"
                             display="inline"
+
                         >.me</Text>
                     </motion.a>
 

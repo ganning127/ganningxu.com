@@ -9,14 +9,14 @@ export const Landing = () => (
 
             <Box mt="4">
                 <Link href='mailto:xu23g@ncssm.edu' isExternal>
-                    <button className="rounded-full bg-light-purple py-2 px-5 font-bold text-xl mr-3 mb-2 text-black ease-in-out duration-300 hover:px-7">Email</button>
+                    <button className="rounded-full bg-light-blue py-2 px-5 font-bold text-xl mr-3 mb-2 text-black ease-in-out duration-300 hover:px-7">email</button>
                 </Link>
                 <Link href='https://github.com/ganning127' isExternal>
-                    <button className="rounded-full bg-light-purple py-2 px-5 font-bold text-xl mr-3 mb-2 text-black ease-in-out duration-300 hover:px-7">GitHub</button>
+                    <button className="rounded-full bg-light-blue py-2 px-5 font-bold text-xl mr-3 mb-2 text-black ease-in-out duration-300 hover:px-7">github</button>
                 </Link>
 
                 <Link href='https://www.linkedin.com/in/ganningxu/' isExternal>
-                    <button className="rounded-full bg-light-purple py-2 px-5 font-bold text-xl mb-2 text-black ease-in-out duration-300 hover:px-7">LinkedIn</button>
+                    <button className="rounded-full bg-light-blue py-2 px-5 font-bold text-xl mb-2 text-black ease-in-out duration-300 hover:px-7">linkedIn</button>
                 </Link>
             </Box>
         </Container>
