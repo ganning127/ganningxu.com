@@ -1,29 +1,29 @@
 [
     {
-        "title": "<span class='text-dark-yellow'>Data Structures with C</span>"
+        "title": "<span class='text-light-yellow'>Data Structures with C</span>"
     },
     {
-        "title": "<span class='text-dark-yellow'>Python I</span>"
+        "title": "<span class='text-light-yellow'>Python I</span>"
     },
     {
-        "title": "<span class='text-dark-yellow'>AP Computer Science Principles & React Native</span>"
+        "title": "<span class='text-light-yellow'>AP Computer Science Principles & React Native</span>"
     },
     {
-        "title": "<span class='text-dark-yellow'>Computer Vision</span>"
+        "title": "<span class='text-light-yellow'>Computer Vision</span>"
     },
     {
-        "title": "<span class='text-dark-yellow'>Foundations of Data Sciences</span>"
+        "title": "<span class='text-light-yellow'>Foundations of Data Sciences</span>"
     },
     {
-        "title": "<span class='text-dark-yellow'>Intro to Cybersecurity</span>"
+        "title": "<span class='text-light-yellow'>Intro to Cybersecurity</span>"
     },
     {
-        "title": "<span class='text-dark-yellow'>Research in Computational Science I</span>"
+        "title": "<span class='text-light-yellow'>Research in Computational Science I</span>"
     },
     {
-        "title": "<span class='text-dark-yellow'>JavaScript Algorithms and Data Structures</span>"
+        "title": "<span class='text-light-yellow'>JavaScript Algorithms and Data Structures</span>"
     },
     {
-        "title": "<span class='text-dark-yellow'>Object Oriented Programming in Python</span>"
+        "title": "<span class='text-light-yellow'>Object Oriented Programming in Python</span>"
     }
 ]

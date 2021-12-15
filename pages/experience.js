@@ -7,6 +7,7 @@ import SkillList from "../data/skills.json";
 import AwardsList from "../data/awards.json";
 import CourseList from "../data/courses.json";
 import { Research } from '../components/Research'
+import { Footer } from '../components/Footer'
 
 export default function Experience() {
     return (
@@ -25,6 +26,7 @@ export default function Experience() {
             <Research />
             <Organizations />
             <Volunteering />
+            <Footer />
 
 
         </>
