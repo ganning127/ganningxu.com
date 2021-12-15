@@ -13,7 +13,7 @@ export default function Experience() {
     return (
         <>
             <Head>
-                <title>Ganning Xu</title>
+                <title>Experience</title>
                 <meta property="og:title" content="Ganning Xu" />
                 <meta property="og:site_name" content="ganning.me/experience" />
                 <meta property="og:type" content="website" />
