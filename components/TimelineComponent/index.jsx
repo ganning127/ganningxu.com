@@ -23,7 +23,7 @@ export const TimelineComponent = () => (
                         >
                             <Image d="inline" src={item.img} alt={item.headline} boxSize='60px' objectFit='cover' mr="2" />
                             <h3 className="vertical-timeline-element-title font-bold text-xl text-white inline">{item.headline}</h3>
-                            <p className="text-light-yellow">{item.desc}</p>
+                            <p className="text-light-yellow"><b>{item.desc}</b></p>
                         </VerticalTimelineElement>
                     )
                 }
@@ -40,7 +40,7 @@ export const TimelineComponent = () => (
                         >
                             <Image d="inline" src={item.img} alt={item.headline} boxSize='60px' objectFit='cover' mr="2" />
                             <h3 className="vertical-timeline-element-title font-bold text-xl inline">{item.headline}</h3>
-                            <p className="text-slate-300">{item.desc}</p>
+                            <p className="text-slate-300"><b>{item.desc}</b></p>
                         </VerticalTimelineElement>
                     )
                 }

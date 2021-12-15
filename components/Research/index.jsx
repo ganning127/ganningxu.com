@@ -11,7 +11,7 @@ export const Research = () => (
                 ResearchList.map((item, i) => (
                     <div key={i} className='mt-2'>
                         <Link className='mt-2' href={item.link} _hover={{}} isExternal>
-                            <h4 className="font-bold text-light-yellow hover:text-hover-purple inline">{item.title}</h4>
+                            <h4 className="font-bold text-light-yellow hover:text-hover-purple inline text-xl">{item.title}</h4>
                         </Link>
                     </div>
                 ))

@@ -1,26 +1,46 @@
 [
     {
-        "title": "<span class='text-light-purple'>Python3</span>"
+        "title": "<span class='text-light-purple'>Python3</span>",
+        "img": "https://i.imgur.com/uSPaotQ.png"
     },
     {
-        "title": "<span class='text-light-purple'>JavaScript</span>"
+        "title": "<span class='text-light-purple'>JavaScript</span>",
+        "img": "https://i.imgur.com/40snW1A.png"
     },
     {
-        "title": "<span class='text-light-purple'>React.js & React Native</span>"
+        "title": "<span class='text-light-purple'>React.js & React Native</span>",
+        "img": "https://i.imgur.com/dUkzeyK.png"
     },
     {
-        "title": "<span class='text-light-purple'>Bootstrap & Tailwind CSS</span>"
+        "title": "<span class='text-light-purple'>Bootstrap</span>",
+        "img": "https://i.imgur.com/UVFNxYD.png"
     },
     {
-        "title": "<span class='text-light-purple'>Next.js</span>"
+        "title": "<span class='text-light-purple'>Tailwind CSS</span>",
+        "img": "https://i.imgur.com/R4Ekrqn.png"
     },
     {
-        "title": "<span class='text-light-purple'>C</span>"
+        "title": "<span class='text-light-purple'>Next.js</span>",
+        "img": "https://i.imgur.com/K4g9hjj.png"
     },
     {
-        "title": "<span class='text-light-purple'>Java</span>"
+        "title": "<span class='text-light-purple'>C</span>",
+        "img": "https://i.imgur.com/d0JPOCB.png"
     },
     {
-        "title": "<span class='text-light-purple'>Azure Functions</span>"
+        "title": "<span class='text-light-purple'>Java</span>",
+        "img": "https://i.imgur.com/HLlskFe.png"
+    },
+    {
+        "title": "<span class='text-light-purple'>Azure Functions</span>",
+        "img": "https://i.imgur.com/tTFFD5j.png"
+    },
+    {
+        "title": "<span class='text-light-purple'>AWS Lambda</span>",
+        "img": "https://i.imgur.com/rnxWm3x.png"
+    },
+    {
+        "title": "<span class='text-light-purple'>Hasura PostreSQL</span>",
+        "img": "https://i.imgur.com/eUEeHC8.png"
     }
 ]

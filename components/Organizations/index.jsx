@@ -10,8 +10,8 @@ export const Organizations = () => (
             {
                 OrganizationsList.map((organization, i) => (
                     <div key={i} className='mt-2'>
-                        <h4 className="font-bold text-light-purple hover:text-hover-purple inline">{organization.name}:</h4>
-                        <p className="inline font-semibold"> {organization.desc}</p>
+                        <h4 className="font-bold text-light-purple hover:text-hover-purple inline text-xl">{organization.name}:</h4>
+                        <p className="inline font-semibold text-xl"> {organization.desc}</p>
                     </div>
                 ))
             }

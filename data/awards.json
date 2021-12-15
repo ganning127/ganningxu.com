@@ -1,23 +1,28 @@
 [
     {
-        "title": "<span class='text-light-purple'>1st Place</span> - Create an App (Wake County)"
+        "title": "<span class='text-light-purple'>1st Place</span> - Create an App (Wake County)",
+        "link": "bit.ly/mekeproposal"
     },
     {
-        "title": "<span class='text-light-purple'>2nd Place</span> - App Mockup (Wake County)"
+        "title": "<span class='text-light-purple'>2nd Place</span> - App Mockup (Wake County)",
+        "link": "bit.ly/mockupmeke"
     },
     {
         "title": "<span class='text-light-purple'>2nd Place</span> - RTP HS Hackathon 2020"
     },
     {
-        "title": "<span class='text-light-purple'>Winner</span> - 2021 Congressional App Challenge"
+        "title": "<span class='text-light-purple'>Winner</span> - 2021 Congressional App Challenge",
+        "link": "https://price.house.gov/newsroom/press-releases/rep-price-announces-winner-2021-congressional-app-challenge"
     },
     {
         "title": "<span class='text-light-purple'>3rd Place</span> - RTP HS Hackathon 2021"
     },
     {
-        "title": "<span class='text-light-purple'>Semifinalist</span> - National Cyber Scholarship"
+        "title": "<span class='text-light-purple'>Semifinalist</span> - National Cyber Scholarship",
+        "link": "https://www.nationalcyberscholarship.org/scholarships-and-awards/awards-2022"
     },
     {
-        "title": "<span class='text-light-purple'>9th Place</span> - Hack the Cloud 2.0"
+        "title": "<span class='text-light-purple'>9th Place</span> - Hack the Cloud 2.0",
+        "link": "https://devpost.com/software/spotion"
     }
 ]

@@ -34,7 +34,7 @@
     {
         "headline": "Intern at The Coding Foundation",
         "type": "work",
-        "desc": " <p>The Coding Foundation provided me with the opportunity to start my first Computer Science internship. I'm currently developing a curriculum to teach students in middle school JavaScript.</p>",
+        "desc": " The Coding Foundation provided me with the opportunity to start my first Computer Science internship. I created a curriculum taught to 100+ students about the fundamentals of JavaScript.",
         "date": "May 2021",
         "img": "https://i.imgur.com/6w3cKWi.png",
         "alt": "The Coding Foundation Logo"
@@ -58,7 +58,7 @@
     {
         "headline": "NC School of Science and Math",
         "type": "school",
-        "desc": "Rising junior at NCSSM. I plan on delving deeper into the world of computer science during my junior and senior years at NCSSM.",
+        "desc": "I'm currently a junior at NCSSM, a public residential high school. I plan on delving deeper into the world of computer science during time at this school.",
         "date": "Aug 2021",
         "img": "https://i.imgur.com/JijlBMx.png",
         "alt": "NCSSM Logo"
