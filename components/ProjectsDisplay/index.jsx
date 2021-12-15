@@ -6,7 +6,7 @@ export const ProjectsDisplay = () => (
   <Box bg="black" color="white" className='mt-8'>
     <Container maxW='container.xl' px="8">
       <SimpleGrid minChildWidth='300px' spacing='40px' justifyContent="center">
-        {Projects.map((project, i) => {
+        {Projects.slice(0).reverse().map((project, i) => {
           return (
             <ProjectCard
               key={i}

@@ -7,8 +7,10 @@ export default function Timeline() {
         <>
             <Head>
                 <title>Timeline</title>
-                <meta property="og:title" content="Ganning Xu" />
+                <meta property="og:title" content="Timeline" />
                 <meta property="og:site_name" content="ganning.me" />
+                <meta property="og:url" content="http://ganning.me/timeline" />
+                <meta property="og:description" content="My work experience and education!" />
                 <meta property="og:type" content="website" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

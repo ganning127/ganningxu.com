@@ -9,7 +9,7 @@ export const TimelineComponent = () => (
     // <Container>
     <VerticalTimeline lineColor="white">
         {
-            timelineData.map((item, index) => {
+            timelineData.slice(0).reverse().map((item, index) => {
                 if (item.type == "work") {
                     return (
                         <VerticalTimelineElement

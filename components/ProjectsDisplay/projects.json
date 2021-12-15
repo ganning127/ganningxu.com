@@ -31,6 +31,14 @@
         "timeframe": "Summer 2021"
     },
     {
+        "title": "EnviroHelp",
+        "img": "/project-envirohelp.png",
+        "alt": "Picture of the homepage of EnviroHelp.",
+        "text": "With EnviroHelp, users can upload a picture of a waste item and get whether or not it is recyclable!",
+        "link": "https://github.com/ganning127/envirohelp",
+        "timeframe": "Summer 2021"
+    },
+    {
         "title": "Focale",
         "img": "./project-focale.png",
         "alt": "Picture of the Focale chrome extension popup",
@@ -53,5 +61,29 @@
         "text": "A web app that makes translation easier. Live Translate can translate from English into 6 different languages, in real time!",
         "link": "https://github.com/ganning127/translate-azure",
         "timeframe": "Summer 2021"
+    },
+    {
+        "title": "AWS Lambda Workshop",
+        "img": "/project-aws.png",
+        "alt": "Picture of Spotion's landing page",
+        "text": "Created an AWS workshop that was presented at the 2021 Serverless Days Student Edition conference. The workshop was designed to teach students how to use AWS Lambda.",
+        "link": "https://youtu.be/l_1BhV-dtMk?t=7752",
+        "timeframe": "Summer 2021"
+    },
+    {
+        "title": "CounselorBot",
+        "img": "/project-counselorbot.png",
+        "alt": "Picture of Spotion's landing page",
+        "text": "Helped develop the serverless version of CounselorBot, a GitHub bot that autonomously guides students through GitHub learning repositories.",
+        "link": "https://github.com/bitprj/counselor",
+        "timeframe": "Summer 2021"
+    },
+    {
+        "title": "SLTranslate",
+        "img": "/project-sltranslate.png",
+        "alt": "Picture of SLTranslate's landing page",
+        "text": "SLTranslate is a mobile app that uses machine learning to translate into English.",
+        "link": "https://github.com/KeshavVarad/SLTranslator",
+        "timeframe": "Fall 2021"
     }
 ]

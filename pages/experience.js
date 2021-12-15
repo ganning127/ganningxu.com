@@ -14,8 +14,10 @@ export default function Experience() {
         <>
             <Head>
                 <title>Experience</title>
-                <meta property="og:title" content="Ganning Xu" />
-                <meta property="og:site_name" content="ganning.me/experience" />
+                <meta property="og:title" content="Experience" />
+                <meta property="og:site_name" content="ganning.me" />
+                <meta property="og:url" content="http://ganning.me/experience" />
+                <meta property="og:description" content="Skills and languages I know!" />
                 <meta property="og:type" content="website" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

@@ -9,6 +9,8 @@ export default function Home() {
         <title>Ganning Xu</title>
         <meta property="og:title" content="Ganning Xu" />
         <meta property="og:site_name" content="ganning.me" />
+        <meta property="og:url" content="http://ganning.me/" />
+        <meta property="og:description" content="Welcome to my website, feel free to take a look around!" />
         <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
