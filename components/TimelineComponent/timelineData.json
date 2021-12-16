@@ -62,5 +62,13 @@
         "date": "Aug 2021",
         "img": "https://i.imgur.com/JijlBMx.png",
         "alt": "NCSSM Logo"
+    },
+    {
+        "headline": "Student Developer at Bit Project",
+        "type": "work",
+        "desc": "I'm currently working with Bit Project, a non-profit organization, make technical education more accessible to all students.",
+        "date": "Aug 2021",
+        "img": "https://i.imgur.com/y7Xl4rv.png",
+        "alt": "Bit Project Logo"
     }
 ]
