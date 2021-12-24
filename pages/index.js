@@ -14,7 +14,7 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <NavBar active="" />
+      <NavBar active="home" />
       <Landing />
       <Footer />
     </>

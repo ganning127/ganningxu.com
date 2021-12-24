@@ -14,7 +14,7 @@ export default function Timeline() {
                 <meta property="og:type" content="website" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <NavBar active="" />
+            <NavBar active="timeline" />
             <TimelineComponent />
             <Footer />
         </>

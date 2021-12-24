@@ -21,7 +21,7 @@ export default function Experience() {
                 <meta property="og:type" content="website" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <NavBar active="" />
+            <NavBar active="experience" />
             <AutoGridHTML list={AwardsList} heading="awards" />
             <AutoGridHTML list={SkillList} heading="languages" />
             <AutoGridHTML list={CourseList} heading="courses" />

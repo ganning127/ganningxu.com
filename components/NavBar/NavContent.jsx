@@ -72,11 +72,18 @@ const MobileNavContent = (props) => {
 const DesktopNavContent = (props) => {
     return (
         <HStack spacing="8" align="stretch" {...props}>
-            {links.map((link, index) => (
-                <NavLink.Desktop key={index} href={link.href} fontSize="2xl" fontWeight="bold" className="hover:text-light-blue py-1 px-1 rounded-md">
-                    {link.label}
-                </NavLink.Desktop>
-            ))}
+            {links.map((link, index) => {
+                if (props.active == link.label.toLowerCase()) {
+                    return (<NavLink.Desktop key={index} href={link.href} fontSize="2xl" fontWeight="bold" className="text-light-blue py-1 px-1 rounded-md">
+                        {link.label}
+                    </NavLink.Desktop>)
+                }
+                return (
+                    <NavLink.Desktop key={index} href={link.href} fontSize="2xl" fontWeight="bold" className="hover:text-light-blue py-1 px-1 rounded-md">
+                        {link.label}
+                    </NavLink.Desktop>
+                )
+            })}
         </HStack>
     )
 }
