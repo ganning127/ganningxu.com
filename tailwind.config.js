@@ -11,9 +11,11 @@ module.exports = {
       "hover-purple": "#d3b0ff",
       "dark-purple": "#531987",
       "light-blue": "#00DAC4",
+      "dark-blue": "#00998a",
       "black": "#000000",
       "white": "#ffffff",
       "slate-300": "#CBD5FF",
+      "slate-500": "#64738b",
       "gray-600": "#333333"
     },
     fontFamily: {
