@@ -3,7 +3,7 @@ import * as React from 'react'
 import { NavContent } from './NavContent'
 import { motion } from "framer-motion"
 
-export const NavBar = () => (
+export const NavBar = (props) => (
     <Box bg="black" color="white" pt="1" position="sticky" top="0" zIndex="100">
         <Box as="header" height="16" position="relative" color="white">
             <Box
@@ -50,6 +50,7 @@ export const NavBar = () => (
                             base: 'none',
                             md: 'flex',
                         }}
+                        active={props.active}
                     />
                     <NavContent.Mobile
                         display={{
