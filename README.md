@@ -10,4 +10,4 @@
 - Chakra UI
 - Tailwind CSS
 
-Created by Ganning in 2021
+Created by **Ganning in 2021**
