@@ -16,7 +16,7 @@ export const ProjectCard = ({ title, img, text, link }) => (
                 {text}
             </Text>
             <Link href={link} isExternal mx="auto">
-                <Button bg="bg-dark-purple" hover="hover:bg-light-purple" color="text-white" fontSize="text-xl">View Project</Button>
+                <Button bg="bg-dark-purple" hover="hover:bg-light-purple" color="text-white" fontSize="text-xl" classes="my-2 py-1">View Project</Button>
             </Link>
         </Box>
 

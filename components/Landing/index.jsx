@@ -33,18 +33,18 @@ export const Landing = () => (
 
                 <Box mt="4">
                     <Link href='mailto:xu23g@ncssm.edu' isExternal>
-                        <Button color="text-white" bg="bg-dark-blue" hover="hover:bg-light-blue" fontSize="text-2xl" classes="mr-2">email</Button>
+                        <Button color="text-white" bg="bg-dark-blue" hover="hover:bg-light-blue" fontSize="text-2xl" classes="mr-2 my-2 pt-1 pb-2">email</Button>
                     </Link>
                     <Link href='https://github.com/ganning127' isExternal>
-                        <Button color="text-white" bg="bg-dark-blue" hover="hover:bg-light-blue" fontSize="text-2xl" classes="mr-2">github</Button>
+                        <Button color="text-white" bg="bg-dark-blue" hover="hover:bg-light-blue" fontSize="text-2xl" classes="mr-2 my-2 pt-1 pb-2">github</Button>
                     </Link>
 
                     <Link href='https://www.linkedin.com/in/ganningxu/' isExternal>
-                        <Button color="text-white" bg="bg-dark-blue" hover="hover:bg-light-blue" fontSize="text-2xl" classes="mr-2">linkedin</Button>
+                        <Button color="text-white" bg="bg-dark-blue" hover="hover:bg-light-blue" fontSize="text-2xl" classes="mr-2 my-2 pt-1 pb-2">linkedin</Button>
                     </Link>
 
                     <Link href='/Ganning Xu Resume - Final.pdf' isExternal>
-                        <Button color="text-white" bg="bg-dark-blue" hover="hover:bg-light-blue" fontSize="text-2xl">resume</Button>
+                        <Button color="text-white" bg="bg-dark-blue" hover="hover:bg-light-blue" fontSize="text-2xl" classes="my-2 pt-1 pb-2">resume</Button>
                     </Link>
 
                 </Box>
