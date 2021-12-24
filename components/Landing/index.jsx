@@ -1,4 +1,5 @@
-import { Box, Container, Text, Link, SimpleGrid } from '@chakra-ui/react'
+import { Box, Container, Text, Link } from '@chakra-ui/react';
+import { Button } from '../Button';
 import TypeIt from "typeit-react";
 
 export const Landing = () => (
@@ -32,18 +33,18 @@ export const Landing = () => (
 
                 <Box mt="4">
                     <Link href='mailto:xu23g@ncssm.edu' isExternal>
-                        <button className="rounded-full bg-light-blue py-2 px-5 font-bold text-xl mr-3 mb-2 text-black ease-in-out duration-300 hover:px-7">email</button>
+                        <Button color="text-white" bg="bg-dark-blue" hover="hover:bg-light-blue" fontSize="text-2xl" classes="mr-2">email</Button>
                     </Link>
                     <Link href='https://github.com/ganning127' isExternal>
-                        <button className="rounded-full bg-light-blue py-2 px-5 font-bold text-xl mr-3 mb-2 text-black ease-in-out duration-300 hover:px-7">github</button>
+                        <Button color="text-white" bg="bg-dark-blue" hover="hover:bg-light-blue" fontSize="text-2xl" classes="mr-2">github</Button>
                     </Link>
 
                     <Link href='https://www.linkedin.com/in/ganningxu/' isExternal>
-                        <button className="rounded-full bg-light-blue py-2 px-5 font-bold text-xl mr-3 mb-2 text-black ease-in-out duration-300 hover:px-7">linkedIn</button>
+                        <Button color="text-white" bg="bg-dark-blue" hover="hover:bg-light-blue" fontSize="text-2xl" classes="mr-2">linkedin</Button>
                     </Link>
 
                     <Link href='/Ganning Xu Resume - Final.pdf' isExternal>
-                        <button className="rounded-full bg-light-blue py-2 px-5 font-bold text-xl mb-2 text-black ease-in-out duration-300 hover:px-7">resume</button>
+                        <Button color="text-white" bg="bg-dark-blue" hover="hover:bg-light-blue" fontSize="text-2xl">resume</Button>
                     </Link>
 
                 </Box>

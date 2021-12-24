@@ -8,7 +8,7 @@ const DesktopNavLink = (props) => {
             display="flex"
             borderBottom="2px"
             borderColor="transparent"
-            transition="all 0.2s"
+            transition="all 0.3s"
             {...props}
         />
     )

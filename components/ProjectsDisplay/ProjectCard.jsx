@@ -1,4 +1,6 @@
-import { Box, Button, Text, Link, SimpleGrid, Image } from '@chakra-ui/react'
+import { Box, Text, Link, Image } from '@chakra-ui/react';
+import { Button } from "../Button";
+
 export const ProjectCard = ({ title, img, text, link }) => (
     <Box bg="black" color="white" maxW="300px" align="center" mx="auto" p="3" className="border-solid border-2 border-light-blue rounded-md">
         <Box>
@@ -14,7 +16,7 @@ export const ProjectCard = ({ title, img, text, link }) => (
                 {text}
             </Text>
             <Link href={link} isExternal mx="auto">
-                <button className="rounded-full bg-light-purple py-2 px-5 font-bold text-xl mr-3 mb-2 ease-in-out duration-300 hover:px-7" >See Project</button>
+                <Button bg="bg-dark-purple" hover="hover:bg-light-purple" color="text-white" fontSize="text-xl">View Project</Button>
             </Link>
         </Box>
 
