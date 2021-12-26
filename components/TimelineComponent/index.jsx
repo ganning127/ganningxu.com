@@ -3,11 +3,17 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import { MdWork, MdSchool, MdStars } from "react-icons/md";
 import 'react-vertical-timeline-component/style.min.css';
 import timelineData from './timelineData';
-import { Image, Container } from '@chakra-ui/react'
+import { Image } from '@chakra-ui/react'
 
 export const TimelineComponent = () => (
-    <Container maxW='container.xl'>
+    <>
+        <h1 className="text-5xl text-light-blue font-bold text-center  my-5">now</h1>
+
         <VerticalTimeline lineColor="white">
+            <VerticalTimelineElement
+                iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+                icon={<MdStars />}
+            />
             {
                 timelineData.slice(0).reverse().map((item, index) => {
                     if (item.type == "work") {
@@ -52,7 +58,9 @@ export const TimelineComponent = () => (
             />
 
 
+
         </VerticalTimeline>
-    </Container>
+        <h1 className="text-5xl text-light-blue font-bold text-center mt-5">birth</h1>
+    </>
 
 )

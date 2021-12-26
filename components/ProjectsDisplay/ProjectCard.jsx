@@ -2,7 +2,7 @@ import { Box, Text, Link, Image } from '@chakra-ui/react';
 import { Button } from "../Button";
 
 export const ProjectCard = ({ title, img, text, link }) => (
-    <Box bg="black" color="white" maxW="300px" align="center" mx="auto" p="3" className="border-solid border-2 border-light-blue rounded-md">
+    <Box bg="black" color="white" maxW="300px" align="center" mx="auto" p="3" className="border-solid border-2 rounded-md">
         <Box>
             <Text fontSize='2xl' fontWeight={800} align="center" className="text-light-purple">{title}</Text>
             <Image

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { NavBar } from '../components/NavBar'
 import { TimelineComponent } from '../components/TimelineComponent'
 import { Footer } from '../components/Footer'
+import { Container } from '@chakra-ui/react'
 export default function Timeline() {
     return (
         <>
@@ -15,8 +16,10 @@ export default function Timeline() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <NavBar active="timeline" />
-            <TimelineComponent />
-            <Footer />
+            <Container maxW='container.xl' px="8">
+                <TimelineComponent />
+                <Footer />
+            </Container>
         </>
     )
 }

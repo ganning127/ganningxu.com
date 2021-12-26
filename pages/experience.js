@@ -8,6 +8,7 @@ import AwardsList from "../data/awards.json";
 import CourseList from "../data/courses.json";
 import { Research } from '../components/Research'
 import { Footer } from '../components/Footer'
+import { Container } from '@chakra-ui/react'
 
 export default function Experience() {
     return (
@@ -22,13 +23,15 @@ export default function Experience() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <NavBar active="experience" />
-            <AutoGridHTML list={AwardsList} heading="awards" />
-            <AutoGridHTML list={SkillList} heading="languages" />
-            <AutoGridHTML list={CourseList} heading="courses" />
-            <Research />
-            <Organizations />
-            <Volunteering />
-            <Footer />
+            <Container maxW='container.xl' px="8">
+                <AutoGridHTML list={AwardsList} heading="awards" />
+                <AutoGridHTML list={SkillList} heading="languages" />
+                <AutoGridHTML list={CourseList} heading="courses" />
+                <Research />
+                <Organizations />
+                <Volunteering />
+                <Footer />
+            </Container>
 
 
         </>

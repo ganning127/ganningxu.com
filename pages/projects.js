@@ -2,6 +2,8 @@ import Head from 'next/head'
 import { NavBar } from '../components/NavBar'
 import { ProjectsDisplay } from '../components/ProjectsDisplay'
 import { Footer } from '../components/Footer'
+import { Container } from '@chakra-ui/react'
+
 export default function Home() {
     return (
         <>
@@ -15,8 +17,11 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <NavBar active="projects" />
-            <ProjectsDisplay />
-            <Footer />
+            <Container maxW='container.xl' px="8">
+                <ProjectsDisplay />
+                <Footer />
+            </Container>
+
 
         </>
     )

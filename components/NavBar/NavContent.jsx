@@ -14,10 +14,6 @@ import { NavListItem } from './NavListItem'
 
 const links = [
     {
-        label: 'home',
-        href: '/',
-    },
-    {
         label: 'projects',
         href: '/projects',
     },
@@ -28,6 +24,10 @@ const links = [
     {
         label: 'timeline',
         href: '/timeline',
+    },
+    {
+        label: 'blog',
+        href: '/blog',
     },
 ]
 
