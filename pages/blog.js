@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react'
 import BlogLayout from '../layouts/blog'
 
-export default function Workshops({ posts }) {
+export default function BlogPosts({ posts }) {
     const [searchValue, setSearchValue] = useState('')
     const filteredBlogPosts = posts
         .sort(
@@ -22,8 +22,6 @@ export default function Workshops({ posts }) {
             frontMatter.title.toLowerCase().includes(searchValue.toLowerCase()) ||
             frontMatter.summary.toLowerCase().includes(searchValue.toLowerCase())
         )
-
-    // console.log(filteredBlogPosts[0])
 
     return (
         <div>
@@ -40,7 +38,7 @@ export default function Workshops({ posts }) {
                 <Box as="section" bg="black" color="white">
                     <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing="40px" bg="black" justify="center" >
                         {filteredBlogPosts.map((frontMatter) => (
-                            <BlogCard key={frontMatter.title} title={frontMatter.title} image={frontMatter.image} link={`blog/${frontMatter.slug}`} />
+                            <BlogCard key={frontMatter.title} title={frontMatter.title} image={frontMatter.image} desc={frontMatter.summary} link={`blog/${frontMatter.slug}`} isTrunc={true} />
                         ))}
                     </SimpleGrid>
 

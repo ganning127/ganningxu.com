@@ -4,7 +4,7 @@ import {
 } from '@chakra-ui/react'
 import * as React from 'react'
 
-export const BlogCard = ({ title, image, link, desc, isExternal }) => {
+export const BlogCard = ({ title, image, link, desc, isExternal, isTrunc }) => {
     let bkgUrl = `url(${image})`
     return (
         <Box
@@ -28,12 +28,21 @@ export const BlogCard = ({ title, image, link, desc, isExternal }) => {
                 mx="4"
                 mt="6"
             >
-                {(desc &&
+                {((desc && isTrunc) &&
                     <>
                         <Text fontSize="2xl" fontWeight="800" className="text-light-purple">
                             {title}
                         </Text>
-                        <Text fontSize="lg" color="white">{desc}</Text>
+                        <Text fontSize="md" color="gray" noOfLines={1}>{desc}</Text>
+                    </>
+                )}
+
+                {((desc && !isTrunc) &&
+                    <>
+                        <Text fontSize="2xl" fontWeight="800" className="text-light-purple">
+                            {title}
+                        </Text>
+                        <Text fontSize="md" color="gray">{desc}</Text>
                     </>
                 )}
 
