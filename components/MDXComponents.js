@@ -5,22 +5,15 @@ import {
     Code,
     Heading,
     Link,
-    Text,
     Divider,
-    useColorMode
+    useColorMode,
+    OrderedList,
+    UnorderedList,
 } from '@chakra-ui/react'
-import { jsx } from '@emotion/react'
 import NextLink from 'next/link'
 import React from "react"
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
-import { dracula } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
 const CustomLink = (props) => {
-    const { colorMode } = useColorMode()
-    const color = {
-        light: 'hsl(208, 99%, 44%)',
-        dark: 'hsl(208, 95%, 68%)'
-    }
 
     const href = props.href
     const isInternalLink = href && (href.startsWith('/') || href.startsWith('#'))
@@ -28,12 +21,12 @@ const CustomLink = (props) => {
     if (isInternalLink) {
         return (
             <NextLink href={href} passHref>
-                <Link color={color[colorMode]} {...props} />
+                <Link color="#BB86FC" {...props} />
             </NextLink>
         )
     }
 
-    return <Link color={color[colorMode]} isExternal {...props} />
+    return <Link color="#BB86FC" isExternal {...props} />
 }
 
 const Quote = (props) => {
@@ -88,7 +81,6 @@ const DocsHeading = (props) => (
                 <Box
                     aria-label="anchor"
                     as="a"
-                    color="blue.500"
                     fontWeight="normal"
                     outline="none"
                     _focus={{
@@ -134,11 +126,11 @@ const MDXComponents = {
     br: (props) => <Box height="24px" {...props} />,
     hr: Hr,
     a: CustomLink,
-    p: (props) => <p as="p" className="text-md font-semibold" lineHeight="tall" {...props} />,
-    ul: (props) => <Box as="ul" pt={2} pl={4} ml={2} {...props} />,
-    ol: (props) => <Box as="ol" pt={2} pl={4} ml={2} {...props} />,
-    li: (props) => <Box as="li" pb={1} {...props} />,
-    code: (props) => <code border="2px solid red" {...props} />,
+    p: (props) => <p as="p" className="text-md font-semibold " {...props} />,
+    ul: (props) => <UnorderedList as="ul" pl={4} {...props} />,
+    ol: (props) => <OrderedList as="ol" pl={4}  {...props} />,
+    li: (props) => <li as="li" pb={1} className="text-md font-semibold" {...props} />,
+    code: (props) => <code {...props} />,
     blockquote: Quote
 }
 
