@@ -85,5 +85,13 @@
         "text": "SLTranslate is a mobile app that uses machine learning to translate into English.",
         "link": "https://github.com/KeshavVarad/SLTranslator",
         "timeframe": "Fall 2021"
+    },
+    {
+        "title": "Augmented Hashmap",
+        "img": "/project-hashmap.png",
+        "alt": "Picture of Hashmap Structure",
+        "text": "Created a Hashmap in C that is able to store any data type and uses an AVL tree for each \"bucket\".",
+        "link": "https://github.com/ganning127/augmented-hashmap",
+        "timeframe": "Fall 2021"
     }
 ]
