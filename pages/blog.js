@@ -67,7 +67,6 @@ export async function getStaticProps() {
 
     for (var i = 0; i < categories.length; i++) {
         const retrievedPosts = await getAllFilesFrontMatter(categories[i])
-        console.log(retrievedPosts)
         finalPosts.push(...retrievedPosts)
     }
 

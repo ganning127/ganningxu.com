@@ -10,7 +10,7 @@ export const Research = () => (
             ResearchList.map((item, i) => (
                 <div key={i} className='mt-2'>
                     <Link className='mt-2' href={item.link} _hover={{}} isExternal>
-                        <h4 className="font-bold text-dark-yellow hover:text-hover-purple inline text-xl duration-300">{item.title}</h4>
+                        <h4 className="font-bold text-dark-yellow hover:text-hover-purple inline text-lg duration-300">{item.title}</h4>
                     </Link>
                 </div>
             ))

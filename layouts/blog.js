@@ -6,16 +6,18 @@ import {
     Img,
     Box,
     Container,
-    Divider
+    Text,
+    Divider,
+    Link
 } from '@chakra-ui/react'
+import { Icon } from '@chakra-ui/react'
+import { IoLogoTwitter } from "react-icons/io";
 import { useRouter } from 'next/router'
 import { NavBar } from '../components/NavBar'
 import { Footer } from '../components/Footer'
 
-// const editUrl = (slug) =>
-//     `https://github.com/bjcarlson42/benjamincarlson.io/edit/main/pages/blog${slug}.mdx`
-// const tweetUrl = (slug) =>
-//     `https://twitter.com/intent/tweet?text=https://benjamincarlson.io/blog${slug} by @bjmncrlsn`
+const tweetUrl = (title, slug) =>
+    `https://twitter.com/intent/tweet?text=Check out this blog by Ganning Xu: ${title} - http://ganning.me/blog${slug}`
 
 export default function BlogLayout({ children, frontMatter }) {
 
@@ -87,6 +89,12 @@ export default function BlogLayout({ children, frontMatter }) {
                         </Flex>
                         <Divider />
                         {children}
+                        <Box d="flex" >
+                            <Link href={tweetUrl(frontMatter.title, slug)} _hover={{ color: "#00DAC4" }} isExternal>
+                                <Icon as={IoLogoTwitter} fontSize="5xl" color="#00DAC4" mr="2" />
+                                <Text d="inline" fontSize="xl" fontStyle="italic" alignSelf="center">Share this blog on Twitter!</Text>
+                            </Link>
+                        </Box>
                         <Divider />
                         <Footer />
                     </Stack>

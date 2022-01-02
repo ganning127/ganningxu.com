@@ -11,7 +11,7 @@ export const AutoGridHTML = ({ list, heading }) => (
                     return (
                         <div key={i}>
                             <Link href={item.link} _hover={{ color: "#F2E3AC" }} isExternal>
-                                <p dangerouslySetInnerHTML={{ __html: item.title }} className="font-bold text-xl inline mr-2"></p>
+                                <p dangerouslySetInnerHTML={{ __html: item.title }} className="font-bold text-lg inline mr-2"></p>
                                 {item.img && <Image d="inline" src={item.img} alt={item.title} boxSize='30px' objectFit='cover' />}
                             </Link>
                         </div>
@@ -19,7 +19,7 @@ export const AutoGridHTML = ({ list, heading }) => (
                 else
                     return (
                         <div key={i}>
-                            <p dangerouslySetInnerHTML={{ __html: item.title }} className="font-bold text-xl inline mr-2"></p>
+                            <p dangerouslySetInnerHTML={{ __html: item.title }} className="font-bold text-lg inline mr-2"></p>
                             {item.img && <Image d="inline" src={item.img} alt={item.title} boxSize='30px' objectFit='cover' />}
                         </div>
                     )

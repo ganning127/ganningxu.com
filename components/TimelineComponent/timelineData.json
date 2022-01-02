@@ -70,5 +70,13 @@
         "date": "Aug 2021",
         "img": "https://i.imgur.com/y7Xl4rv.png",
         "alt": "Bit Project Logo"
+    },
+    {
+        "headline": "Founded the NCSSM CyberUnicorns",
+        "type": "work",
+        "desc": " CyberUnicorns strives to engage the NCSSM community with cybersecurity through education, capture the flag challenges, and possible scholarships.",
+        "date": "Dec 2021",
+        "img": "https://i.imgur.com/CkxuY6J.png",
+        "alt": "CyberUnicorns Logo"
     }
 ]

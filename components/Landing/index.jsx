@@ -11,7 +11,6 @@ export const Landing = () => (
                 afterComplete: async () => {
                     // Will fire after the entire instance has completed typing.
                     // NOTE: If "loop" is enabled, this will never fire.
-                    console.log('done');
                     document.getElementById("wait").classList.add("visible");
                 },
             }}

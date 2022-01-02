@@ -6,10 +6,10 @@ export const Volunteering = () => (
         <Text fontSize="5xl" fontWeight="bold" className='mt-8 text-light-blue'>
             volunteering
         </Text>
-        <SimpleGrid minChildWidth='300px' spacing='40px'>
+        <SimpleGrid minChildWidth='300px' spacingX='40px' spacingY="20px">
             {
                 VolunteeringList.map((volunteer, i) => (
-                    <VolunteerCard key={i} position={volunteer.position} org={volunteer.org} desc={volunteer.desc} />
+                    <VolunteerCard key={i} position={volunteer.position} org={volunteer.org} desc={volunteer.desc} bullets={volunteer.bullets} />
                 ))
             }
         </SimpleGrid>
