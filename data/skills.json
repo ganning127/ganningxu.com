@@ -1,6 +1,6 @@
 [
     {
-        "title": "<span class='text-light-purple'>Python3</span>",
+        "title": "<span class='text-light-purple'>Python</span>",
         "img": "https://i.imgur.com/uSPaotQ.png"
     },
     {
@@ -20,8 +20,16 @@
         "img": "https://i.imgur.com/R4Ekrqn.png"
     },
     {
+        "title": "<span class='text-light-purple'>Chakra UI</span>",
+        "img": "https://i.imgur.com/giPWOmR.png"
+    },
+    {
         "title": "<span class='text-light-purple'>Next.js</span>",
         "img": "https://i.imgur.com/K4g9hjj.png"
+    },
+    {
+        "title": "<span class='text-light-purple'>Node.js</span>",
+        "img": "https://i.imgur.com/uRLD0C2.png"
     },
     {
         "title": "<span class='text-light-purple'>C</span>",
@@ -42,5 +50,17 @@
     {
         "title": "<span class='text-light-purple'>Hasura PostreSQL</span>",
         "img": "https://i.imgur.com/eUEeHC8.png"
+    },
+    {
+        "title": "<span class='text-light-purple'>SASS</span>",
+        "img": "https://i.imgur.com/X5G1k4y.png"
+    },
+    {
+        "title": "<span class='text-light-purple'>Git & GitHub</span>",
+        "img": "https://i.imgur.com/nIVU7kN.png"
+    },
+    {
+        "title": "<span class='text-light-purple'>Linux</span>",
+        "img": "https://i.imgur.com/HXp47QO.png"
     }
 ]

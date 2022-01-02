@@ -25,7 +25,7 @@ export default function Experience() {
             <NavBar active="experience" />
             <Container maxW='container.xl' px="8">
                 <AutoGridHTML list={AwardsList} heading="awards" />
-                <AutoGridHTML list={SkillList} heading="languages" />
+                <AutoGridHTML list={SkillList} heading="tools" />
                 <AutoGridHTML list={CourseList} heading="courses" />
                 <Research />
                 <Organizations />

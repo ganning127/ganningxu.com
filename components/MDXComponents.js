@@ -9,6 +9,7 @@ import {
     useColorMode,
     OrderedList,
     UnorderedList,
+    Text
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import React from "react"
@@ -30,12 +31,6 @@ const CustomLink = (props) => {
 }
 
 const Quote = (props) => {
-    const { colorMode } = useColorMode()
-    const bgColor = {
-        light: 'blue.50',
-        dark: 'blue.900'
-    }
-
     return (
         <Alert
             mt={4}
@@ -57,7 +52,7 @@ const Quote = (props) => {
 const DocsHeading = (props) => (
     <Heading
         css={{
-            scrollMarginTop: '100px',
+            // scrollMarginTop: '100px',
             scrollSnapMargin: '100px', // Safari
             '&[id]': {
                 pointerEvents: 'none'
@@ -66,14 +61,13 @@ const DocsHeading = (props) => (
                 display: 'block',
                 height: ' 6rem',
                 marginTop: '-6rem',
+                // marginBottom: '-6rem',
                 visibility: 'hidden',
                 content: `""`
             },
             '&[id]:hover a': { opacity: 1 }
         }}
         {...props}
-        mb="0"
-        mt="0"
     >
         <Box pointerEvents="auto">
             {props.children}
@@ -108,6 +102,20 @@ const Hr = () => {
     return <Divider borderColor={borderColor[colorMode]} my={4} w="100%" />
 }
 
+const Ptag = (props) => {
+    return (
+        <Text as="p" fontWeight="semibold"
+            css={{
+                '&[id]:before': {
+                    display: 'block',
+                    // marginTop: '-6rem',
+                    marginBottom: '-4rem',
+                    visibility: 'hidden',
+                },
+            }}
+        >{props.children}</Text>
+    )
+}
 
 
 
@@ -120,13 +128,11 @@ const MDXComponents = {
     h4: (props) => <DocsHeading as="h4" size="sm" fontWeight="bold" className="text-light-blue" {...props} />,
     h5: (props) => <DocsHeading as="h5" size="sm" fontWeight="bold" className="text-light-blue" {...props} />,
     h6: (props) => <DocsHeading as="h6" size="xs" fontWeight="bold" className="text-light-blue" {...props} />,
-    inlineCode: (props) => (
-        <Code colorScheme="yellow" fontSize="0.84em" {...props} />
-    ),
+    inlineCode: (props) => <Code colorScheme="yellow" fontSize="0.84em" {...props} />,
     br: (props) => <Box height="24px" {...props} />,
     hr: Hr,
     a: CustomLink,
-    p: (props) => <p as="p" className="text-md font-semibold " {...props} />,
+    p: (props) => <Ptag {...props} />,
     ul: (props) => <UnorderedList as="ul" pl={4} {...props} />,
     ol: (props) => <OrderedList as="ol" pl={4}  {...props} />,
     li: (props) => <li as="li" pb={1} className="text-md font-semibold" {...props} />,

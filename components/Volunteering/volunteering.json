@@ -1,37 +1,59 @@
 [
     {
         "position": "Coding Tutor",
-        "org": "North Carolina School of Science and Mathematics",
-        "desc": "Contact tutor for programming at NCSSM."
+        "org": "The Coding Foundation",
+        "bullets": [
+            "Taught 2 students with zero programming experience how to code in Python",
+            "6 week program with each lesson being 1.5 hours long"
+        ]
     },
     {
         "position": "Director Of Technology",
         "org": "Inspire2Dev",
-        "desc": "Hosted a free hackathon for 80 students in elementary and middle school."
+        "bullets": [
+            "Hosted a free middle school hackathon for over 80 students",
+            "Judged 50 submissions to finalize projects and decide upon winners"
+        ]
     },
     {
         "position": "Youth Ambassador",
         "org": "North Carolina Asian Americans Together",
-        "desc": "Engaged in 10+ volunteer opportunities during virtual NCAAT events and workshops."
+        "bullets": [
+            "Served 30+ hours at various NCAAT events and workshops",
+            "Contributed to NCAAT's N-Fluencer takeover program"
+        ]
     },
     {
         "position": "Content Writer",
         "org": "For Young By Young",
-        "desc": "Wrote 20+ blogs for the For Young By Young Website."
+        "bullets": [
+            "Created over 10 original blogs for the FYBY website",
+            "Revised and edited blogs for other publishers in FYBY"
+        ]
     },
     {
         "position": "IT Director",
-        "org": "North Carolina School of Science and Mathematics",
-        "desc": "Coordinated all redesigning of the website, with special attention to GSYJ’s theme and colors. Also managed all published works for GSYJ."
+        "org": "Global STEM Youth Journal",
+        "bullets": [
+            "Published over 30+ articles written by various authors for the GSYJ website",
+            "Redesigned and updated the website to reflect branding guidelines"
+        ]
     },
     {
         "position": "Projects Committee",
         "org": "Key Club International",
-        "desc": "Achieved 75+ service hours with organizations such as Brown Bag Ministry, Miracle League, and American Heart Association."
+        "bullets": [
+            "Volunteered 90+ hours for the Key Club International",
+            "Served over 10 organizations through Key Club, including Miracle League, Town of Cary/Raleigh, Brown Bag Ministry, and the American Heart Association"
+        ]
     },
     {
         "position": "Community Volunteer",
         "org": "Morrisville Youth Leadership Council",
-        "desc": "Volunteered 50+ hours for the Town of Morrisville. Collected 540+ pounds of food at the annual food drive."
+        "bullets": [
+            "Served 90+ hours for the Town of Morrisville",
+            "Collected 540+ pounds of food at the annual food drive",
+            "Raised $500+ for St. Jude Children’s Research Hospital"
+        ]
     }
 ]

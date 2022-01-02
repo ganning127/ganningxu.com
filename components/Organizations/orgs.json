@@ -1,5 +1,9 @@
 [
     {
+        "name": "CyberUnicorns",
+        "desc": "CyberUnicorns is a student-led club at NCSSM dedicated to cybersecurity and it's opportunities"
+    },
+    {
         "name": "Computer Science Club",
         "desc": "NCSSM club dedicated to teaching and learning about computer science."
     },
