@@ -8,21 +8,29 @@ import {
     Container,
     Text,
     Divider,
-    Link
+    Spacer,
+    Link,
+    Heading
 } from '@chakra-ui/react'
 import { Icon } from '@chakra-ui/react'
 import { IoLogoTwitter } from "react-icons/io";
 import { useRouter } from 'next/router'
 import { NavBar } from '../components/NavBar'
 import { Footer } from '../components/Footer'
+import PageViews from '../pages/api/views/getBlogViews'
 
 const tweetUrl = (title, slug) =>
     `https://twitter.com/intent/tweet?text=Check out this blog by Ganning Xu: ${title} - http://ganning.me/blog${slug}`
 
 export default function BlogLayout({ children, frontMatter }) {
-
     const router = useRouter();
     const slug = router.asPath.replace('/blog', '')
+
+    useEffect(() => {
+        fetch(`/api/views/${slug}`, {
+            method: 'POST'
+        });
+    }, [slug]);
 
     const [width, setWidth] = useState(1)
     const handleScroll = () => {
@@ -41,13 +49,16 @@ export default function BlogLayout({ children, frontMatter }) {
         }
     })
 
+    const views = PageViews(frontMatter.slug);
+
+
     return (
 
         <>
 
             <Head>
-                <title>Blog - {frontMatter.title}</title>
-                <meta property="og:title" content={`Blog - ${frontMatter.title}`} />
+                <title>{frontMatter.title}</title>
+                <meta property="og:title" content={frontMatter.title} />
                 <meta property="og:image" content={frontMatter.image} />
                 <meta property="og:description" content={frontMatter.summary} />
                 <meta property="og:type" content="website" />
@@ -59,7 +70,6 @@ export default function BlogLayout({ children, frontMatter }) {
                     maxW="container.xl"
                     px="8"
                 >
-
                     <Stack
                         as="article"
                         spacing={8}
@@ -78,15 +88,20 @@ export default function BlogLayout({ children, frontMatter }) {
                             maxWidth="800px"
                             w="100%"
                         >
-                            <h1 className="text-5xl font-bold text-light-blue">{frontMatter.title}</h1>
+                            <Heading as="h1" color="#00DAC4" fontWeight="bold" fontSize={{ base: '2xl', md: '5xl' }}>{frontMatter.title}</Heading>
                             <Img src={frontMatter.image} className="rounded-md" my="8" />
                             <Flex>
-                                <p className="font-bold text-xl inline mr-2 text-slate-500">Written by</p>
-                                <p className="font-bold text-xl inline mr-2">Ganning Xu</p>
-                                <p className="font-bold text-xl inline mr-2 text-slate-500">({frontMatter.readingTime.text})</p>
+                                <Box >
+                                    <Text fontWeight="semibold" fontSize="xl">{frontMatter.readingTime.text}</Text>
+                                </Box>
+                                <Spacer />
+                                <Box>
+                                    <Text alignSelf="center" fontWeight="semibold" fontSize="xl">{views}</Text>
+                                </Box>
                             </Flex>
 
                         </Flex>
+
                         <Divider />
                         {children}
                         <Box d="flex" >
@@ -95,6 +110,7 @@ export default function BlogLayout({ children, frontMatter }) {
                                 <Text d="inline" fontSize="xl" fontStyle="italic" alignSelf="center">Share this blog on Twitter!</Text>
                             </Link>
                         </Box>
+
                         <Divider />
                         <Footer />
                     </Stack>

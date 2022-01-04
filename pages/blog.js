@@ -10,7 +10,7 @@ import {
     Box,
 } from '@chakra-ui/react'
 import BlogLayout from '../layouts/blog'
-
+import PageViews from './api/views/getBlogViews'
 export default function BlogPosts({ posts }) {
     const [searchValue, setSearchValue] = useState('')
     const filteredBlogPosts = posts
@@ -37,9 +37,12 @@ export default function BlogPosts({ posts }) {
                 <h1 className="text-5xl text-light-blue font-bold text-center mb-5">blog count:  <span className="text-white">{filteredBlogPosts.length}</span></h1>
                 <Box as="section" bg="black" color="white">
                     <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing="40px" bg="black" justify="center" >
-                        {filteredBlogPosts.map((frontMatter) => (
-                            <BlogCard key={frontMatter.title} title={frontMatter.title} image={frontMatter.image} desc={frontMatter.summary} link={`blog/${frontMatter.slug}`} isTrunc={true} />
-                        ))}
+                        {filteredBlogPosts.map((frontMatter) => {
+                            const views = PageViews(frontMatter.slug);
+                            return (
+                                <BlogCard key={frontMatter.title} views={views} title={frontMatter.title} image={frontMatter.image} desc={frontMatter.summary} link={`blog/${frontMatter.slug}`} isTrunc={true} />
+                            )
+                        })}
                     </SimpleGrid>
 
                 </Box>
