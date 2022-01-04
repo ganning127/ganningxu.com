@@ -4,7 +4,7 @@ import {
 } from '@chakra-ui/react'
 import * as React from 'react'
 
-export const BlogCard = ({ title, image, link, desc, isExternal, isTrunc }) => {
+export const BlogCard = ({ title, image, link, desc, isExternal, isTrunc, views }) => {
     let bkgUrl = `url(${image})`
     return (
         <Box
@@ -53,6 +53,10 @@ export const BlogCard = ({ title, image, link, desc, isExternal, isTrunc }) => {
                         </Text>
                     </>
                 )}
+                {
+                    views &&
+                    <Text fontSize="md" color="#eee0ff" noOfLines={1} fontStyle="italic">{views}</Text>
+                }
 
 
 
