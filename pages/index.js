@@ -7,7 +7,6 @@ import { Container } from '@chakra-ui/react'
 export default function Home() {
   return (
     <>
-
       <Head>
         <title>Ganning Xu</title>
         <meta property="og:title" content="Ganning Xu" />
