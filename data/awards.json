@@ -11,7 +11,7 @@
         "title": "<span class='text-light-purple'>2nd Place</span> - RTP HS Hackathon 2020"
     },
     {
-        "title": "<span class='text-light-purple'>Winner</span> - 2021 Congressional App Challenge",
+        "title": "<span class='text-light-purple'>1st Place</span> - 2021 Congressional App Challenge",
         "link": "https://price.house.gov/newsroom/press-releases/rep-price-announces-winner-2021-congressional-app-challenge"
     },
     {
@@ -20,6 +20,10 @@
     {
         "title": "<span class='text-light-purple'>Semifinalist</span> - National Cyber Scholarship",
         "link": "https://www.nationalcyberscholarship.org/scholarships-and-awards/awards-2022"
+    },
+    {
+        "title": "<span class='text-light-purple'>Gold Badge</span> - CyberStart America",
+        "link": "https://devpost.com/software/spotion"
     },
     {
         "title": "<span class='text-light-purple'>9th Place</span> - Hack the Cloud 2.0",

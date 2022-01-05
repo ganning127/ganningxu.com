@@ -78,5 +78,13 @@
         "date": "Dec 2021",
         "img": "https://i.imgur.com/CkxuY6J.png",
         "alt": "CyberUnicorns Logo"
+    },
+    {
+        "headline": "Director of Web Development",
+        "type": "work",
+        "desc": "Leading a team of 13 Web Development Interns to create a website for The Coding Foundation",
+        "date": "Jan 2022",
+        "img": "https://i.imgur.com/6w3cKWi.png",
+        "alt": "The Coding Foundation Logo"
     }
 ]
