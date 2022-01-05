@@ -17,7 +17,7 @@ import { IoLogoTwitter } from "react-icons/io";
 import { useRouter } from 'next/router'
 import { NavBar } from '../components/NavBar'
 import { Footer } from '../components/Footer'
-import PageViews from '../pages/api/views/getBlogViews'
+import PageViews from '../pages/api/getBlogViews'
 
 const tweetUrl = (title, slug) =>
     `https://twitter.com/intent/tweet?text=Check out this blog by Ganning Xu: ${title} - http://ganning.me/blog${slug}`
