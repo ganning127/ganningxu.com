@@ -23,6 +23,12 @@ export default function BlogPosts({ posts }) {
             frontMatter.summary.toLowerCase().includes(searchValue.toLowerCase())
         )
 
+    fetch('/api/hello')
+        .then(res => res.json())
+        .then(data => console.log(data))
+
+
+
     return (
         <div>
             <Head>
