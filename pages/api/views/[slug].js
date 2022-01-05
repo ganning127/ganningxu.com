@@ -1,7 +1,6 @@
-/* eslint-disable import/no-anonymous-default-export */
 import { SupabaseAdmin } from '../../../lib/supabase-admin';
 
-export default async (req, res) => {
+export default async function handler(req, res) {
     if (req.method === 'POST') {
         // Call our stored procedure with the page_slug set by the request params slug
         await SupabaseAdmin.rpc('increment_page_view', { page_slug: req.query.slug });
