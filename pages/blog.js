@@ -23,6 +23,9 @@ export default function BlogPosts({ posts }) {
             frontMatter.summary.toLowerCase().includes(searchValue.toLowerCase())
         )
 
+    console.log("client key:", process.env.NEXT_PUBLIC_SUPABASE_CLIENT_KEY);
+    console.log("service key:", process.env.SUPABASE_SERVICE_KEY);
+
     return (
         <div>
             <Head>
