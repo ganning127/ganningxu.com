@@ -10,7 +10,7 @@ import {
     Box,
 } from '@chakra-ui/react'
 import BlogLayout from '../layouts/blog'
-import PageViews from './api/views/getBlogViews'
+import PageViews from './api/getBlogViews'
 export default function BlogPosts({ posts }) {
     const [searchValue, setSearchValue] = useState('')
     const filteredBlogPosts = posts
