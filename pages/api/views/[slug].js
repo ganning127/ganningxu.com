@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import { SupabaseAdmin } from '../../../lib/supabase-admin';
 
 export default async (req, res) => {
