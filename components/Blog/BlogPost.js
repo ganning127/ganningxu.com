@@ -5,12 +5,20 @@ import {
     Link,
     Flex,
     Spacer,
+    useColorMode,
     Img
 } from '@chakra-ui/react'
 import * as React from 'react'
 import PageViews from '../../pages/api/getBlogViews'
-export const BlogPost = ({ title, image, link, desc, isExternal, publishedAt, slug }) => {
-    let bkgUrl = `url(${image})`
+export const BlogPost = ({ title, image, link, desc, isExternal, publishedAt, slug, readingTime }) => {
+    // let bkgUrl = `url(${image})`
+
+    const { colorMode } = useColorMode()
+    const headingColors = {
+        light: '#15161a',
+        dark: 'white'
+    }
+
     let views = PageViews(slug);
     return (
         <Box
@@ -18,18 +26,16 @@ export const BlogPost = ({ title, image, link, desc, isExternal, publishedAt, sl
             mx="auto"
             as="a"
             w={{ sm: "100%" }} // width 100 when larger than sm
-            // borderRadius="5px"
             href={link}
             transition="all 0.2s"
-            // pb="6"
             target={isExternal ? "_blank" : "_self"}
         >
             <Link href={link} _hover={{}}>
                 <Flex>
                     <Box>
-                        <Heading fontSize="3xl" _hover={{ color: "purple.light" }}>{title}</Heading>
+                        <Heading fontSize="3xl" color={headingColors[colorMode]} _hover={{ color: "purple.light" }}>{title}</Heading>
                         <Text color="gray.500" fontSize="md" noOfLines={1}>{desc}</Text>
-                        <Text fontWeight="semibold" color="gray.300">{views} • {publishedAt}</Text>
+                        <Text fontWeight="semibold" color="gray.300">{views} • {publishedAt} • {readingTime.text}</Text>
                     </Box>
                     <Spacer />
                     {/* only display the image when greater than sm device size */}

@@ -19,7 +19,13 @@ const theme = extendTheme({
             light: "#00DAC4",
             dark: "#00998a",
         },
+        bkg: {
+            dark: "#15161a",
+            light: "#f5f5f5",
+        }
     },
+    initalColorMode: 'dark',
+    useSystemColorMode: false,
 })
 
 

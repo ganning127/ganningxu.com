@@ -10,7 +10,8 @@ import {
     Divider,
     Spacer,
     Link,
-    Heading
+    Heading,
+    useColorMode,
 } from '@chakra-ui/react'
 import { Icon } from '@chakra-ui/react'
 import { IoLogoTwitter } from "react-icons/io";
@@ -52,11 +53,21 @@ export default function BlogLayout({ children, frontMatter }) {
 
     const views = PageViews(frontMatter.slug);
 
+    const { colorMode } = useColorMode()
+    const descColors = {
+        light: '#15161a',
+        dark: 'white'
+    }
+
+    const titleColors = {
+        dark: 'blue.light',
+        light: '#15161a'
+    }
+
 
     return (
 
         <>
-
             <Head>
                 <title>{frontMatter.title}</title>
                 <meta property="og:title" content={frontMatter.title} />
@@ -66,7 +77,7 @@ export default function BlogLayout({ children, frontMatter }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <NavBar active="blog" />
-            <Box as="section" bg="black" pt="24" overflow="hidden" color="white">
+            <Box as="section" pt="24" overflow="hidden" color="white">
 
                 <motion.div
                     initial={{ y: -20, opacity: 0 }}
@@ -95,9 +106,9 @@ export default function BlogLayout({ children, frontMatter }) {
                                 maxWidth="800px"
                                 w="100%"
                             >
-                                <Heading as="h1" color="#00DAC4" fontWeight="bold" fontSize={{ base: '2xl', md: '5xl' }}>{frontMatter.title}</Heading>
+                                <Heading as="h1" color={titleColors[colorMode]} fontWeight="bold" fontSize={{ base: '2xl', md: '5xl' }}>{frontMatter.title}</Heading>
                                 <Img src={frontMatter.image} borderRadius="10" my="8" />
-                                <Flex>
+                                <Flex color={descColors[colorMode]}>
                                     <Box >
                                         <Text fontWeight="semibold" fontSize="xl">{frontMatter.readingTime.text}</Text>
                                     </Box>
@@ -111,12 +122,12 @@ export default function BlogLayout({ children, frontMatter }) {
 
                             <Divider />
                             {children}
-                            <Box d="flex" >
-                                <Link href={tweetUrl(frontMatter.title, slug)} _hover={{ color: "#00DAC4" }} isExternal>
-                                    <Icon as={IoLogoTwitter} fontSize="5xl" color="#00DAC4" mr="2" />
-                                    <Text d="inline" fontSize="xl" fontStyle="italic" alignSelf="center">Share this blog on Twitter!</Text>
-                                </Link>
-                            </Box>
+                            <Link href={tweetUrl(frontMatter.title, slug)} _hover={{ color: "#00DAC4" }} isExternal>
+                                <Flex d="flex" >
+                                    <Icon as={IoLogoTwitter} fontSize="5xl" color="#00DAC4" mr="2" alignSelf="center" />
+                                    <Text d="inline" fontSize="xl" fontStyle="italic" alignSelf="center" fontWeight="semibold" color={descColors[colorMode]}>Share this blog on Twitter!</Text>
+                                </Flex>
+                            </Link>
 
                             <Divider />
                             <Footer />

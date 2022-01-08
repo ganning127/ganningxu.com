@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import { ChakraProvider } from '@chakra-ui/react'
 import theme from '../theme'
 import React from 'react'
-import { useColorMode, ColorModeProvider } from '@chakra-ui/react'
+import { useColorMode, ColorModeProvider, ColorModeScript } from '@chakra-ui/react'
 import { MDXProvider } from '@mdx-js/react'
 import { Global, css } from '@emotion/react'
 // import { DefaultSeo } from 'next-seo'
@@ -12,11 +12,12 @@ import MDXComponents from '../components/MDXComponents'
 const GlobalStyle = ({ children }) => {
   let { colorMode } = useColorMode()
 
+
   return (
     <>
       <Global
         styles={css`
-          ${colorMode = prismDarkTheme};
+           ${colorMode === 'light' ? prismLightTheme : prismDarkTheme};
           html {
             min-width: 356px;
             scroll-behavior: smooth;
@@ -25,7 +26,7 @@ const GlobalStyle = ({ children }) => {
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            background: black;
+            background: ${colorMode === 'light' ? 'white' : '#15161a'};
           }
         `}
       />
@@ -43,7 +44,7 @@ function MyApp({ Component, pageProps }) {
           <Component {...pageProps} />
         </GlobalStyle>
       </MDXProvider>
-    </ChakraProvider>
+    </ChakraProvider >
   )
 }
 export default MyApp
