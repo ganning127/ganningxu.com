@@ -1,12 +1,15 @@
 import { Box, Text, Link, Heading, Button, chakra, Stack, useColorMode } from '@chakra-ui/react';
 import TypeIt from "typeit-react";
 import { motion } from "framer-motion"
-import colors from "../../colors"
 
 
 
 export const Landing = () => {
     const { colorMode } = useColorMode();
+    const textColor = {
+        light: "#15161a",
+        dark: "white"
+    }
 
     return (
         <Box color={textColor[colorMode]} mt="8">
