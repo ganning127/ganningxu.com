@@ -52,11 +52,18 @@ const MobileNavContent = (props) => {
                 animate={isOpen ? 'enter' : 'exit'}
             >
                 <Stack spacing="0" divider={<StackDivider borderColor="black" />}>
-                    {links.map((link, index) => (
-                        <NavListItem key={index} >
-                            <NavLink.Mobile href={link.href}>{link.label}</NavLink.Mobile>
-                        </NavListItem>
-                    ))}
+                    {links.map((link, index) => {
+                        let color = "white";
+                        if (props.active === link.label.toLowerCase()) {
+                            color = "blue.light";
+                        }
+
+                        return (
+                            <NavListItem key={index} >
+                                <NavLink.Mobile href={link.href} color={color} _hover={{ color: 'blue.light' }}>{link.label}</NavLink.Mobile>
+                            </NavListItem>
+                        )
+                    })}
                     <NavListItem
                         style={{
                             flex: '1',
@@ -73,12 +80,12 @@ const DesktopNavContent = (props) => {
     return (
         <HStack spacing="8" align="stretch" {...props}>
             {links.map((link, index) => {
-                let color = "black";
+                let color = "white";
                 if (props.active === link.label.toLowerCase()) {
-                    color = "text-light-blue";
+                    color = "blue.light";
                 }
                 return (
-                    <NavLink.Desktop key={index} href={link.href} fontSize="2xl" fontWeight="bold" className={`hover:text-light-blue py-1 px-1 rounded-m ${color}`}>
+                    <NavLink.Desktop key={index} href={link.href} fontSize="2xl" fontWeight="bold" color={color} _hover={{ color: 'blue.light' }}>
                         {link.label}
                     </NavLink.Desktop>
                 )

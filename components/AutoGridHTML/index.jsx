@@ -1,27 +1,34 @@
-import { Box, Text, Link, SimpleGrid, Image } from '@chakra-ui/react'
+import { Box, Text, Link, SimpleGrid, Image, Heading, chakra } from '@chakra-ui/react'
 
 export const AutoGridHTML = ({ list, heading }) => (
-    <Box bg="black" color="white" className='mt-8'>
-        <Text fontSize="5xl" fontWeight="bold" className='mt-8 text-light-blue'>
+    <Box bg="black" color="white" mt="8">
+        <Heading fontSize="5xl" fontWeight="bold" color="blue.light" mt="8" mb="1">
             {heading}
-        </Text>
+        </Heading>
         <SimpleGrid minChildWidth='200px' spacingX='40px' justifyContent="center" spacingY="20px">
             {list.map((item, i) => {
                 if (item.link)
                     return (
-                        <div key={i}>
+                        <Box key={i}>
                             <Link href={item.link} _hover={{ color: "#F2E3AC" }} isExternal>
-                                <p dangerouslySetInnerHTML={{ __html: item.title }} className="font-bold text-lg inline mr-2"></p>
-                                {item.img && <Image d="inline" src={item.img} alt={item.title} boxSize='30px' objectFit='cover' />}
+                                <Box d="flex">
+                                    <Text dangerouslySetInnerHTML={{ __html: item.title }} fontWeight="bold" fontSize="lg" alignSelf="center" />
+                                    {item.img &&
+
+                                        <Image d="inline" src={item.img} alt={item.title} boxSize='30px' objectFit='cover' />}
+                                </Box>
                             </Link>
-                        </div>
+                        </Box>
                     )
                 else
                     return (
-                        <div key={i}>
-                            <p dangerouslySetInnerHTML={{ __html: item.title }} className="font-bold text-lg inline mr-2"></p>
-                            {item.img && <Image d="inline" src={item.img} alt={item.title} boxSize='30px' objectFit='cover' />}
-                        </div>
+                        <Box key={i}>
+                            <Box d="flex">
+                                <Text dangerouslySetInnerHTML={{ __html: item.title }} fontWeight="bold" fontSize="lg" d="inline" mr="2" />
+
+                                {item.img && <Image d="inline" src={item.img} alt={item.title} boxSize='30px' objectFit='cover' />}
+                            </Box>
+                        </Box>
                     )
             }
             )}

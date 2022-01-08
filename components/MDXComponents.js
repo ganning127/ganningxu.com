@@ -123,19 +123,19 @@ const Ptag = (props) => {
 
 const MDXComponents = {
     h1: (props) => <Heading as="h1" size="xl" my={4} {...props} />,
-    h2: (props) => <DocsHeading as="h2" size="lg" fontWeight="bold" className="text-light-blue" {...props} />,
-    h3: (props) => <DocsHeading as="h3" size="md" fontWeight="bold" className="text-light-purple" {...props} />,
-    h4: (props) => <DocsHeading as="h4" size="sm" fontWeight="bold" className="text-light-blue" {...props} />,
-    h5: (props) => <DocsHeading as="h5" size="sm" fontWeight="bold" className="text-light-blue" {...props} />,
-    h6: (props) => <DocsHeading as="h6" size="xs" fontWeight="bold" className="text-light-blue" {...props} />,
-    inlineCode: (props) => <Code colorScheme="yellow" fontSize="0.84em" {...props} />,
+    h2: (props) => <DocsHeading as="h2" size="lg" fontWeight="bold" color="blue.light" {...props} />,
+    h3: (props) => <DocsHeading as="h3" size="md" fontWeight="bold" color="purple.light" {...props} />,
+    h4: (props) => <DocsHeading as="h4" size="sm" fontWeight="bold" color="blue.light" {...props} />,
+    h5: (props) => <DocsHeading as="h5" size="sm" fontWeight="bold" color="blue.light" {...props} />,
+    h6: (props) => <DocsHeading as="h6" size="xs" fontWeight="bold" color="blue.light" {...props} />,
+    inlineCode: (props) => <Code colorScheme="purple" fontSize="0.84em" {...props} />,
     br: (props) => <Box height="24px" {...props} />,
     hr: Hr,
     a: CustomLink,
     p: (props) => <Ptag {...props} />,
     ul: (props) => <UnorderedList as="ul" pl={4} {...props} />,
     ol: (props) => <OrderedList as="ol" pl={4}  {...props} />,
-    li: (props) => <li as="li" pb={1} className="text-md font-semibold" {...props} />,
+    li: (props) => <li as="li" pb={1} fontSize="md" {...props} />,
     code: (props) => <code {...props} />,
     blockquote: Quote
 }

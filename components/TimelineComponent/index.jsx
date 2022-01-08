@@ -3,11 +3,11 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import { MdWork, MdSchool, MdStars } from "react-icons/md";
 import 'react-vertical-timeline-component/style.min.css';
 import timelineData from './timelineData';
-import { Image } from '@chakra-ui/react'
+import { Image, Heading, Text, Box, chakra } from '@chakra-ui/react'
 
 export const TimelineComponent = () => (
     <>
-        <h1 className="text-5xl text-light-blue font-bold text-center  my-5">now</h1>
+        <Heading fontSize="5xl" color="blue.light" fontWeight="bold" textAlign="center">now</Heading>
 
         <VerticalTimeline lineColor="white">
             <VerticalTimelineElement
@@ -27,9 +27,17 @@ export const TimelineComponent = () => (
                                 iconStyle={{ background: '#0fc4af', color: '#fff' }}
                                 icon={<MdWork />}
                             >
-                                <Image d="inline" src={item.img} alt={item.headline} boxSize='60px' objectFit='cover' mr="2" />
-                                <h3 className="vertical-timeline-element-title font-bold text-xl text-white inline">{item.headline}</h3>
-                                <p className="text-light-yellow"><b>{item.desc}</b></p>
+                                <Box d="flex">
+                                    <Image d="inline" src={item.img} alt={item.headline} boxSize='60px' objectFit='cover' mr="2" />
+                                    <Heading d="inline" fontSize="xl" fontWeight="bold"
+                                        alignSelf="center"
+                                        color="white"
+                                        className="vertical-timeline-element-title"><chakra.span color="white">{item.headline}</chakra.span>
+
+                                    </Heading>
+                                </Box>
+
+                                <Text color="yellow.light" fontWeight="bold"><b>{item.desc}</b></Text>
                             </VerticalTimelineElement>
                         )
                     }
@@ -45,8 +53,13 @@ export const TimelineComponent = () => (
                                 icon={<MdSchool />}
                             >
                                 <Image d="inline" src={item.img} alt={item.headline} boxSize='60px' objectFit='cover' mr="2" />
-                                <h3 className="vertical-timeline-element-title font-bold text-xl inline">{item.headline}</h3>
-                                <p className="text-slate-300"><b>{item.desc}</b></p>
+                                <Box d="flex">
+                                    <Heading d="inline" fontSize="xl" fontWeight="bold"
+                                        alignSelf="center"
+                                        color="white"
+                                        className="vertical-timeline-element-title"><chakra.span color="white">{item.headline}</chakra.span></Heading>
+                                </Box>
+                                <Text color="yellow.light" fontWeight="bold"><b>{item.desc}</b></Text>
                             </VerticalTimelineElement>
                         )
                     }
@@ -60,7 +73,7 @@ export const TimelineComponent = () => (
 
 
         </VerticalTimeline>
-        <h1 className="text-5xl text-light-blue font-bold text-center mt-5">birth</h1>
+        <Heading fontSize="5xl" color="blue.light" fontWeight="bold" textAlign="center">now</Heading>
     </>
 
 )
