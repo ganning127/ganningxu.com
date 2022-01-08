@@ -1,27 +1,25 @@
-import { Box, Text, Link, Heading, Button, chakra, Stack, SlideFade } from '@chakra-ui/react';
+import { Box, Text, Link, Heading, Button, chakra, Stack, useColorMode } from '@chakra-ui/react';
 import TypeIt from "typeit-react";
 import { motion } from "framer-motion"
+import colors from "../../colors"
+
+
 
 export const Landing = () => {
+    const { colorMode } = useColorMode();
+
     return (
-        <Box bg="black" color="white" mt="8">
+        <Box color={textColor[colorMode]} mt="8">
             <motion.div
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: .7, delay: 0.5 }}
             >
-                <TypeIt
-                    options={{
-                        cursor: false,
-                        speed: 75,
-                        startDelay: 1000,
-                    }}
-                >
-                    <Heading fontSize="6xl" as="h1">hello, I&apos;m <chakra.span color="blue.light">Ganning</chakra.span>.</Heading>
-                </TypeIt>
+
+                <Heading fontSize="6xl" as="h1" color={textColor[colorMode]}>hello, I&apos;m <chakra.span color="blue.light">Ganning</chakra.span>.</Heading>
+
 
                 <Text fontSize="xl" fontWeight="semibold" mt="4">
-
                     <TypeIt
                         element={Heading}
                         options={{

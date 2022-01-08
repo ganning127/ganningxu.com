@@ -13,6 +13,7 @@ import {
     InputRightElement,
     VStack,
     StackDivider,
+    useColorMode,
     chakra
 } from '@chakra-ui/react'
 import { SearchIcon } from '@chakra-ui/icons'
@@ -21,18 +22,21 @@ import { motion } from 'framer-motion'
 
 export default function BlogPosts({ posts }) {
     const [searchValue, setSearchValue] = useState('')
+    const { colorMode } = useColorMode()
+    const headingColors = {
+        light: '#15161a',
+        dark: 'white'
+    }
 
     let filteredBlogPosts = posts
         .sort(
             (a, b) =>
-                Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
+                Number(new Date(a.publishedAt)) - Number(new Date(b.publishedAt))
         )
         .filter((frontMatter) =>
             frontMatter.title?.toLowerCase()?.includes(searchValue.toLowerCase()) ||
             frontMatter.summary?.toLowerCase()?.includes(searchValue.toLowerCase())
         )
-
-
 
     return (
         <>
@@ -52,12 +56,13 @@ export default function BlogPosts({ posts }) {
                 >
                     <Heading as="h2" color="blue.light" fontSize="5xl" mb="5" textAlign="center">blog <chakra.span color="white">({filteredBlogPosts.length} posts)</chakra.span></Heading>
 
-                    <Box as="section" bg="black" color="white">
+                    <Box as="section" color="white">
                         <InputGroup mb={4} mr={4} w="100%">
                             <Input
                                 aria-label="Search by post title or summary"
                                 onChange={(e) => setSearchValue(e.target.value)}
                                 placeholder="Search by post title or summary"
+                                color={headingColors[colorMode]}
                             />
                             <InputRightElement>
                                 <SearchIcon color="gray.300" />
@@ -78,6 +83,7 @@ export default function BlogPosts({ posts }) {
                                     slug={frontMatter.slug}
                                     image={frontMatter.image}
                                     desc={frontMatter.summary}
+                                    readingTime={frontMatter.readingTime}
                                     link={`blog/${frontMatter.slug}`}
                                     publishedAt={frontMatter.publishedAt}
                                     isTrunc={true}
