@@ -3,9 +3,10 @@ import {
     Text,
 } from '@chakra-ui/react'
 import * as React from 'react'
-
-export const BlogCard = ({ title, image, link, desc, isExternal, isTrunc, views }) => {
+import PageViews from '../../pages/api/getBlogViews'
+export const BlogCard = ({ title, image, link, desc, isExternal, isTrunc, slug }) => {
     let bkgUrl = `url(${image})`
+    let views = PageViews(slug);
     return (
         <Box
             overflow="hidden"
@@ -30,7 +31,7 @@ export const BlogCard = ({ title, image, link, desc, isExternal, isTrunc, views 
             >
                 {((desc && isTrunc) &&
                     <>
-                        <Text fontSize="2xl" fontWeight="800" className="text-light-purple">
+                        <Text fontSize="2xl" fontWeight="800" color="purple.light">
                             {title}
                         </Text>
                         <Text fontSize="md" color="gray" noOfLines={1}>{desc}</Text>
@@ -39,7 +40,7 @@ export const BlogCard = ({ title, image, link, desc, isExternal, isTrunc, views 
 
                 {((desc && !isTrunc) &&
                     <>
-                        <Text fontSize="2xl" fontWeight="800" className="text-light-purple">
+                        <Text fontSize="2xl" fontWeight="800" color="purple.light">
                             {title}
                         </Text>
                         <Text fontSize="md" color="gray">{desc}</Text>
@@ -54,7 +55,7 @@ export const BlogCard = ({ title, image, link, desc, isExternal, isTrunc, views 
                     </>
                 )}
                 {
-                    views &&
+                    slug &&
                     <Text fontSize="md" color="#eee0ff" noOfLines={1} fontStyle="italic">{views}</Text>
                 }
 

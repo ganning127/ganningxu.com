@@ -1,53 +1,104 @@
-import { Box, Container, Text, Link } from '@chakra-ui/react';
-import { Button } from '../Button';
+import { Box, Text, Link, Heading, Button, chakra, Stack, SlideFade } from '@chakra-ui/react';
 import TypeIt from "typeit-react";
+import { motion } from "framer-motion"
 
-export const Landing = () => (
-    <Box bg="black" color="white" className='mt-8'>
-        <TypeIt
-            options={{
-                cursor: false,
-                speed: 75,
-                afterComplete: async () => {
-                    // Will fire after the entire instance has completed typing.
-                    // NOTE: If "loop" is enabled, this will never fire.
-                    document.getElementById("wait").classList.add("visible");
-                },
-            }}
-        >
-            <h1 className="text-5xl font-bold">hello, I&apos;m <span className='text-light-blue'>Ganning</span>.</h1>
-        </TypeIt>
+export const Landing = () => {
+    return (
+        <Box bg="black" color="white" mt="8">
+            <motion.div
+                initial={{ y: -20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: .7, delay: 0.5 }}
+            >
+                <TypeIt
+                    options={{
+                        cursor: false,
+                        speed: 75,
+                        startDelay: 1000,
+                    }}
+                >
+                    <Heading fontSize="6xl" as="h1">hello, I&apos;m <chakra.span color="blue.light">Ganning</chakra.span>.</Heading>
+                </TypeIt>
 
-        <div id="wait">
-            <Text mt="8" fontSize='xl' fontWeight={600}>I&apos;m a <span className="text-light-purple">high school junior</span> at North Carolina&apos;s School of Science and Mathematics. Since discovering programming in 7th grade, coding has fascinated me with how simple, yet complex it is. In my free time, I like to create applications that have a <span className="text-light-purple">positive</span> impact on the lives of those around me. I&apos;ve created <a href="https://chrome.google.com/webstore/detail/focale-study-pal/khjidjdpidalladedmkjibjkklanhcnc" target="_blank" rel="noreferrer" className="text-light-purple hover:text-hover-purple">Chrome extensions</a>, mobile <a href="https://price.house.gov/newsroom/press-releases/rep-price-announces-winner-2021-congressional-app-challenge" target="_blank" rel="noreferrer" className="text-light-purple hover:text-hover-purple">apps</a>, <a href="https://www.bitproject.org/" target="_blank" rel="noreferrer" className="text-light-purple hover:text-hover-purple">websites</a> for non-profits, and <a href="https://easybag98.qoom.space/~/MaskUp/detect" target="_blank" rel="noreferrer" className="text-light-purple hover:text-hover-purple">machine learning</a> models. Currently, I&apos;m working on an app that helps users track expiration dates for products!
-            </Text>
+                <Text fontSize="xl" fontWeight="semibold" mt="4">
 
-            <Text mt="8" fontSize='xl' fontWeight={600}>In addition to computer science, <span className="text-light-purple">business management</span> and administration is a <span className="text-light-purple">passion</span> of mine. I love being able to lead teams and see projects through from start to finish, creating a quality product in a timely manner. In college, I plan on pursuing a double major of <span className="text-light-purple">computer science</span> and <span className="text-light-purple">business management</span>.
-            </Text>
+                    <TypeIt
+                        element={Heading}
+                        options={{
+                            startDelay: 2300,
+                            speed: 100,
+                        }}
+                        getBeforeInit={(instance) => {
+                            const strings = [
+                                "student", "web developer", "mobile app developer", "machine learning engineer", "swimmer", "aviation enthusiast"
+                            ]
+                            instance
+                                .type("I am a ")
+                                .pause(750)
+                                .type(strings[0])
+                                .pause(750)
+                                .delete(strings[0].length)
+                                .type(strings[1])
+                                .pause(750)
+                                .delete(strings[1].length)
+                                .type(strings[2])
+                                .pause(750)
+                                .delete(strings[2].length)
+                                .type(strings[3])
+                                .pause(750)
+                                .delete(strings[3].length)
+                                .type(strings[4])
+                                .pause(750)
+                                .delete(strings[4].length)
+                                .type(strings[5])
+                                .pause(750)
+                                .delete(strings[5].length)
+                                .type(strings[0] + ", " + strings[1] + ", " + strings[2] + ", " + strings[3] + ", " + strings[4] + ", and " + strings[5] + ".")
 
 
 
-            <Text mt="8" fontSize='xl' fontWeight={600}>Feel free to <span className='text-light-purple'>connect</span> with me below!</Text>
+                            // Remember to return it!
+                            return instance;
+                        }}
+                    />
+                </Text>
 
-            <Box mt="4">
-                <Link href='mailto:xu23g@ncssm.edu' isExternal>
-                    <Button color="text-white" bg="bg-dark-blue" hover="hover:bg-light-blue" fontSize="text-2xl" classes="mr-2 my-2 pt-1 pb-2">email</Button>
-                </Link>
-                <Link href='https://github.com/ganning127' isExternal>
-                    <Button color="text-white" bg="bg-dark-blue" hover="hover:bg-light-blue" fontSize="text-2xl" classes="mr-2 my-2 pt-1 pb-2">github</Button>
-                </Link>
+                <Text></Text>
 
-                <Link href='https://www.linkedin.com/in/ganningxu/' isExternal>
-                    <Button color="text-white" bg="bg-dark-blue" hover="hover:bg-light-blue" fontSize="text-2xl" classes="mr-2 my-2 pt-1 pb-2">linkedin</Button>
-                </Link>
+                <Box>
+                    <Text mt="8" fontSize='xl' fontWeight={600}>I&apos;m a <chakra.span color="purple.light">high school junior</chakra.span> at North Carolina&apos;s School of Science and Mathematics. Since discovering programming in 7th grade, coding has fascinated me with how simple, yet complex it is. In my free time, I like to create applications that have a <chakra.span color="purple.light">positive</chakra.span> impact on the lives of those around me. I&apos;ve created <Link color="purple.light" _hover={{ color: 'purple.hover' }} href="https://chrome.google.com/webstore/detail/focale-study-pal/khjidjdpidalladedmkjibjkklanhcnc" isExternal>Chrome extensions</Link>, mobile <Link href="https://price.house.gov/newsroom/press-releases/rep-price-announces-winner-2021-congressional-app-challenge" color="purple.light" _hover={{ color: 'purple.hover' }} isExternal>apps</Link>, <Link href="https://www.bitproject.org/" color="purple.light" _hover={{ color: 'purple.hover' }} isExternal>websites</Link> for non-profits, and <Link href="https://easybag98.qoom.space/~/MaskUp/detect" color="purple.light" _hover={{ color: 'purple.hover' }} isExternal>machine learning</Link> models. Currently, I&apos;m working on an app that helps users track expiration dates for products!
+                    </Text>
 
-                <Link href='/Ganning Xu Resume - Final.pdf' isExternal>
-                    <Button color="text-white" bg="bg-dark-blue" hover="hover:bg-light-blue" fontSize="text-2xl" classes="my-2 pt-1 pb-2">resume</Button>
-                </Link>
-
-            </Box>
-        </div>
+                    <Text mt="8" fontSize='xl' fontWeight={600}>In addition to computer science, <chakra.span color="purple.light">business management</chakra.span> and administration is a <chakra.span color="purple.light">passion</chakra.span> of mine. I love being able to lead teams and see projects through from start to finish, creating a quality product in a timely manner. In college, I plan on pursuing a double major of <chakra.span color="purple.light">computer science</chakra.span> and <chakra.span color="purple.light">business management</chakra.span>.
+                    </Text>
 
 
-    </Box >
-)
+
+                    <Text mt="8" fontSize='xl' fontWeight={600}>Feel free to <chakra.span color="purple.light">connect</chakra.span> with me below!</Text>
+
+                    <Stack spacing={4} direction={{ base: "column", md: "row" }} mt="1">
+                        <Link href='mailto:xu23g@ncssm.edu' _hover={{}} isExternal>
+                            <Button bg="blue.dark" fontSize="2xl" _hover={{ bg: 'blue.light' }}>email</Button>
+                        </Link>
+
+                        <Link href='https://github.com/ganning127' _hover={{}} isExternal>
+                            <Button bg="blue.dark" fontSize="2xl" _hover={{ bg: 'blue.light' }}>github</Button>
+                        </Link>
+
+                        <Link href='https://www.linkedin.com/in/ganningxu' _hover={{}} isExternal>
+                            <Button bg="blue.dark" fontSize="2xl" _hover={{ bg: 'blue.light' }}>linkedin</Button>
+                        </Link>
+
+
+                        <Link href='/Ganning Xu Resume - Final.pdf' _hover={{}} isExternal>
+                            <Button bg="blue.dark" fontSize="2xl" _hover={{ bg: 'blue.light' }}>resume</Button>
+                        </Link>
+
+                    </Stack>
+
+                </Box>
+            </motion.div>
+
+        </Box >
+    )
+}

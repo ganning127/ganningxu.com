@@ -1,10 +1,9 @@
-import { Box, Container, Text, Link, SimpleGrid, Image } from '@chakra-ui/react'
+import { Box, SimpleGrid } from '@chakra-ui/react'
 import Projects from './projects.json'
-import { ProjectCard } from './ProjectCard'
 import { BlogCard } from '../Blog/BlogCard'
 
 export const ProjectsDisplay = () => (
-  <Box bg="black" color="white" className='mt-8'>
+  <Box bg="black" color="white" mt="8">
 
     <SimpleGrid minChildWidth='300px' spacing='40px' justifyContent="center">
       {Projects.slice(0).reverse().map((project, i) => {
