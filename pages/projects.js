@@ -3,6 +3,7 @@ import { NavBar } from '../components/NavBar'
 import { ProjectsDisplay } from '../components/ProjectsDisplay'
 import { Footer } from '../components/Footer'
 import { Container } from '@chakra-ui/react'
+import { motion } from "framer-motion"
 
 export default function Home() {
     return (
@@ -17,10 +18,17 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <NavBar active="projects" />
-            <Container maxW='container.xl' px="8">
-                <ProjectsDisplay />
-                <Footer />
-            </Container>
+
+            <motion.div
+                initial={{ y: -20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: .7, delay: 0.5 }}
+            >
+                <Container maxW='container.xl' px="8">
+                    <ProjectsDisplay />
+                    <Footer />
+                </Container>
+            </motion.div>
 
 
         </>

@@ -18,6 +18,7 @@ import { useRouter } from 'next/router'
 import { NavBar } from '../components/NavBar'
 import { Footer } from '../components/Footer'
 import PageViews from '../pages/api/getBlogViews'
+import { motion } from 'framer-motion'
 
 const tweetUrl = (title, slug) =>
     `https://twitter.com/intent/tweet?text=Check out this blog by Ganning Xu: ${title} - http://ganning.me/blog${slug}`
@@ -66,57 +67,63 @@ export default function BlogLayout({ children, frontMatter }) {
             </Head>
             <NavBar active="blog" />
             <Box as="section" bg="black" pt="24" overflow="hidden" color="white">
-                <Container
-                    maxW="container.xl"
-                    px="8"
-                >
-                    <Stack
-                        as="article"
-                        spacing={8}
-                        justifyContent="center"
-                        alignItems="flex-start"
-                        m="0 auto 4rem auto"
-                        maxWidth="800px"
-                        w="100%"
-                        px={2}
 
+                <motion.div
+                    initial={{ y: -20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: .7, delay: 0.5 }}
+                >
+                    <Container
+                        maxW="container.xl"
+                        px="8"
                     >
-                        <Flex
-                            flexDirection="column"
+                        <Stack
+                            as="article"
+                            spacing={8}
                             justifyContent="center"
-                            alignItems="flex-center"
+                            alignItems="flex-start"
+                            m="0 auto 4rem auto"
                             maxWidth="800px"
                             w="100%"
+                            px={2}
+
                         >
-                            <Heading as="h1" color="#00DAC4" fontWeight="bold" fontSize={{ base: '2xl', md: '5xl' }}>{frontMatter.title}</Heading>
-                            <Img src={frontMatter.image} borderRadius="10" my="8" />
-                            <Flex>
-                                <Box >
-                                    <Text fontWeight="semibold" fontSize="xl">{frontMatter.readingTime.text}</Text>
-                                </Box>
-                                <Spacer />
-                                <Box>
-                                    <Text alignSelf="center" fontWeight="semibold" fontSize="xl">{views}</Text>
-                                </Box>
+                            <Flex
+                                flexDirection="column"
+                                justifyContent="center"
+                                alignItems="flex-center"
+                                maxWidth="800px"
+                                w="100%"
+                            >
+                                <Heading as="h1" color="#00DAC4" fontWeight="bold" fontSize={{ base: '2xl', md: '5xl' }}>{frontMatter.title}</Heading>
+                                <Img src={frontMatter.image} borderRadius="10" my="8" />
+                                <Flex>
+                                    <Box >
+                                        <Text fontWeight="semibold" fontSize="xl">{frontMatter.readingTime.text}</Text>
+                                    </Box>
+                                    <Spacer />
+                                    <Box>
+                                        <Text alignSelf="center" fontWeight="semibold" fontSize="xl">{views}</Text>
+                                    </Box>
+                                </Flex>
+
                             </Flex>
 
-                        </Flex>
+                            <Divider />
+                            {children}
+                            <Box d="flex" >
+                                <Link href={tweetUrl(frontMatter.title, slug)} _hover={{ color: "#00DAC4" }} isExternal>
+                                    <Icon as={IoLogoTwitter} fontSize="5xl" color="#00DAC4" mr="2" />
+                                    <Text d="inline" fontSize="xl" fontStyle="italic" alignSelf="center">Share this blog on Twitter!</Text>
+                                </Link>
+                            </Box>
 
-                        <Divider />
-                        {children}
-                        <Box d="flex" >
-                            <Link href={tweetUrl(frontMatter.title, slug)} _hover={{ color: "#00DAC4" }} isExternal>
-                                <Icon as={IoLogoTwitter} fontSize="5xl" color="#00DAC4" mr="2" />
-                                <Text d="inline" fontSize="xl" fontStyle="italic" alignSelf="center">Share this blog on Twitter!</Text>
-                            </Link>
-                        </Box>
+                            <Divider />
+                            <Footer />
+                        </Stack>
 
-                        <Divider />
-                        <Footer />
-                    </Stack>
-
-                </Container>
-
+                    </Container>
+                </motion.div>
             </Box>
 
         </>

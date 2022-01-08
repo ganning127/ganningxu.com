@@ -9,7 +9,7 @@ import CourseList from "../data/courses.json";
 import { Research } from '../components/Research'
 import { Footer } from '../components/Footer'
 import { Container } from '@chakra-ui/react'
-
+import { motion } from "framer-motion"
 export default function Experience() {
     return (
         <>
@@ -23,15 +23,21 @@ export default function Experience() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <NavBar active="experience" />
-            <Container maxW='container.xl' px="8">
-                <AutoGridHTML list={AwardsList} heading="awards" />
-                <AutoGridHTML list={SkillList} heading="tools" />
-                <AutoGridHTML list={CourseList} heading="courses" />
-                <Research />
-                <Organizations />
-                <Volunteering />
-                <Footer />
-            </Container>
+            <motion.div
+                initial={{ y: -20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: .7, delay: 0.5 }}
+            >
+                <Container maxW='container.xl' px="8">
+                    <AutoGridHTML list={AwardsList} heading="awards" />
+                    <AutoGridHTML list={SkillList} heading="tools" />
+                    <AutoGridHTML list={CourseList} heading="courses" />
+                    <Research />
+                    <Organizations />
+                    <Volunteering />
+                    <Footer />
+                </Container>
+            </motion.div>
 
 
         </>
