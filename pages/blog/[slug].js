@@ -8,7 +8,9 @@ export default function Blog({ mdxSource, frontMatter }) {
         components: MDXComponents
     })
 
-    return <BlogLayout frontMatter={frontMatter}>{content}</BlogLayout>
+    return (
+        <BlogLayout frontMatter={frontMatter}>{content}</BlogLayout>
+    )
 }
 
 
