@@ -155,7 +155,7 @@ const ColoredOrderedList = (props) => {
         dark: 'white'
     }
     return (
-        <UnorderedList as="ul" pl={4} color={buttonColors[colorMode]} fontWeight="bold" {...props} />
+        <OrderedList as="ul" pl={4} color={buttonColors[colorMode]} fontWeight="bold" {...props} />
     )
 }
 
