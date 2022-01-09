@@ -6,12 +6,16 @@ import { motion } from "framer-motion"
 export const NavBar = (props) => {
     const { colorMode } = useColorMode()
     const textColors = {
-
         light: '#15161a',
         dark: 'white'
     }
+
+    const bgColors = {
+        dark: '#15161a',
+        light: 'white'
+    }
     return (
-        <Box pt="1" position="sticky" top="0" zIndex="100">
+        <Box pt="1" bg={bgColors[colorMode]} position="sticky" top="0" zIndex="100">
             <motion.div
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}

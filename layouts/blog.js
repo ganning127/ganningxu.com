@@ -20,6 +20,7 @@ import { NavBar } from '../components/NavBar'
 import { Footer } from '../components/Footer'
 import PageViews from '../pages/api/getBlogViews'
 import { motion } from 'framer-motion'
+import { NextSeo, ArticleJsonLd } from 'next-seo'
 
 const tweetUrl = (title, slug) =>
     `https://twitter.com/intent/tweet?text=Check out this blog by Ganning Xu: ${title} - http://ganning.me/blog${slug}`
@@ -52,7 +53,7 @@ export default function BlogLayout({ children, frontMatter }) {
     })
 
     const views = PageViews(frontMatter.slug);
-
+    const date = new Date(frontMatter.publishedAt).toISOString()
     const { colorMode } = useColorMode()
     const descColors = {
         light: '#15161a',
@@ -65,16 +66,40 @@ export default function BlogLayout({ children, frontMatter }) {
     }
 
 
+
     return (
 
         <>
             <Head>
-                <title>{frontMatter.title}</title>
-                <meta property="og:title" content={frontMatter.title} />
-                <meta property="og:image" content={frontMatter.image} />
-                <meta property="og:description" content={frontMatter.summary} />
-                <meta property="og:type" content="website" />
-                <link rel="icon" href="/favicon.ico" />
+                <title>{`${frontMatter.title} – Ganning Xu`}</title>
+                <NextSeo
+                    title={`${frontMatter.title} – Ganning Xu`}
+                    description={frontMatter.summary}
+                    canonical={frontMatter.url}
+                    openGraph={{
+                        type: 'article',
+                        article: {
+                            publishedTime: date
+                        },
+                        url: frontMatter.url,
+                        title: `${frontMatter.title} – Ganning Xu`,
+                        description: frontMatter.summary,
+                        images: [frontMatter.image]
+                    }}
+                />
+                <ArticleJsonLd
+                    authorName="Ganning Xu"
+                    dateModified={date}
+                    datePublished={date}
+                    description={frontMatter.summary}
+                    images={[frontMatter.image]}
+                    publisherLogo="/favicon.ico"
+                    publisherName="Ganning Xu"
+                    title={frontMatter.title}
+                    url={frontMatter.url}
+                />
+
+
             </Head>
             <NavBar active="blog" />
             <Box as="section" pt="24" overflow="hidden" color="white">
