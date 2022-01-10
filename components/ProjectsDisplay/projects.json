@@ -93,5 +93,13 @@
         "text": "Created a Hashmap in C that is able to store any data type and uses an AVL tree for each \"bucket\".",
         "link": "https://github.com/ganning127/augmented-hashmap",
         "timeframe": "Fall 2021"
+    },
+    {
+        "title": "Discord Word Bot",
+        "img": "/project-discord-bot.png",
+        "alt": "Picture of me interacting with the Discord bot",
+        "text": "Word bot is a bot that can define words, search google, draw ascii art, and make funny insults!",
+        "link": "https://github.com/ganning127/discord-word-bot",
+        "timeframe": "Winter 2022"
     }
 ]
