@@ -1,5 +1,5 @@
 import { Box, SimpleGrid } from '@chakra-ui/react'
-import Projects from './projects.json'
+import Projects from '../../data/projects.json'
 import { BlogCard } from '../Blog/BlogCard'
 
 export const ProjectsDisplay = () => (
