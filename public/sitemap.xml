@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://ganning.me/blog</loc>
+  </url>
+
+  <url>
+    <loc>https://ganning.me/experience</loc>
+  </url>
+
+  <url>
+    <loc>https://ganning.me</loc>
+  </url>
+
+  <url>
+    <loc>https://ganning.me/projects</loc>
+  </url>
+
+  <url>
+    <loc>https://ganning.me/timeline</loc>
+  </url>
+
+  <url>
+    <loc>https://ganning.me/blog/creating-a-hello-world-website</loc>
+  </url>
+
+  <url>
+    <loc>https://ganning.me/blog/how-to-create-a-discord-bot</loc>
+  </url>
+
+  <url>
+    <loc>https://ganning.me/blog/how-to-learn-web-development</loc>
+  </url>
+
+  <url>
+    <loc>https://ganning.me/blog/how-to-pick-a-programming-language</loc>
+  </url>
+
+  <url>
+    <loc
+      >https://ganning.me/blog/learning-a-new-programming-language-from-scratch</loc
+    >
+  </url>
+
+  <url>
+    <loc>https://ganning.me/blog/what-is-programming</loc>
+  </url>
+</urlset>
