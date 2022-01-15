@@ -3,7 +3,6 @@ import TypeIt from "typeit-react";
 import { motion } from "framer-motion"
 
 
-
 export const Landing = () => {
     const { colorMode } = useColorMode();
     const textColor = {
@@ -64,16 +63,33 @@ export const Landing = () => {
                 </Text>
 
                 <Text></Text>
+            </motion.div>
 
-                <Box>
+
+            <Box>
+                <motion.div
+                    initial={{ y: -20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.7, delay: 0.9 }}
+                >
                     <Text mt="8" fontSize='xl' fontWeight={600}>I&apos;m a <chakra.span color="purple.light">high school junior</chakra.span> at North Carolina&apos;s School of Science and Mathematics. Since discovering programming in 7th grade, coding has fascinated me with how simple, yet complex it is. In my free time, I like to create applications that have a <chakra.span color="purple.light">positive</chakra.span> impact on the lives of those around me. I&apos;ve created <Link color="purple.light" _hover={{ color: 'purple.hover' }} href="https://chrome.google.com/webstore/detail/focale-study-pal/khjidjdpidalladedmkjibjkklanhcnc" isExternal>Chrome extensions</Link>, mobile <Link href="https://price.house.gov/newsroom/press-releases/rep-price-announces-winner-2021-congressional-app-challenge" color="purple.light" _hover={{ color: 'purple.hover' }} isExternal>apps</Link>, <Link href="https://www.bitproject.org/" color="purple.light" _hover={{ color: 'purple.hover' }} isExternal>websites</Link> for non-profits, and <Link href="https://easybag98.qoom.space/~/MaskUp/detect" color="purple.light" _hover={{ color: 'purple.hover' }} isExternal>machine learning</Link> models. Currently, I&apos;m working on an app that helps users track expiration dates for products!
                     </Text>
-
+                </motion.div>
+                <motion.div
+                    initial={{ y: -20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: .7, delay: 1.3 }}
+                >
                     <Text mt="8" fontSize='xl' fontWeight={600}>In addition to computer science, <chakra.span color="purple.light">business management</chakra.span> and administration is a <chakra.span color="purple.light">passion</chakra.span> of mine. I love being able to lead teams and see projects through from start to finish, creating a quality product in a timely manner. In college, I plan on pursuing a double major of <chakra.span color="purple.light">computer science</chakra.span> and <chakra.span color="purple.light">business management</chakra.span>.
                     </Text>
+                </motion.div>
 
 
-
+                <motion.div
+                    initial={{ y: -20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: .7, delay: 1.6 }}
+                >
                     <Text mt="8" fontSize='xl' fontWeight={600}>Feel free to <chakra.span color="purple.light">connect</chakra.span> with me below!</Text>
 
                     <Stack spacing={4} direction={{ base: "column", md: "row" }} mt="1">
@@ -95,9 +111,10 @@ export const Landing = () => {
                         </Link>
 
                     </Stack>
+                </motion.div>
 
-                </Box>
-            </motion.div>
+            </Box>
+
 
         </Box >
     )

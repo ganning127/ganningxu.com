@@ -2,10 +2,11 @@ import '../styles/globals.css'
 import { ChakraProvider } from '@chakra-ui/react'
 import theme from '../theme'
 import React from 'react'
-import { useColorMode, ColorModeProvider, ColorModeScript } from '@chakra-ui/react'
+import { useColorMode } from '@chakra-ui/react'
 import { MDXProvider } from '@mdx-js/react'
 import { Global, css } from '@emotion/react'
-// import { DefaultSeo } from 'next-seo'
+import { DefaultSeo } from 'next-seo'
+import SEO from '../next-seo.config'
 import { prismLightTheme, prismDarkTheme } from '../styles/prism'
 import MDXComponents from '../components/MDXComponents'
 
@@ -41,7 +42,9 @@ function MyApp({ Component, pageProps }) {
     <ChakraProvider theme={theme}>
       <MDXProvider components={MDXComponents}>
         <GlobalStyle>
+          <DefaultSeo {...SEO} />
           <Component {...pageProps} />
+
         </GlobalStyle>
       </MDXProvider>
     </ChakraProvider >
