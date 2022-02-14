@@ -101,5 +101,13 @@
         "text": "Word bot is a bot that can define words, search google, draw ascii art, and make funny insults!",
         "link": "https://github.com/ganning127/discord-word-bot",
         "timeframe": "Winter 2022"
+    },
+    {
+        "title": "UniHeart",
+        "img": "/project-uniheart.png",
+        "alt": "Picture of UniHeart's landing page",
+        "text": "UniHeart is a web app that allows for the early detection of heart disease using 2 machine learning algorithms, all coded from scratch.",
+        "link": "https://github.com/ganning127/UniHeart",
+        "timeframe": "Spring 2023"
     }
 ]
