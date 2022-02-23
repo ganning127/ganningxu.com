@@ -1,6 +1,7 @@
 
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { MdWork, MdSchool, MdStars } from "react-icons/md";
+import { FaBaby } from "react-icons/fa";
 import 'react-vertical-timeline-component/style.min.css';
 import timelineData from './timelineData';
 import { Image, Heading, Text, Box, chakra, useColorMode } from '@chakra-ui/react'
@@ -13,8 +14,6 @@ export const TimelineComponent = () => {
     }
     return (
         <>
-            <Heading fontSize="5xl" color="blue.light" fontWeight="bold" textAlign="center">now</Heading>
-
             <VerticalTimeline lineColor={lineColors[colorMode]}>
                 <VerticalTimelineElement
                     iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
@@ -72,14 +71,10 @@ export const TimelineComponent = () => {
                     })
                 }
                 <VerticalTimelineElement
-                    iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                    icon={<MdStars />}
+                    iconStyle={{ background: 'rgb(255, 157, 0)', color: '#fff' }}
+                    icon={<FaBaby />}
                 />
-
-
-
             </VerticalTimeline>
-            <Heading fontSize="5xl" color="blue.light" fontWeight="bold" textAlign="center">now</Heading>
         </>
 
     )
