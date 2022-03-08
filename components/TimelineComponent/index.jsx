@@ -57,8 +57,9 @@ export const TimelineComponent = () => {
                                     iconStyle={{ background: '#531987', color: '#fff' }}
                                     icon={<MdSchool />}
                                 >
-                                    <Image d="inline" src={item.img} alt={item.headline} boxSize='60px' objectFit='cover' mr="2" />
+
                                     <Box d="flex">
+                                        <Image d="inline" src={item.img} alt={item.headline} boxSize='60px' objectFit='cover' mr="2" />
                                         <Heading d="inline" fontSize="xl" fontWeight="bold"
                                             alignSelf="center"
                                             color="white"
