@@ -3,7 +3,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import { MdWork, MdSchool, MdStars } from "react-icons/md";
 import { FaBaby } from "react-icons/fa";
 import 'react-vertical-timeline-component/style.min.css';
-import timelineData from './timelineData';
+import timelineData from '../../data/timelineData';
 import { Image, Heading, Text, Box, chakra, useColorMode } from '@chakra-ui/react'
 
 export const TimelineComponent = () => {
@@ -32,14 +32,14 @@ export const TimelineComponent = () => {
                                     iconStyle={{ background: '#0fc4af', color: '#fff' }}
                                     icon={<MdWork />}
                                 >
-                                    <Box d="flex">
+                                    <Box d="flex" alignItems='center'>
                                         <Image d="inline" src={item.img} alt={item.headline} boxSize='60px' objectFit='cover' mr="2" />
-                                        <Heading d="inline" fontSize="xl" fontWeight="bold"
-                                            alignSelf="center"
-                                            color="white"
-                                            className="vertical-timeline-element-title"><chakra.span color="white">{item.headline}</chakra.span>
-
-                                        </Heading>
+                                        <Box alignSelf="center">
+                                            <Heading fontSize="xl" fontWeight="bold"
+                                                color="white"
+                                                className="vertical-timeline-element-title"><chakra.span color="white">{item.headline}</chakra.span>
+                                            </Heading>
+                                        </Box>
                                     </Box>
 
                                     <Text color="yellow.light" fontWeight="bold"><b>{item.desc}</b></Text>

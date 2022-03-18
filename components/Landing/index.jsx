@@ -106,7 +106,7 @@ export const Landing = () => {
                         </Link>
 
 
-                        <Link href='/Ganning Xu Resume - Final.pdf' _hover={{}} isExternal>
+                        <Link href='/Ganning Xu Resume.pdf' _hover={{}} isExternal>
                             <Button bg="blue.dark" fontSize="2xl" _hover={{ bg: 'blue.light' }}>resume</Button>
                         </Link>
 
