@@ -93,14 +93,22 @@
         "desc": "Verste is a 501(c)(3) nonprofit organization that aims to make technical education more accessible through simplified research papers.",
         "date": "Feb 2022",
         "img": "https://i.imgur.com/zc6OCoJ.png",
-        "alt": "Verste"
+        "alt": "Verste Logo"
     },
     {
         "headline": "Founded the NCSSM Software Development Club",
         "type": "school",
-        "desc": " Chapter of Hack Club! We build fun and practical applications using code.",
+        "desc": "Chapter of Hack Club! We build fun and practical applications using code.",
         "date": "Feb 2022",
         "img": "https://i.imgur.com/JijlBMx.png",
         "alt": "NCSSM Logo"
+    },
+    {
+        "headline": "Stevens Business Research Program",
+        "type": "school",
+        "desc": "I'll be participating in the Stevens Business Research Program, where I'll be researching about the relationship between risk and reward of businesses and their success.",
+        "date": "June 2022",
+        "img": "https://i.imgur.com/yNph2fg.png",
+        "alt": "Stevens Institute of Technology Logo"
     }
 ]

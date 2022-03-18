@@ -4,6 +4,10 @@
         "desc": "CyberUnicorns is a student-led club at NCSSM dedicated to cybersecurity and it's opportunities"
     },
     {
+        "name": "Software Development Club",
+        "desc": "NCSSM club that teaches students how to build real-world applications using code!"
+    },
+    {
         "name": "Computer Science Club",
         "desc": "NCSSM club dedicated to teaching and learning about computer science."
     },

@@ -1,5 +1,5 @@
 import { Box, Heading, Text, useColorMode } from '@chakra-ui/react'
-import OrganizationsList from "./orgs.json"
+import OrganizationsList from "../../data/orgs.json"
 
 export const Organizations = () => {
     const { colorMode } = useColorMode()

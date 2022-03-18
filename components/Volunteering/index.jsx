@@ -1,5 +1,5 @@
 import { Box, Heading, SimpleGrid, Text } from '@chakra-ui/react'
-import VolunteeringList from "./volunteering.json"
+import VolunteeringList from "../../data/volunteering.json"
 import { VolunteerCard } from './VolunteerCard'
 export const Volunteering = () => {
 
