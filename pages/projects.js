@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { NavBar } from '../components/NavBar'
 import { ProjectsDisplay } from '../components/ProjectsDisplay'
 import { Footer } from '../components/Footer'
-import { Container } from '@chakra-ui/react'
+import { Container, Box } from '@chakra-ui/react'
 import { motion } from "framer-motion"
 
 export default function Home() {
@@ -25,7 +25,44 @@ export default function Home() {
                 transition={{ duration: .7, delay: 0.5 }}
             >
                 <Container maxW='container.xl' px="8">
-                    <ProjectsDisplay />
+                    <ProjectsDisplay
+                        title="websites"
+                        itemType='website'
+                    />
+
+                    <Box h={1} my={5} />
+
+                    <ProjectsDisplay
+                        title="apps"
+                        itemType='app'
+                    />
+
+                    <Box h={1} my={5} />
+
+                    <ProjectsDisplay
+                        title="bots"
+                        itemType='bot'
+                    />
+
+                    <Box h={1} my={5} />
+
+                    <ProjectsDisplay
+                        title="algorithms"
+                        itemType='algo'
+                    />
+
+
+
+                    <Box h={1} my={5} />
+
+                    <ProjectsDisplay
+                        title="misc"
+                        itemType='misc'
+                    />
+
+
+
+
                     <Footer />
                 </Container>
             </motion.div>

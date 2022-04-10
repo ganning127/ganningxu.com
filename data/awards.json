@@ -1,36 +1,35 @@
 [
     {
-        "title": "<chakra.span color='purple.light'>1st Place</chakra.span> - Create an App (Wake County)",
+        "title": "1st Place - Wake County Create an App (2021)",
         "link": "https://bit.ly/mekeproposal"
     },
     {
-        "title": "<span class='text-light-purple'>2nd Place</span> - App Mockup (Wake County)",
+        "title": "2nd Place - Wake County App Mockup (2021)",
         "link": "https://bit.ly/mockupmeke"
     },
     {
-        "title": "<span class='text-light-purple'>2nd Place</span> - RTP HS Hackathon 2020"
+        "title": "2nd Place</span> - Research Triangle High School Hackathon (2020)"
     },
     {
-        "title": "<span class='text-light-purple'>1st Place</span> - 2021 Congressional App Challenge",
+        "title": "1st Place - Congressional App Challenge (2021)",
         "link": "https://price.house.gov/newsroom/press-releases/rep-price-announces-winner-2021-congressional-app-challenge"
     },
     {
-        "title": "<span class='text-light-purple'>3rd Place</span> - RTP HS Hackathon 2021"
+        "title": "3rd Place - Research Triangle High School Hackathon (2021)"
     },
     {
-        "title": "<span class='text-light-purple'>Semifinalist</span> - National Cyber Scholarship",
+        "title": "Semifinalist - National Cyber Scholarship (2022)",
         "link": "https://www.nationalcyberscholarship.org/scholarships-and-awards/awards-2022"
     },
     {
-        "title": "<span class='text-light-purple'>Gold Badge</span> - CyberStart America",
+        "title": "Gold Badge - CyberStart America (2022)"
+    },
+    {
+        "title": "9th Place - Hack the Cloud 2.0 (2021)",
         "link": "https://devpost.com/software/spotion"
     },
     {
-        "title": "9th Place - Hack the Cloud 2.0",
-        "link": "https://devpost.com/software/spotion"
-    },
-    {
-        "title": "State Winners - Samsung Solve for Tomorrow",
+        "title": "State Winners - Samsung Solve for Tomorrow (2022)",
         "link": "https://www.samsung.com/us/solvefortomorrow/"
     },
     {
@@ -38,11 +37,27 @@
         "link": "https://www.bitproject.org/"
     },
     {
-        "title": "1st Place - UniHacks",
+        "title": "1st Place - UniHacks (2022)",
         "link": "https://unihacks.ncssm.edu/"
     },
     {
-        "title": "2nd Place - 2022 Education Datathon",
+        "title": "2nd Place - Education Datathon (2022)",
         "link": "https://github.com/macbarnes04/Datathon"
+    },
+    {
+        "title": "1st Place - TSA Webmaster (2022)",
+        "link": "https://tsaweb.org/competitions-programs/tsa/themes-problems"
+    },
+    {
+        "title": "1st Place - TSA Coding (2022)",
+        "link": "https://tsaweb.org/competitions-programs/tsa/themes-problems"
+    },
+    {
+        "title": "2nd Place - TSA Cybersecurity (2022)",
+        "link": "https://tsaweb.org/competitions-programs/tsa/themes-problems"
+    },
+    {
+        "title": "3r Place - TSA Software Development (2022)",
+        "link": "https://tsaweb.org/competitions-programs/tsa/themes-problems"
     }
 ]
