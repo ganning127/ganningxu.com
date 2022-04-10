@@ -4,7 +4,8 @@
         "img": "./project-covid19updated.jpeg",
         "text": "Program that texts recipients about the daily number of cases, deaths, death rate, and increase in cases from the day before.",
         "link": "https://github.com/ganning127/covid_19_tracker",
-        "timeframe": "Summer 2020 & Spring 2021"
+        "timeframe": "Summer 2020 & Spring 2021",
+        "type": "bot"
     },
     {
         "title": "Meke",
@@ -12,7 +13,8 @@
         "alt": "Picture of Meke's addition skill being played",
         "text": "Meke is an app designed to help students in elementary school learn math in a fun and engaging way.",
         "link": "https://studio.code.org/projects/applab/WTJbCVKc7vU6SmHTJ3OWr61DrGmmQlDVEeZsF-Q453M",
-        "timeframe": "Summer 2020 & Spring 2021"
+        "timeframe": "Summer 2020 & Spring 2021",
+        "type": "app"
     },
     {
         "title": "MaskUp",
@@ -20,7 +22,8 @@
         "alt": "Picture of MaskUp's live detection feature.",
         "text": "MaskUp allows stores and organizations to check the mask status of their users. Features include a login system, live & group mask detection, symptom checking, and data visualization statistics.",
         "link": "https://easybag98.qoom.space/~/MaskUp",
-        "timeframe": "Summer 2021"
+        "timeframe": "Summer 2021",
+        "type": "website"
     },
     {
         "title": "Weathery",
@@ -28,7 +31,8 @@
         "alt": "Picture of the homepage of Weathery.",
         "text": "A clean and easy-to-use weather website. No ads, no spam, just current and hourly weather forecasts.",
         "link": "https://github.com/ganning127/weathery",
-        "timeframe": "Summer 2021"
+        "timeframe": "Summer 2021",
+        "type": "website"
     },
     {
         "title": "EnviroHelp",
@@ -36,7 +40,8 @@
         "alt": "Picture of the homepage of EnviroHelp.",
         "text": "With EnviroHelp, users can upload a picture of a waste item and get whether or not it is recyclable!",
         "link": "https://github.com/ganning127/envirohelp",
-        "timeframe": "Summer 2021"
+        "timeframe": "Summer 2021",
+        "type": "website"
     },
     {
         "title": "Focale",
@@ -44,7 +49,8 @@
         "alt": "Picture of the Focale chrome extension popup",
         "text": "Focale is a chrome extension designed to help students time and pace their studies efficiently. ",
         "link": "https://github.com/ganning127/focale",
-        "timeframe": "Summer 2021"
+        "timeframe": "Summer 2021",
+        "type": "misc"
     },
     {
         "title": "Spotion",
@@ -52,7 +58,8 @@
         "alt": "Picture of Spotion's landing page",
         "text": "An intelligent web app that allows you to take a live picture and get back a playlist and song recommendation based on your detected emotion.",
         "link": "https://github.com/ganning127/spotion-ai/",
-        "timeframe": "Summer 2021"
+        "timeframe": "Summer 2021",
+        "type": "website"
     },
     {
         "title": "LiveTranslate",
@@ -60,7 +67,8 @@
         "alt": "Picture of Spotion's landing page",
         "text": "A web app that makes translation easier. Live Translate can translate from English into 6 different languages, in real time!",
         "link": "https://github.com/ganning127/translate-azure",
-        "timeframe": "Summer 2021"
+        "timeframe": "Summer 2021",
+        "type": "website"
     },
     {
         "title": "AWS Lambda Workshop",
@@ -68,7 +76,8 @@
         "alt": "Picture of Spotion's landing page",
         "text": "Created an AWS workshop that was presented at the 2021 Serverless Days Student Edition conference. The workshop was designed to teach students how to use AWS Lambda.",
         "link": "https://youtu.be/l_1BhV-dtMk?t=7752",
-        "timeframe": "Summer 2021"
+        "timeframe": "Summer 2021",
+        "type": "misc"
     },
     {
         "title": "CounselorBot",
@@ -76,7 +85,8 @@
         "alt": "Picture of Spotion's landing page",
         "text": "Helped develop the serverless version of CounselorBot, a GitHub bot that autonomously guides students through GitHub learning repositories.",
         "link": "https://github.com/bitprj/counselor",
-        "timeframe": "Summer 2021"
+        "timeframe": "Summer 2021",
+        "type": "bot"
     },
     {
         "title": "SLTranslate",
@@ -84,7 +94,8 @@
         "alt": "Picture of SLTranslate's landing page",
         "text": "SLTranslate is a mobile app that uses machine learning to translate into English.",
         "link": "https://github.com/KeshavVarad/SLTranslator",
-        "timeframe": "Fall 2021"
+        "timeframe": "Fall 2021",
+        "type": "app"
     },
     {
         "title": "Augmented Hashmap",
@@ -92,7 +103,8 @@
         "alt": "Picture of Hashmap Structure",
         "text": "Created a Hashmap in C that is able to store any data type and uses an AVL tree for each \"bucket\".",
         "link": "https://github.com/ganning127/augmented-hashmap",
-        "timeframe": "Fall 2021"
+        "timeframe": "Fall 2021",
+        "type": "algo"
     },
     {
         "title": "Discord Word Bot",
@@ -100,7 +112,8 @@
         "alt": "Picture of me interacting with the Discord bot",
         "text": "Word bot is a bot that can define words, search google, draw ascii art, and make funny insults!",
         "link": "https://github.com/ganning127/discord-word-bot",
-        "timeframe": "Winter 2022"
+        "timeframe": "Winter 2022",
+        "type": "bot"
     },
     {
         "title": "UniHeart",
@@ -108,7 +121,8 @@
         "alt": "Picture of UniHeart's landing page",
         "text": "UniHeart is a web app that allows for the early detection of heart disease using 2 machine learning algorithms, all coded from scratch.",
         "link": "https://github.com/ganning127/UniHeart",
-        "timeframe": "Spring 2022"
+        "timeframe": "Spring 2022",
+        "type": "website"
     },
     {
         "title": "Bit Project Website",
@@ -116,7 +130,8 @@
         "alt": "Picture of Bit Project's landing page",
         "text": "Built the website for Bit Project, a 501(c)(3) non-profit organization that provides free mentorship programs to students.",
         "link": "https://www.bitproject.org/",
-        "timeframe": "Spring 2022"
+        "timeframe": "Spring 2022",
+        "type": "website"
     },
     {
         "title": "#IAmCS Website",
@@ -124,6 +139,7 @@
         "alt": "Picture of #IAmCS's landing page",
         "text": "Built the website for #IAmCS, NC-wide effort providing students exposure to computer science and STEM careers.",
         "link": "https://iamcs-website.vercel.app/",
-        "timeframe": "Spring 2022"
+        "timeframe": "Spring 2022",
+        "type": "website"
     }
 ]

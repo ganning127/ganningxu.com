@@ -5,7 +5,7 @@ import {
 } from '@chakra-ui/react'
 import * as React from 'react'
 import PageViews from '../../pages/api/getBlogViews'
-export const BlogCard = ({ title, image, link, desc, isExternal, isTrunc, slug }) => {
+export const BlogCard = ({ title, image, link, desc, isExternal, isTrunc, slug, timeframe }) => {
     let bkgUrl = `url(${image})`
     let views = PageViews(slug);
     const { colorMode } = useColorMode();
@@ -61,6 +61,10 @@ export const BlogCard = ({ title, image, link, desc, isExternal, isTrunc, slug }
                         <Text fontSize="md" color={descColors[colorMode]}>{desc}</Text>
                     </>
                 )}
+
+                {timeframe &&
+                    <Text mt={2} fontSize="md" color={descColors[colorMode]}>{timeframe}</Text>
+                }
 
 
             </Box>

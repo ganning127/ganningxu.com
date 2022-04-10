@@ -1,24 +1,48 @@
-import { Box, SimpleGrid } from '@chakra-ui/react'
+import { Box, SimpleGrid, Heading, Button } from '@chakra-ui/react'
 import Projects from '../../data/projects.json'
 import { BlogCard } from '../Blog/BlogCard'
+import { useState } from 'react'
+export const ProjectsDisplay = ({ title, itemType }) => {
+  const INIT_NUM = 3
 
-export const ProjectsDisplay = () => (
-  <Box mt="8">
+  const [items, setItems] = useState(Projects.filter(project => project.type === itemType).slice(0, INIT_NUM))
 
-    <SimpleGrid minChildWidth='300px' spacing='40px' justifyContent="center">
-      {Projects.slice(0).reverse().map((project, i) => {
-        return (
-          <BlogCard
-            key={i}
+
+  const totalNum = Projects.filter(project => project.type === itemType).length
+
+
+
+
+  const handleItem = () => {
+    if (items.length === INIT_NUM) {
+      setItems(Projects.filter(project => project.type === itemType))
+    }
+    else {
+      setItems(Projects.filter(project => project.type === itemType).slice(0, INIT_NUM))
+    }
+  }
+  return (
+    <Box mt="8">
+      <Heading fontSize="5xl" fontWeight="bold" mt="8" color="blue.light" mb="1">
+        {title}
+      </Heading>
+      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing='40px' justifyContent="center">
+        {items.map((project, i) => (
+          <BlogCard key={i}
             title={project.title}
-            image={project.img}
             desc={project.text}
             link={project.link}
+            image={project.img}
+            timeframe={project.timeframe}
             isExternal={true}
           />
-        )
-      })}
+        ))}
+      </SimpleGrid>
+      {totalNum > 3 && <Button colorScheme="blue" onClick={handleItem} mt={4} mx='auto'>
+        {items.length === 3 ? `show more ${title}` : `show less ${title}`}
+      </Button>}
 
-    </SimpleGrid>
-  </Box>
-)
+
+    </Box>
+  )
+}
