@@ -106,13 +106,14 @@
     "timeframe": "Fall 2021",
     "type": "algo"
   },
+
   {
     "title": "Discord Word Bot",
     "img": "/project-discord-bot.png",
     "alt": "Picture of me interacting with the Discord bot",
     "text": "Word bot is a bot that can define words, search google, draw ascii art, and make funny insults!",
     "link": "https://github.com/ganning127/discord-word-bot",
-    "timeframe": "Winter 2022",
+    "timeframe": "Winter 2021",
     "type": "bot"
   },
   {
@@ -145,9 +146,18 @@
   {
     "title": "The Coding Foundation Website",
     "img": "/project-tcf-website.png",
-    "alt": "Picture of TCF websiet",
+    "alt": "Picture of TCF website",
     "text": "Built the website of The Coding Foundation, a non-profit organization that provides coding lessons to students.",
     "link": "https://thecodingfoundation.org/",
+    "timeframe": "Spring 2022",
+    "type": "website"
+  },
+  {
+    "title": "Durham Meals on Wheels 2021 Report Website",
+    "img": "/project-meals-on-wheels.png",
+    "alt": "Picture of Durham Meals on Wheels's landing page",
+    "text": "Built the 2021 report website for Durham Meals on Wheels, shwocasing the impact of their charity work.",
+    "link": "https://big-data-big-impacts-ncssm.github.io/meals-on-wheels/",
     "timeframe": "Spring 2022",
     "type": "website"
   }
