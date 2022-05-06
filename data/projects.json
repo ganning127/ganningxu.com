@@ -103,10 +103,18 @@
     "alt": "Picture of Hashmap Structure",
     "text": "Created a Hashmap in C that is able to store any data type and uses an AVL tree for each \"bucket\".",
     "link": "https://github.com/ganning127/augmented-hashmap",
-    "timeframe": "Fall 2021",
+    "timeframe": "Winter 2021",
     "type": "algo"
   },
-
+  {
+    "title": "Valence Robotics Website",
+    "img": "/project-valence-robotics.png",
+    "alt": "Picture of Valence Robotics's landing page",
+    "text": "Developed the Valence Robotics website (FRC Team #8429), a non-profit FIRST robotics team in its first year.",
+    "link": "https://big-data-big-impacts-ncssm.github.io/meals-on-wheels/",
+    "timeframe": "Winter 2021",
+    "type": "website"
+  },
   {
     "title": "Discord Word Bot",
     "img": "/project-discord-bot.png",
@@ -156,7 +164,7 @@
     "title": "Durham Meals on Wheels 2021 Report Website",
     "img": "/project-meals-on-wheels.png",
     "alt": "Picture of Durham Meals on Wheels's landing page",
-    "text": "Built the 2021 report website for Durham Meals on Wheels, shwocasing the impact of their charity work.",
+    "text": "Built the 2021 report website for Durham Meals on Wheels, showcasing the impact of their charity work.",
     "link": "https://big-data-big-impacts-ncssm.github.io/meals-on-wheels/",
     "timeframe": "Spring 2022",
     "type": "website"
