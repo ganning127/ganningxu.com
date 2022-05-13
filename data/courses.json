@@ -1,38 +1,41 @@
 [
-    {
-        "title": "<span class='text-light-yellow'>Data Structures with C</span>"
-    },
-    {
-        "title": "<span class='text-light-yellow'>Python I</span>"
-    },
-    {
-        "title": "<span class='text-light-yellow'>AP Computer Science Principles</span>"
-    },
-    {
-        "title": "<span class='text-light-yellow'>Computer Vision</span>"
-    },
-    {
-        "title": "<span class='text-light-yellow'>Foundations of Data Sciences</span>"
-    },
-    {
-        "title": "<span class='text-light-yellow'>Intro to Cybersecurity</span>"
-    },
-    {
-        "title": "<span class='text-light-yellow'>Research in Computational Science I</span>"
-    },
-    {
-        "title": "<span class='text-light-yellow'>JavaScript Algorithms and Data Structures</span>"
-    },
-    {
-        "title": "<span class='text-light-yellow'>Object Oriented Programming in Python</span>"
-    },
-    {
-        "title": "<span class='text-light-yellow'>Research in Mathematics</span>"
-    },
-    {
-        "title": "<span class='text-light-yellow'>Data Science for Finance with Credit Suisse</span>"
-    },
-    {
-        "title": "<span class='text-light-yellow'>Machine Learning with Python</span>"
-    }
+  {
+    "title": ">Data Structures with C"
+  },
+  {
+    "title": "Python I"
+  },
+  {
+    "title": "AP Computer Science Principles"
+  },
+  {
+    "title": "Computer Vision"
+  },
+  {
+    "title": "Theory and Methods of Natural Language Processing"
+  },
+  {
+    "title": "Foundations of Data Sciences"
+  },
+  {
+    "title": "Intro to Cybersecurity"
+  },
+  {
+    "title": "Research in Computational Science I"
+  },
+  {
+    "title": "JavaScript Algorithms and Data Structures"
+  },
+  {
+    "title": "Object Oriented Programming in Python"
+  },
+  {
+    "title": "Research in Mathematics"
+  },
+  {
+    "title": "Data Science for Finance with Credit Suisse"
+  },
+  {
+    "title": "Machine Learning with Python"
+  }
 ]
