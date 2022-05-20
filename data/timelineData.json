@@ -84,7 +84,7 @@
     "type": "work",
     "desc": "Leading a team of 13 Web Development Interns to create a website for The Coding Foundation",
     "date": "Jan 2022",
-    "img": "https://i.imgur.com/6w3cKWi.png",
+    "img": "https://i.imgur.com/hci9sDT.png",
     "alt": "The Coding Foundation Logo"
   },
   {
@@ -98,9 +98,25 @@
   {
     "headline": "Founded the NCSSM Software Development Club",
     "type": "school",
-    "desc": "Chapter of Hack Club! We build fun and practical applications using code.",
+    "desc": "Chapter of Hack Club! We build fun and practical applications using code. So far, we've built personal websites, URL shorteners, wordle, and a neural network from scratch.",
     "date": "Feb 2022",
     "img": "https://i.imgur.com/JijlBMx.png",
     "alt": "NCSSM Logo"
+  },
+  {
+    "headline": "Stevens Institute of Technology Summer Research Program",
+    "type": "school",
+    "desc": "A six-week, virtual research program, where I'll be working alongside a faculty member from the School of Business and assist them in their research.",
+    "date": "June 2022",
+    "img": "https://i.imgur.com/UDa8ajh.png",
+    "alt": "Stevens Institute of Technology Logo"
+  },
+  {
+    "headline": "Duke Summer STEM Academy",
+    "type": "school",
+    "desc": "A fully immersive summer program in which I'll be designing, prototyping, and pitching a new product.",
+    "date": "June 2022",
+    "img": "https://i.imgur.com/cKtHiSN.png",
+    "alt": "Duke Logo"
   }
 ]

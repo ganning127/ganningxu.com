@@ -14,8 +14,24 @@ import {
   chakra,
   useColorMode,
 } from "@chakra-ui/react";
-
+import { useState, useEffect } from "react";
 export const TimelineComponent = () => {
+  const [width, setWidth] = useState();
+
+  useEffect(() => {
+    function handleResize() {
+      setWidth(window.innerWidth);
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [setWidth]);
+
   const { colorMode } = useColorMode();
   const lineColors = {
     light: "#15161a",
@@ -23,7 +39,10 @@ export const TimelineComponent = () => {
   };
   return (
     <>
-      <VerticalTimeline lineColor={lineColors[colorMode]}>
+      <VerticalTimeline
+        lineColor={lineColors[colorMode]}
+        animate={width > 992 ? true : false}
+      >
         <VerticalTimelineElement
           iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
           icon={<MdStars />}
