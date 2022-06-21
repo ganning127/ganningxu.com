@@ -168,5 +168,14 @@
     "link": "https://big-data-big-impacts-ncssm.github.io/meals-on-wheels/",
     "timeframe": "Spring 2022",
     "type": "website"
+  },
+  {
+    "title": "University of North Carolina @ Wilmington Wang Lab Website",
+    "img": "/project-wang-lab.png",
+    "alt": "Picture of The Wang Lab's home page",
+    "text": "Designed, developed, and tested The Wang Lab's website in collaboration with another developer.",
+    "link": "https://www.thewanglab.org/",
+    "timeframe": "Spring 2022",
+    "type": "website"
   }
 ]
