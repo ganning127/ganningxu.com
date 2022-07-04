@@ -37,6 +37,17 @@ export const TimelineComponent = () => {
     light: "#15161a",
     dark: "white",
   };
+
+  const bgColors = {
+    dark: "#242323",
+    light: "#faf7f7",
+  };
+
+  const typeIcons = {
+    school: <MdSchool />,
+    work: <MdWork />,
+  };
+
   return (
     <>
       <VerticalTimeline
@@ -51,86 +62,47 @@ export const TimelineComponent = () => {
           .slice(0)
           .reverse()
           .map((item, index) => {
-            if (item.type == "work") {
-              return (
-                <VerticalTimelineElement
-                  key={index}
-                  className="vertical-timeline-element--work"
-                  date={item.date}
-                  contentStyle={{
-                    background: "#006475",
-                    color: lineColors[colorMode],
-                  }}
-                  contentArrowStyle={{ borderRight: "7px solid  #0fc4af" }}
-                  iconStyle={{ background: "#0fc4af", color: "#fff" }}
-                  icon={<MdWork />}
-                >
-                  <Box d="flex" alignItems="center">
-                    <Image
-                      d="inline"
-                      src={item.img}
-                      alt={item.headline}
-                      boxSize="60px"
-                      objectFit="cover"
-                      mr="2"
-                    />
-                    <Box alignSelf="center">
-                      <Heading
-                        fontSize="xl"
-                        fontWeight="bold"
-                        color="white"
-                        className="vertical-timeline-element-title"
-                      >
-                        <chakra.span color="white">{item.headline}</chakra.span>
-                      </Heading>
-                    </Box>
-                  </Box>
-
-                  <Text color="yellow.light" fontWeight="bold">
-                    <b>{item.desc}</b>
-                  </Text>
-                </VerticalTimelineElement>
-              );
-            } else if (item.type == "school") {
-              return (
-                <VerticalTimelineElement
-                  key={index}
-                  className="vertical-timeline-element--education"
-                  date={item.date}
-                  contentStyle={{
-                    background: "#531987",
-                    color: lineColors[colorMode],
-                  }}
-                  contentArrowStyle={{ borderRight: "7px solid  #531987" }}
-                  iconStyle={{ background: "#531987", color: "#fff" }}
-                  icon={<MdSchool />}
-                >
-                  <Box d="flex">
-                    <Image
-                      d="inline"
-                      src={item.img}
-                      alt={item.headline}
-                      boxSize="60px"
-                      objectFit="cover"
-                      mr="2"
-                    />
+            return (
+              <VerticalTimelineElement
+                key={index}
+                className="vertical-timeline-element--work"
+                date={item.date}
+                contentStyle={{
+                  background: bgColors[colorMode],
+                  color: lineColors[colorMode],
+                }}
+                contentArrowStyle={{
+                  borderRight: "7px solid " + bgColors[colorMode],
+                }}
+                iconStyle={{ background: "#242323", color: "#fff" }}
+                icon={typeIcons[item.type]}
+              >
+                <Box d="flex" alignItems="center">
+                  <Image
+                    d="inline"
+                    src={item.img}
+                    alt={item.headline}
+                    boxSize="60px"
+                    objectFit="cover"
+                    mr="2"
+                  />
+                  <Box alignSelf="center">
                     <Heading
-                      d="inline"
                       fontSize="xl"
                       fontWeight="bold"
-                      alignSelf="center"
                       color="white"
                       className="vertical-timeline-element-title"
                     >
-                      <chakra.span color="white">{item.headline}</chakra.span>
+                      <chakra.span color={lineColors[colorMode]}>
+                        {item.headline}
+                      </chakra.span>
                     </Heading>
                   </Box>
-                  <Text color="yellow.light" fontWeight="bold">
-                    <b>{item.desc}</b>
-                  </Text>
-                </VerticalTimelineElement>
-              );
-            }
+                </Box>
+
+                <Text color={lineColors[colorMode]}>{item.desc}</Text>
+              </VerticalTimelineElement>
+            );
           })}
         <VerticalTimelineElement
           iconStyle={{ background: "rgb(255, 157, 0)", color: "#fff" }}
