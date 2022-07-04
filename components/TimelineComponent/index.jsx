@@ -10,9 +10,12 @@ import {
   Image,
   Heading,
   Text,
+  HStack,
   Box,
+  Badge,
   chakra,
   useColorMode,
+  SimpleGrid,
 } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 export const TimelineComponent = () => {
@@ -101,6 +104,16 @@ export const TimelineComponent = () => {
                 </Box>
 
                 <Text color={lineColors[colorMode]}>{item.desc}</Text>
+
+                <SimpleGrid mt={4} columns={3} spacing={2} justify="flex-start">
+                  {item.skills?.map((skill, index) => {
+                    return (
+                      <Box key={index}>
+                        <Badge colorScheme="teal">{skill}</Badge>
+                      </Box>
+                    );
+                  })}
+                </SimpleGrid>
               </VerticalTimelineElement>
             );
           })}
