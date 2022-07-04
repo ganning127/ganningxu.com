@@ -1,6 +1,6 @@
 import { Box, SimpleGrid, Heading, Button } from "@chakra-ui/react";
 import Projects from "../../data/projects.json";
-import { BlogCard } from "../Blog/BlogCard";
+import { ProjectCard } from "../Cards/ProjectCard";
 import { useState } from "react";
 export const ProjectsDisplay = ({ title, itemType }) => {
   const INIT_NUM = 3;
@@ -41,11 +41,11 @@ export const ProjectsDisplay = ({ title, itemType }) => {
       </Heading>
       <SimpleGrid
         columns={{ base: 1, md: 2, lg: 3 }}
-        spacing="40px"
+        spacing="60px"
         justifyContent="center"
       >
         {items.map((project, i) => (
-          <BlogCard
+          <ProjectCard
             key={i}
             title={project.title}
             desc={project.text}
@@ -53,6 +53,8 @@ export const ProjectsDisplay = ({ title, itemType }) => {
             image={project.img}
             timeframe={project.timeframe}
             isExternal={true}
+            type={project.type}
+            github={project.github}
           />
         ))}
       </SimpleGrid>
