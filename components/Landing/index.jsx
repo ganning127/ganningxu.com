@@ -7,9 +7,11 @@ import {
   chakra,
   Stack,
   useColorMode,
+  SimpleGrid,
 } from "@chakra-ui/react";
 import TypeIt from "typeit-react";
 import { motion } from "framer-motion";
+import { ProjectCard } from "../Cards/ProjectCard";
 
 export const Landing = () => {
   const { colorMode } = useColorMode();
@@ -98,7 +100,7 @@ export const Landing = () => {
         >
           <Text mt="8" fontSize="xl" fontWeight={600}>
             I&apos;m a{" "}
-            <chakra.span color="purple.light">high school junior</chakra.span>{" "}
+            <chakra.span color="purple.light">high school senior</chakra.span>{" "}
             at North Carolina&apos;s School of Science and Mathematics. Since
             discovering programming in 7th grade, coding has fascinated me with
             how simple, yet complex it is. In my free time, I like to create
@@ -160,6 +162,50 @@ export const Landing = () => {
             <chakra.span color="purple.light">computer science</chakra.span> and{" "}
             <chakra.span color="purple.light">business management</chakra.span>.
           </Text>
+        </motion.div>
+
+        <motion.div
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.7, delay: 1.6 }}
+        >
+          <Text mt="8" fontSize="xl" fontWeight={600}>
+            Here are some cool projects I&apos;ve worked on:
+          </Text>
+          <SimpleGrid
+            columns={{ base: 1, md: 2, lg: 3 }}
+            spacing="60px"
+            justifyContent="center"
+            mt="8"
+          >
+            <ProjectCard
+              title="Focale"
+              alt="Picture of the Focale chrome extension popup"
+              desc="Focale is a chrome extension designed to help students time and pace their studies efficiently."
+              github="https://github.com/ganning127/focale"
+              link="https://chrome.google.com/webstore/detail/focale-study-pal/khjidjdpidalladedmkjibjkklanhcnc"
+              timeframe="Summer 2021"
+              type="misc"
+            />
+            <ProjectCard
+              title="UNCW Wang Lab Website"
+              alt="Picture of The Wang Lab's home page"
+              desc="Designed, developed, and tested The Wang Lab's website in collaboration with another developer."
+              github="https://github.com/ganning127/uncw-wang-lab"
+              link="https://www.thewanglab.org/"
+              timeframe="Spring 2022"
+              type="website"
+            />
+            <ProjectCard
+              title="CounselorBot"
+              alt="Picture of The Wang Lab's home page"
+              desc="Helped develop the serverless version of CounselorBot, a GitHub bot that autonomously guides students through GitHub learning repositories."
+              github="https://github.com/bitprj/counselor"
+              link="https://github.com/apps/counselorbot"
+              timeframe="Summer 2021"
+              type="bot"
+            />
+          </SimpleGrid>
         </motion.div>
 
         <motion.div

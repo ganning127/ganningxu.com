@@ -72,14 +72,17 @@ export const ProjectCard = ({
         pb="6"
         target={isExternal ? "_blank" : "_self"}
       >
-        <Box
-          h="15rem"
-          bgImage={bkgUrl}
-          bgPosition="center"
-          bgRepeat="no-repeat"
-          backgroundSize="cover"
-        ></Box>
-        <Box fontWeight="semibold" mx="4" mt="6">
+        {image && (
+          <Box
+            h="15rem"
+            bgImage={bkgUrl}
+            bgPosition="center"
+            bgRepeat="no-repeat"
+            backgroundSize="cover"
+          ></Box>
+        )}
+        {!image && <Box h={1} />}
+        <Box fontWeight="semibold" mx="4" mt={image ? "6" : "2"}>
           <Text fontSize="2xl" fontWeight="800" color={titleColors[colorMode]}>
             {title}
           </Text>

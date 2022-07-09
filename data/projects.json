@@ -49,7 +49,7 @@
   },
   {
     "title": "Focale",
-    "img": "./project-focale.png",
+    "img": "/project-focale.png",
     "alt": "Picture of the Focale chrome extension popup",
     "text": "Focale is a chrome extension designed to help students time and pace their studies efficiently. ",
     "github": "https://github.com/ganning127/focale",

@@ -10,7 +10,7 @@ import {
   Image,
   Heading,
   Text,
-  HStack,
+  Stack,
   Box,
   Badge,
   chakra,
@@ -105,15 +105,22 @@ export const TimelineComponent = () => {
 
                 <Text color={lineColors[colorMode]}>{item.desc}</Text>
 
-                <SimpleGrid mt={4} columns={3} spacing={2} justify="flex-start">
+                <Stack
+                  mt={4}
+                  spacing={2}
+                  justify="flex-end"
+                  wrap="wrap"
+                  direction="row-reverse"
+                  p={0}
+                >
                   {item.skills?.map((skill, index) => {
                     return (
-                      <Box key={index}>
+                      <Box key={index} p={0} m={0}>
                         <Badge colorScheme="teal">{skill}</Badge>
                       </Box>
                     );
                   })}
-                </SimpleGrid>
+                </Stack>
               </VerticalTimelineElement>
             );
           })}
