@@ -194,5 +194,25 @@
     "github": "https://github.com/ganning127/uncw-wang-lab",
     "timeframe": "Spring 2022",
     "type": "website"
+  },
+  {
+    "title": "RiemannAI",
+    "img": "/project-riemannai.png",
+    "alt": "Picture of RiemanAI' home page",
+    "text": "Developed RiemannAI, a web app designed to summarize, translate, and save spoken text.",
+    "link": "https://riemann-ai.vercel.app/",
+    "github": "https://github.com/ganning127/riemann-ai",
+    "timeframe": "Summer 2022",
+    "type": "website"
+  },
+  {
+    "title": "ClimateSafe",
+    "img": "/project-climatesafe.jpg",
+    "alt": "Picture of ClimateSafe mounted on a robot dog",
+    "text": "Built ClimateSafe, an autonomous air-quality sensing unit that uses a Heltec ESP32 microcontroller.",
+    "link": "https://climatesafe.vercel.app/",
+    "github": "https://github.com/ganning127/ClimateSafe",
+    "timeframe": "Summer 2022",
+    "type": "misc"
   }
 ]
