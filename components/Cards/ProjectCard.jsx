@@ -11,6 +11,7 @@ import { AiOutlineLink, AiOutlineGithub } from "react-icons/ai";
 import * as React from "react";
 export const ProjectCard = ({
   title,
+  glow,
   image,
   link,
   github,

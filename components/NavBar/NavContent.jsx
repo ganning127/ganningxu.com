@@ -32,10 +32,6 @@ const links = [
     label: "blog",
     href: "/blog",
   },
-  {
-    label: "statistics",
-    href: "/statistics",
-  },
 ];
 
 const MobileNavContent = (props) => {

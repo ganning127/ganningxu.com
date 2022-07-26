@@ -39,49 +39,9 @@ export const Landing = () => {
               speed: 100,
             }}
             getBeforeInit={(instance) => {
-              const strings = [
-                "student",
-                "web developer",
-                "mobile app developer",
-                "machine learning engineer",
-                "swimmer",
-                "aviation enthusiast",
-              ];
-              instance
-                .type("I am a ")
-                .pause(750)
-                .type(strings[0])
-                .pause(750)
-                .delete(strings[0].length)
-                .type(strings[1])
-                .pause(750)
-                .delete(strings[1].length)
-                .type(strings[2])
-                .pause(750)
-                .delete(strings[2].length)
-                .type(strings[3])
-                .pause(750)
-                .delete(strings[3].length)
-                .type(strings[4])
-                .pause(750)
-                .delete(strings[4].length)
-                .type(strings[5])
-                .pause(750)
-                .delete(strings[5].length)
-                .type(
-                  strings[0] +
-                    ", " +
-                    strings[1] +
-                    ", " +
-                    strings[2] +
-                    ", " +
-                    strings[3] +
-                    ", " +
-                    strings[4] +
-                    ", and " +
-                    strings[5] +
-                    "."
-                );
+              instance.type(
+                "I am the Co-Founder @ Verste, Director of Engineering @ Bit Project, and Director of IT @ NCSSM SG."
+              );
 
               // Remember to return it!
               return instance;
@@ -99,14 +59,18 @@ export const Landing = () => {
           transition={{ duration: 0.7, delay: 0.9 }}
         >
           <Text mt="8" fontSize="xl" fontWeight={600}>
-            I&apos;m a{" "}
-            <chakra.span color="purple.light">high school senior</chakra.span>{" "}
-            at North Carolina&apos;s School of Science and Mathematics. Since
-            discovering programming in 7th grade, coding has fascinated me with
-            how simple, yet complex it is. In my free time, I like to create
-            applications that have a{" "}
-            <chakra.span color="purple.light">positive</chakra.span> impact on
-            the lives of those around me. I&apos;ve created{" "}
+            I&apos;m a high school senior at{" "}
+            <Link
+              href="https://www.ncssm.edu/"
+              color="purple.light"
+              _hover={{ color: "purple.hover" }}
+              isExternal
+            >
+              North Carolina&apos;s School of Science and Mathematics
+            </Link>
+            . I fell in love with programming in 9th grade, and I love being
+            able to make a difference in the lives of others through code. These
+            days, I&apos;m developing{" "}
             <Link
               color="purple.light"
               _hover={{ color: "purple.hover" }}
@@ -142,35 +106,34 @@ export const Landing = () => {
             >
               machine learning
             </Link>{" "}
-            models. Currently, I&apos;m working on an app that helps users track
-            expiration dates for products!
-          </Text>
-        </motion.div>
-        <motion.div
-          initial={{ y: -20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.7, delay: 1.3 }}
-        >
-          <Text mt="8" fontSize="xl" fontWeight={600}>
-            In addition to computer science,{" "}
-            <chakra.span color="purple.light">business management</chakra.span>{" "}
-            and administration is a{" "}
-            <chakra.span color="purple.light">passion</chakra.span> of mine. I
-            love being able to lead teams and see projects through from start to
-            finish, creating a quality product in a timely manner. In college, I
-            plan on pursuing a double major of{" "}
-            <chakra.span color="purple.light">computer science</chakra.span> and{" "}
-            <chakra.span color="purple.light">business management</chakra.span>.
+            models. In my free time, I love{" "}
+            <Link
+              href="/statistics"
+              color="purple.light"
+              _hover={{ color: "purple.hover" }}
+            >
+              swimming, biking, and running
+            </Link>
+            ! Anyways, I&apos;ll let you get back to what you came here for.
+            Feel free to poke around this site, and please{" "}
+            <Link
+              color="purple.light"
+              _hover={{ color: "purple.hover" }}
+              href="mailto:xu23g@ncssm.edu"
+            >
+              reach out
+            </Link>{" "}
+            if you want to talk about anything :)
           </Text>
         </motion.div>
 
         <motion.div
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.7, delay: 1.6 }}
+          transition={{ duration: 0.7, delay: 1.3 }}
         >
           <Text mt="8" fontSize="xl" fontWeight={600}>
-            Here are some cool projects I&apos;ve worked on:
+            Some fun projects I&apos;ve built:
           </Text>
           <SimpleGrid
             columns={{ base: 1, md: 2, lg: 3 }}
@@ -180,6 +143,8 @@ export const Landing = () => {
           >
             <ProjectCard
               title="Focale"
+              glow={false}
+              image="/project-focale.png"
               alt="Picture of the Focale chrome extension popup"
               desc="Focale is a chrome extension designed to help students time and pace their studies efficiently."
               github="https://github.com/ganning127/focale"
@@ -189,6 +154,8 @@ export const Landing = () => {
             />
             <ProjectCard
               title="UNCW Wang Lab Website"
+              glow={false}
+              image="/project-wang-lab.png"
               alt="Picture of The Wang Lab's home page"
               desc="Designed, developed, and tested The Wang Lab's website in collaboration with another developer."
               github="https://github.com/ganning127/uncw-wang-lab"
@@ -198,7 +165,9 @@ export const Landing = () => {
             />
             <ProjectCard
               title="CounselorBot"
+              glow={false}
               alt="Picture of The Wang Lab's home page"
+              image="/project-counselorbot.png"
               desc="Helped develop the serverless version of CounselorBot, a GitHub bot that autonomously guides students through GitHub learning repositories."
               github="https://github.com/bitprj/counselor"
               link="https://github.com/apps/counselorbot"
@@ -211,7 +180,15 @@ export const Landing = () => {
         <motion.div
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.7, delay: 1.6 }}
+          transition={{ duration: 0.7, delay: 1.7 }}
+        >
+          <Text mt="8" fontSize="xl" fontWeight={600}></Text>
+        </motion.div>
+
+        <motion.div
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.7, delay: 2.1 }}
         >
           <Text mt="8" fontSize="xl" fontWeight={600}>
             Feel free to <chakra.span color="purple.light">connect</chakra.span>{" "}
