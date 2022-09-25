@@ -214,5 +214,15 @@
     "github": "https://github.com/ganning127/ClimateSafe",
     "timeframe": "Summer 2022",
     "type": "misc"
+  },
+  {
+    "title": "Tuning Your Instrument with Machine Learning",
+    "img": "/project-tuning.png",
+    "alt": "Thumbnail of workshop slide titled \"Tuning Your Instrument with Machine Learning\"",
+    "text": "Created a 45 min workshop for middle school students on how to tune their instruments using machine learning.",
+    "link": "https://www.youtube.com/watch?v=8Ib7MGjTpvM",
+    "github": "https://github.com/ganning127/Ryden-AI-TA/tree/main/teachable-machine-tuning",
+    "timeframe": "Summer 2022",
+    "type": "misc"
   }
 ]
