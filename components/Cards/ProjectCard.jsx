@@ -66,7 +66,9 @@ export const ProjectCard = ({
         borderRadius="5px"
         bg={bgColors[colorMode]}
         transition="all 0.2s"
-        boxShadow={`0px 0px 20px 1px ${shadowColors[type][colorMode]} `}
+        boxShadow={
+          glow ? `0px 0px 20px 1px ${shadowColors[type][colorMode]} ` : ""
+        }
         _hover={{
           boxShadow: `0px 0px 40px 1px ${shadowColors[type][colorMode]}`,
         }}

@@ -1,20 +1,19 @@
 import Head from "next/head";
 import { NavBar } from "../components/NavBar";
-import { Landing } from "../components/Landing";
-import { Footer } from "../components/Footer";
 import {
   Container,
   SimpleGrid,
   useColorMode,
   Link,
   Heading,
-  chakra,
+  Spinner,
 } from "@chakra-ui/react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { StatsCard } from "../components/Cards/StatsCard";
 import useSWR from "swr";
 import fetcher from "../scripts/fetcher";
 import format from "comma-number";
+
 export default function Statistics() {
   const { colorMode } = useColorMode();
   const textColor = {
@@ -24,8 +23,6 @@ export default function Statistics() {
 
   const { data } = useSWR("/api/strava", fetcher);
 
-  console.log(data);
-
   const longestRide = metersToMiles(data?.longestRide); // in meters
   const rideCount = data?.rideCount;
   const rideDistance = metersToMiles(data?.rideDistance); // in meters
@@ -34,7 +31,6 @@ export default function Statistics() {
   const swimDistance = metersToMiles(data?.swimDistance); // in meters
   const swimSecs = secsToHours(data?.swimSecs); // in seconds
 
-  console.log(longestRide);
   return (
     <>
       <Head>
@@ -63,54 +59,59 @@ export default function Statistics() {
           </Link>{" "}
           statistics, updated in real-time.
         </Heading>
-        <SimpleGrid
-          columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
-          spacing={8}
-          mt={8}
-        >
-          <StatsCard
-            title="Longest Bike Ride"
-            value={format(longestRide.toFixed(2)) + " miles"}
-            url="https://www.strava.com/athletes/52460422"
-            type="ride"
-          />
-          <StatsCard
-            title="Number of Bike Rides"
-            value={format(rideCount) + " times"}
-            url="https://www.strava.com/athletes/52460422"
-            type="ride"
-          />
-          <StatsCard
-            title="Total Distance Biked"
-            value={format(rideDistance.toFixed(2)) + " miles"}
-            url="https://www.strava.com/athletes/52460422"
-            type="ride"
-          />
-          <StatsCard
-            title="Total Time Biked"
-            value={format(rideSecs.toFixed(2)) + " hours"}
-            url="https://www.strava.com/athletes/52460422"
-            type="ride"
-          />
-          <StatsCard
-            title="Tracked Swim Distance"
-            value={format(swimDistance.toFixed(2)) + " miles"}
-            url="https://www.strava.com/athletes/52460422"
-            type="swim"
-          />
-          <StatsCard
-            title="Tracked Swims"
-            value={format(swimCount) + " swims"}
-            url="https://www.strava.com/athletes/52460422"
-            type="swim"
-          />
-          <StatsCard
-            title="Tracked Swim Time"
-            value={format(swimSecs.toFixed(2)) + " hours"}
-            url="https://www.strava.com/athletes/52460422"
-            type="swim"
-          />
-        </SimpleGrid>
+
+        {data ? (
+          <SimpleGrid
+            columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
+            spacing={8}
+            mt={8}
+          >
+            <StatsCard
+              title="Longest Bike Ride"
+              value={format(longestRide.toFixed(2)) + " miles"}
+              url="https://www.strava.com/athletes/52460422"
+              type="ride"
+            />
+            <StatsCard
+              title="Number of Bike Rides"
+              value={format(rideCount) + " times"}
+              url="https://www.strava.com/athletes/52460422"
+              type="ride"
+            />
+            <StatsCard
+              title="Total Distance Biked"
+              value={format(rideDistance.toFixed(2)) + " miles"}
+              url="https://www.strava.com/athletes/52460422"
+              type="ride"
+            />
+            <StatsCard
+              title="Total Time Biked"
+              value={format(rideSecs.toFixed(2)) + " hours"}
+              url="https://www.strava.com/athletes/52460422"
+              type="ride"
+            />
+            <StatsCard
+              title="Tracked Swim Distance"
+              value={format(swimDistance.toFixed(2)) + " miles"}
+              url="https://www.strava.com/athletes/52460422"
+              type="swim"
+            />
+            <StatsCard
+              title="Tracked Swims"
+              value={format(swimCount) + " swims"}
+              url="https://www.strava.com/athletes/52460422"
+              type="swim"
+            />
+            <StatsCard
+              title="Tracked Swim Time"
+              value={format(swimSecs.toFixed(2)) + " hours"}
+              url="https://www.strava.com/athletes/52460422"
+              type="swim"
+            />
+          </SimpleGrid>
+        ) : (
+          <Spinner />
+        )}
       </Container>
     </>
   );

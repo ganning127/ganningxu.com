@@ -40,7 +40,7 @@ export const Landing = () => {
             }}
             getBeforeInit={(instance) => {
               instance.type(
-                "I am the Co-Founder @ Verste, Director of Engineering @ Bit Project, and Director of IT @ NCSSM SG."
+                "I am the Co-Founder @ Verste, Director of Engineering @ Bit Project, Director of IT @ NCSSM SG, and SG representative in NCSSM's Web Advisory Council."
               );
 
               // Remember to return it!
@@ -106,7 +106,25 @@ export const Landing = () => {
             >
               machine learning
             </Link>{" "}
-            models. In my free time, I love{" "}
+            models. Specifically, I'm redesigning the{" "}
+            <Link
+              href="https://www.acsl.org/"
+              color="purple.light"
+              _hover={{ color: "purple.hover" }}
+              isExternal
+            >
+              American Computer Science League's website
+            </Link>
+            , and I'm working with our school's webmaster to redesign our{" "}
+            <Link
+              href="https://www.ncssm.edu/"
+              color="purple.light"
+              _hover={{ color: "purple.hover" }}
+              isExternal
+            >
+              school's official site
+            </Link>
+            . In my free time, I love{" "}
             <Link
               href="/statistics"
               color="purple.light"
@@ -139,7 +157,7 @@ export const Landing = () => {
             columns={{ base: 1, md: 2, lg: 3 }}
             spacing="60px"
             justifyContent="center"
-            mt="8"
+            mt="4"
           >
             <ProjectCard
               title="Focale"
