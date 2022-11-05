@@ -106,23 +106,23 @@ export const Landing = () => {
             >
               machine learning
             </Link>{" "}
-            models. Specifically, I'm redesigning the{" "}
+            models. Specifically, I&apos;m redesigning the{" "}
             <Link
               href="https://www.acsl.org/"
               color="purple.light"
               _hover={{ color: "purple.hover" }}
               isExternal
             >
-              American Computer Science League's website
+              American Computer Science League&apos;s website
             </Link>
-            , and I'm working with our school's webmaster to redesign our{" "}
+            , and working with our school&apos;s webmaster to redesign our{" "}
             <Link
               href="https://www.ncssm.edu/"
               color="purple.light"
               _hover={{ color: "purple.hover" }}
               isExternal
             >
-              school's official site
+              school&apos;s official site
             </Link>
             . In my free time, I love{" "}
             <Link
