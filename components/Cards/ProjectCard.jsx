@@ -49,7 +49,7 @@ export const ProjectCard = ({
       light: "#c7cdfc",
       dark: "#7785f7",
     },
-    algo: {
+    workshops: {
       light: "#fab1df",
       dark: "#f765c1",
     },

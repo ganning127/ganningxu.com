@@ -70,7 +70,7 @@ export default function Home() {
 
           <Box h={1} my={5} />
 
-          <ProjectsDisplay title="algorithms" itemType="algo" />
+          <ProjectsDisplay title="workshops" itemType="workshops" />
 
           <Box h={1} my={5} />
 

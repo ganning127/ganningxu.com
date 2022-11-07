@@ -55,7 +55,7 @@
     "github": "https://github.com/ganning127/focale",
     "link": "https://chrome.google.com/webstore/detail/focale-study-pal/khjidjdpidalladedmkjibjkklanhcnc",
     "timeframe": "Summer 2021",
-    "type": "misc"
+    "type": "app"
   },
   {
     "title": "Spotion",
@@ -85,7 +85,7 @@
     "github": "https://github.com/ganning127/catti",
     "link": "https://youtu.be/l_1BhV-dtMk?t=7752",
     "timeframe": "Summer 2021",
-    "type": "misc"
+    "type": "workshops"
   },
   {
     "title": "CounselorBot",
@@ -113,7 +113,7 @@
     "text": "Created a Hashmap in C that is able to store any data type and uses an AVL tree for each \"bucket\".",
     "link": "https://github.com/ganning127/augmented-hashmap",
     "timeframe": "Winter 2021",
-    "type": "algo"
+    "type": "misc"
   },
   {
     "title": "Valence Robotics Website",
@@ -222,7 +222,17 @@
     "text": "Created a 45 min workshop for middle school students on how to tune their instruments using machine learning.",
     "link": "https://www.youtube.com/watch?v=8Ib7MGjTpvM",
     "github": "https://github.com/ganning127/Ryden-AI-TA/tree/main/teachable-machine-tuning",
-    "timeframe": "Summer 2022",
-    "type": "misc"
+    "timeframe": "Fall 2022",
+    "type": "workshops"
+  },
+  {
+    "title": "Text Summarization using Python",
+    "img": "/project-ts-workshop.png",
+    "alt": "Thumbnail of workshop slide titled \"Text Summarization using Python\"",
+    "text": "Developed and filmed a workshop for students with no prior programming experience as a gentle intro to NLP.",
+    "link": "https://www.youtube.com/watch?v=OPABC5uobUY",
+    "github": "https://github.com/ganning127/Ryden-AI-TA/tree/main/text-summarization-python",
+    "timeframe": "Fall 2022",
+    "type": "workshops"
   }
 ]

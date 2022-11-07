@@ -55,6 +55,7 @@ export const ProjectsDisplay = ({ title, itemType }) => {
             isExternal={true}
             type={project.type}
             github={project.github}
+            glow={true}
           />
         ))}
       </SimpleGrid>
