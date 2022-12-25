@@ -31,7 +31,7 @@ export const Landing = () => {
           hello, I&apos;m <chakra.span color="blue.light">Ganning</chakra.span>.
         </Heading>
 
-        <Text fontSize="xl" fontWeight="semibold" mt="4">
+        {/* <Text fontSize="xl" fontWeight="semibold" mt="4">
           <TypeIt
             element={Heading}
             options={{
@@ -47,7 +47,7 @@ export const Landing = () => {
               return instance;
             }}
           />
-        </Text>
+        </Text> */}
 
         <Text></Text>
       </motion.div>
