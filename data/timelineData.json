@@ -184,15 +184,6 @@
     "skills": ["google-sites", "student-gov", "leadership"]
   },
   {
-    "headline": "Director of Information Technology @ NCSSM",
-    "type": "school",
-    "desc": "Head of IT for NCSSM's Student Government. I'm responsible for the maintenance of the Student Government website, the management of SG social media pages, and other projects as directed by the SG Executive Board.",
-    "date": "Aug 2022",
-    "img": "https://i.imgur.com/JijlBMx.png",
-    "alt": "NCSSM Logo",
-    "skills": ["google-sites", "student-gov", "leadership"]
-  },
-  {
     "headline": "Research Intern @ NC State University",
     "type": "work",
     "desc": "Researching identifying provocative at NC State University. We created a 7000-sentence dataset and trained 18 machine learning models on our dataset to determine the best method for provocative sentence detection.",
