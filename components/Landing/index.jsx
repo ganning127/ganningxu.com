@@ -151,7 +151,15 @@ export const Landing = () => {
           transition={{ duration: 0.7, delay: 1.3 }}
         >
           <Text mt="8" fontSize="xl" fontWeight={600}>
-            Some fun projects I&apos;ve built:
+            Some fun projects I&apos;ve built (you can find more{" "}
+            <Link
+              href="/projects"
+              color="purple.light"
+              _hover={{ color: "purple.hover" }}
+            >
+              here
+            </Link>
+            ):
           </Text>
           <SimpleGrid
             columns={{ base: 1, md: 2, lg: 3 }}
