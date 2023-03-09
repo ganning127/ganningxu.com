@@ -97,15 +97,7 @@
     "timeframe": "Summer 2021",
     "type": "bot"
   },
-  {
-    "title": "SLTranslate",
-    "img": "/project-sltranslate.png",
-    "alt": "Picture of SLTranslate's landing page",
-    "text": "SLTranslate is a mobile app that uses machine learning to translate fingerspelling into English.",
-    "link": "https://github.com/KeshavVarad/SLTranslator",
-    "timeframe": "Fall 2021",
-    "type": "app"
-  },
+
   {
     "title": "Augmented Hashmap",
     "img": "/project-hashmap.png",
