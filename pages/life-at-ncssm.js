@@ -68,7 +68,7 @@ export default function LifeAtNCSSM() {
             {fileNames.map((fileName) => {
               let i = fileNames.indexOf(fileName);
               return (
-                <Box>
+                <Box key={fileName}>
                   <Img
                     src={`/photos/${fileName}`}
                     alt="NCSSM"
