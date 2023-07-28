@@ -66,7 +66,7 @@ export const Landing = () => {
               _hover={{ color: "purple.hover" }}
               isExternal
             >
-              Georgia Institute of Technology.
+              Georgia Institute of Technology
             </Link>
             . I fell in love with programming in 9th grade, and I love being
             able to make a difference in the lives of others through code. These
