@@ -252,7 +252,7 @@
     ]
   },
   {
-    "headline": "Software Developer Intern @ iRODS (part of UNC-CH RENCI)",
+    "headline": "Software Developer Intern @ iRODS",
     "type": "work",
     "desc": "Working on the Zone Management Tool (ZMT) and NFSRODS.",
     "date": "Nov 2022",
@@ -260,8 +260,10 @@
     "alt": "NCBCE Logo",
     "skills": [
       "javascript",
+      "react.js",
       "java",
       "nfs",
+      "REST",
       "docker"
     ]
   }
