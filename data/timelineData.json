@@ -14,7 +14,11 @@
     "date": "Aug 2020",
     "img": "https://i.imgur.com/thuyGuV.png",
     "alt": "Panther Creek High Aviation Club Logo",
-    "skills": ["weebly", "outreach", "management"]
+    "skills": [
+      "weebly",
+      "outreach",
+      "management"
+    ]
   },
   {
     "headline": "Team Member at Chick-fil-A",
@@ -23,7 +27,11 @@
     "date": "Jan 2021",
     "img": "https://i.imgur.com/V8GWIGw.png",
     "alt": "Chick-Fil-A Logo",
-    "skills": ["details", "service", "love"]
+    "skills": [
+      "details",
+      "service",
+      "love"
+    ]
   },
   {
     "headline": "Business Development Intern at Oppti",
@@ -48,7 +56,12 @@
     "date": "May 2021",
     "img": "https://i.imgur.com/6w3cKWi.png",
     "alt": "The Coding Foundation Logo",
-    "skills": ["leadership", "react.js", "next.js", "chakra-ui"]
+    "skills": [
+      "leadership",
+      "react.js",
+      "next.js",
+      "chakra-ui"
+    ]
   },
   {
     "headline": "Intern at UNC-CH RENCI",
@@ -73,7 +86,13 @@
     "date": "Jul 2021",
     "img": "https://i.imgur.com/OiryFpf.png",
     "alt": "Qoom Logo",
-    "skills": ["azure", "bootstrap", "html", "css", "js"]
+    "skills": [
+      "azure",
+      "bootstrap",
+      "html",
+      "css",
+      "js"
+    ]
   },
   {
     "headline": "NC School of Science and Math",
@@ -129,7 +148,12 @@
     "date": "Jan 2022",
     "img": "https://i.imgur.com/hci9sDT.png",
     "alt": "The Coding Foundation Logo",
-    "skills": ["leadership", "react.js", "next.js", "chakra-ui"]
+    "skills": [
+      "leadership",
+      "react.js",
+      "next.js",
+      "chakra-ui"
+    ]
   },
   {
     "headline": "Founder of Verste",
@@ -154,7 +178,13 @@
     "date": "Feb 2022",
     "img": "https://i.imgur.com/JijlBMx.png",
     "alt": "NCSSM Logo",
-    "skills": ["python", "js", "html", "css", "bootstrap"]
+    "skills": [
+      "python",
+      "js",
+      "html",
+      "css",
+      "bootstrap"
+    ]
   },
   {
     "headline": "Stevens Institute of Technology Summer Research Program",
@@ -163,7 +193,10 @@
     "date": "June 2022",
     "img": "https://i.imgur.com/UDa8ajh.png",
     "alt": "Stevens Institute of Technology Logo",
-    "skills": ["business", "research"]
+    "skills": [
+      "business",
+      "research"
+    ]
   },
   {
     "headline": "Duke Summer STEM Academy",
@@ -172,7 +205,12 @@
     "date": "June 2022",
     "img": "https://i.imgur.com/cKtHiSN.png",
     "alt": "Duke Logo",
-    "skills": ["engineering", "programming", "business", "pitching"]
+    "skills": [
+      "engineering",
+      "programming",
+      "business",
+      "pitching"
+    ]
   },
   {
     "headline": "Director of Information Technology @ NCSSM",
@@ -181,7 +219,11 @@
     "date": "Aug 2022",
     "img": "https://i.imgur.com/JijlBMx.png",
     "alt": "NCSSM Logo",
-    "skills": ["google-sites", "student-gov", "leadership"]
+    "skills": [
+      "google-sites",
+      "student-gov",
+      "leadership"
+    ]
   },
   {
     "headline": "Research Intern @ NC State University",
@@ -190,7 +232,11 @@
     "date": "Jan 2022",
     "img": "https://i.imgur.com/hIIVxLT.png",
     "alt": "NC State Logo",
-    "skills": ["nlp", "python", "machine-learning"]
+    "skills": [
+      "nlp",
+      "python",
+      "machine-learning"
+    ]
   },
   {
     "headline": "Intern @ NCBCE",
@@ -199,6 +245,24 @@
     "date": "Nov 2022",
     "img": "https://i.imgur.com/yn98d5y.png",
     "alt": "NCBCE Logo",
-    "skills": ["mentor", "javascript", "python"]
+    "skills": [
+      "mentor",
+      "javascript",
+      "python"
+    ]
+  },
+  {
+    "headline": "Software Developer Intern @ iRODS (part of UNC-CH RENCI)",
+    "type": "work",
+    "desc": "Working on the Zone Management Tool (ZMT) and NFSRODS.",
+    "date": "Nov 2022",
+    "img": "<irods_logo>.png",
+    "alt": "NCBCE Logo",
+    "skills": [
+      "javascript",
+      "java",
+      "nfs",
+      "docker"
+    ]
   }
 ]

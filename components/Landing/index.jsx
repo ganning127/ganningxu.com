@@ -59,14 +59,14 @@ export const Landing = () => {
           transition={{ duration: 0.7, delay: 0.9 }}
         >
           <Text mt="8" fontSize="xl" fontWeight={600}>
-            I&apos;m a high school senior at{" "}
+            I&apos;m an incoming freshman at the{" "}
             <Link
-              href="https://www.ncssm.edu/"
+              href="https://www.gatech.edu/"
               color="purple.light"
               _hover={{ color: "purple.hover" }}
               isExternal
             >
-              North Carolina&apos;s School of Science and Mathematics
+              Georgia Institute of Technology.
             </Link>
             . I fell in love with programming in 9th grade, and I love being
             able to make a difference in the lives of others through code. These
@@ -106,25 +106,7 @@ export const Landing = () => {
             >
               machine learning
             </Link>{" "}
-            models. Specifically, I&apos;m redesigning the{" "}
-            <Link
-              href="https://www.acsl.org/"
-              color="purple.light"
-              _hover={{ color: "purple.hover" }}
-              isExternal
-            >
-              American Computer Science League&apos;s website
-            </Link>
-            , and working with our school&apos;s webmaster to redesign our{" "}
-            <Link
-              href="https://www.ncssm.edu/"
-              color="purple.light"
-              _hover={{ color: "purple.hover" }}
-              isExternal
-            >
-              school&apos;s official site
-            </Link>
-            . In my free time, I love{" "}
+            models. In my free time, I love{" "}
             <Link
               href="/statistics"
               color="purple.light"
@@ -222,7 +204,7 @@ export const Landing = () => {
           </Text>
 
           <Stack spacing={4} direction={{ base: "column", md: "row" }} mt="1">
-            <Link href="mailto:xu23g@ncssm.edu" _hover={{}} isExternal>
+            <Link href="mailto:ganning.xu@gatech.edu" _hover={{}} isExternal>
               <Button
                 bg="blue.dark"
                 fontSize="2xl"
