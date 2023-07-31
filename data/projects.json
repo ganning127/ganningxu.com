@@ -97,7 +97,6 @@
     "timeframe": "Summer 2021",
     "type": "bot"
   },
-
   {
     "title": "Augmented Hashmap",
     "img": "/project-hashmap.png",
@@ -226,5 +225,25 @@
     "github": "https://github.com/ganning127/Ryden-AI-TA/tree/main/text-summarization-python",
     "timeframe": "Fall 2022",
     "type": "workshops"
+  },
+  {
+    "title": "Markdown Parser",
+    "img": "/project-markdown-parser.png",
+    "alt": "Thumbnail of the homepage of Markdown Parser",
+    "text": "Developed a markdown parser that converts markdown into HTML. Supports creating, viewing, sharing markdown files",
+    "link": "https://markdown-parser-roan.vercel.app/",
+    "github": "https://github.com/ganning127/markdown-parser",
+    "timeframe": "Spring 2023",
+    "type": "website"
+  },
+  {
+    "title": "The Internet's Journal",
+    "img": "/project-tij.png",
+    "alt": "Thumbnail of the homepage of The Internet's Journal",
+    "text": "Developed a website that allows users to create and share journal entries with others. Posts can be shared, liked, reported, moderated, and ranked based on popularity",
+    "link": "https://tij-ecru.vercel.app/",
+    "github": "https://github.com/ganning127/the-internets-journal",
+    "timeframe": "Spring 2023",
+    "type": "website"
   }
 ]
