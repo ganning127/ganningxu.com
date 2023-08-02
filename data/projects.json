@@ -245,5 +245,15 @@
     "github": "https://github.com/ganning127/the-internets-journal",
     "timeframe": "Spring 2023",
     "type": "website"
+  },
+  {
+    "title": "Caffeine 2.0",
+    "img": "/project-caffeine2.0.png",
+    "alt": "Thumbnail of the homepage of Caffeine 2.0",
+    "text": "Developed a website that prevents you from falling asleep while at your computer. Plays nasty sounds each time you blink!",
+    "link": "",
+    "github": "https://github.com/hyusap/caffeine2.0",
+    "timeframe": "Summer 2023",
+    "type": "website"
   }
 ]
