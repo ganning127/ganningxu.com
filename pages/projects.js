@@ -46,7 +46,7 @@ export default function Home() {
           <Link
             color="purple.light"
             _hover={{ color: "purple.hover" }}
-            href="mailto:xu23g@ncssm.edu"
+            href="mailto:ganning.xu@gatech.edu"
           >
             {" "}
             reach out

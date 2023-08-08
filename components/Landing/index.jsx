@@ -28,7 +28,7 @@ export const Landing = () => {
         transition={{ duration: 0.7, delay: 0.5 }}
       >
         <Heading fontSize="6xl" as="h1" color={textColor[colorMode]}>
-          hello, I&apos;m <chakra.span color="blue.light">Ganning</chakra.span>.
+          hello, I&apos;m <chakra.span color="blue.light">Ganning Xu</chakra.span>.
         </Heading>
 
         {/* <Text fontSize="xl" fontWeight="semibold" mt="4">
@@ -119,7 +119,7 @@ export const Landing = () => {
             <Link
               color="purple.light"
               _hover={{ color: "purple.hover" }}
-              href="mailto:xu23g@ncssm.edu"
+              href="mailto:ganning.xu@gatech.edu"
             >
               reach out
             </Link>{" "}

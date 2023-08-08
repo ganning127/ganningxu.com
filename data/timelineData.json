@@ -256,7 +256,7 @@
     "type": "work",
     "desc": "Working on the Zone Management Tool (ZMT) and NFSRODS.",
     "date": "Nov 2022",
-    "img": "<irods_logo>.png",
+    "img": "/logos/irods.png",
     "alt": "NCBCE Logo",
     "skills": [
       "javascript",
