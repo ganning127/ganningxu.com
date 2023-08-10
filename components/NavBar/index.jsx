@@ -58,7 +58,7 @@ export const NavBar = (props) => {
                                     display="inline"
                                     color={textColors[colorMode]}
 
-                                >.me</Text>
+                                > xu</Text>
                             </motion.a>
 
 
