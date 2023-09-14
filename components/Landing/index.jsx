@@ -59,7 +59,7 @@ export const Landing = () => {
           transition={{ duration: 0.7, delay: 0.9 }}
         >
           <Text mt="8" fontSize="xl" fontWeight={600}>
-            I&apos;m an incoming freshman at the{" "}
+            I&apos;m a first year (2026 expected graduation) at the{" "}
             <Link
               href="https://www.gatech.edu/"
               color="purple.light"
