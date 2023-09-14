@@ -236,6 +236,22 @@ export const Landing = () => {
               >
                 linkedin
               </Button>
+              
+            </Link>
+
+            <Link
+              href="/gxu_resume.pdf"
+              _hover={{}}
+              isExternal
+            >
+              <Button
+                bg="blue.dark"
+                fontSize="2xl"
+                _hover={{ bg: "blue.light" }}
+              >
+                resume
+              </Button>
+              
             </Link>
           </Stack>
         </motion.div>
