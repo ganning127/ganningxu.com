@@ -227,6 +227,16 @@
     "type": "workshops"
   },
   {
+    "title": "CodeLove",
+    "img": "project-codelove.png",
+    "alt": "Thumbmail of CodeLove's landing page",
+    "text": "CodeLove is a dating app for programmers. Sign in with GitHub and start making matches!",
+    "link": "https://codelove.vercel.app/",
+    "github": "https://github.com/ganning127/CodeLove",
+    "timeframe": "Fall 2022",
+    "type": "website"
+  },
+  {
     "title": "Markdown Parser",
     "img": "/project-markdown-parser.png",
     "alt": "Thumbnail of the homepage of Markdown Parser",
