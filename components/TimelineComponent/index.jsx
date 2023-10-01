@@ -84,7 +84,7 @@ export const TimelineComponent = () => {
                   <Image
                     d="inline"
                     src={item.img}
-                    alt={item.headline}
+                    alt={item.alt}
                     boxSize="60px"
                     objectFit="cover"
                     mr="2"
