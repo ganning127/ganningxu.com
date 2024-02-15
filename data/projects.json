@@ -265,5 +265,25 @@
     "github": "https://github.com/hyusap/caffeine2.0",
     "timeframe": "Summer 2023",
     "type": "website"
+  },
+  {
+    "title": "Calendo",
+    "img": "/project-calendo.png",
+    "alt": "Thumbnail of the homepage of Calendo",
+    "text": "Won Education Track @ HackGT X. Calendo is a gamified todolist built for school systems.",
+    "link": "https://calendo-tau.vercel.app/",
+    "github": "https://github.com/ganning127/calendo",
+    "timeframe": "Fall 2023",
+    "type": "website"
+  },
+  {
+    "title": "Aire",
+    "img": "/project-aire.png",
+    "alt": "Thumbnail of the homepage of Aire",
+    "text": "Aire generates personalized resumes & cover letters based on job description.",
+    "link": "https://useaire.tech/",
+    "github": "https://github.com/kambhani/aire",
+    "timeframe": "Spring 2024",
+    "type": "website"
   }
 ]
