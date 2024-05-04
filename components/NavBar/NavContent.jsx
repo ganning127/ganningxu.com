@@ -1,4 +1,5 @@
-import {
+import
+{
   Box,
   Center,
   HStack,
@@ -17,24 +18,25 @@ import { BsFillSunFill, BsMoonFill } from "react-icons/bs";
 
 const links = [
   {
-    label: "projects",
+    label: "Projects",
     href: "/projects",
   },
   {
-    label: "experience",
+    label: "Experience",
     href: "/experience",
   },
   {
-    label: "timeline",
+    label: "Timeline",
     href: "/timeline",
   },
   {
-    label: "blog",
+    label: "Blog",
     href: "/blog",
   },
 ];
 
-const MobileNavContent = (props) => {
+const MobileNavContent = (props) =>
+{
   const { colorMode, toggleColorMode } = useColorMode();
   let icon = colorMode === "light" ? BsFillSunFill : BsMoonFill;
 
@@ -76,9 +78,11 @@ const MobileNavContent = (props) => {
         animate={isOpen ? "enter" : "exit"}
       >
         <Stack spacing="0" divider={<StackDivider borderColor="gray.300" />}>
-          {links.map((link, index) => {
+          {links.map((link, index) =>
+          {
             let color = textColors[colorMode];
-            if (props.active === link.label.toLowerCase()) {
+            if (props.active === link.label.toLowerCase())
+            {
               color = "blue.light";
             }
 
@@ -100,7 +104,8 @@ const MobileNavContent = (props) => {
   );
 };
 
-const DesktopNavContent = (props) => {
+const DesktopNavContent = (props) =>
+{
   const { colorMode, toggleColorMode } = useColorMode();
   let icon = colorMode === "light" ? BsFillSunFill : BsMoonFill;
   const textColors = {
@@ -110,9 +115,11 @@ const DesktopNavContent = (props) => {
 
   return (
     <HStack spacing="8" align="stretch" {...props}>
-      {links.map((link, index) => {
+      {links.map((link, index) =>
+      {
         let color = textColors[colorMode];
-        if (props.active === link.label.toLowerCase()) {
+        if (props.active === link.label.toLowerCase())
+        {
           color = "blue.light";
         }
         return (

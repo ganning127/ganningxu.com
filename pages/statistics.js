@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { NavBar } from "../components/NavBar";
-import {
+import
+{
   Container,
   SimpleGrid,
   useColorMode,
@@ -14,7 +15,8 @@ import useSWR from "swr";
 import fetcher from "../scripts/fetcher";
 import format from "comma-number";
 
-export default function Statistics() {
+export default function Statistics()
+{
   const { colorMode } = useColorMode();
   const textColor = {
     light: "#15161a",
@@ -47,8 +49,8 @@ export default function Statistics() {
       </Head>
       <NavBar active="home" />
       <Container maxW="container.xl" px="8">
-        <Heading fontSize="4xl" as="h1" color={textColor[colorMode]} mt={24}>
-          here are some of my{" "}
+        <Heading fontSize="4xl" as="h1" color={textColor[colorMode]} mt={16}>
+          Here are some of my{" "}
           <Link
             href="https://www.strava.com/athletes/52460422"
             isExternal
@@ -117,15 +119,19 @@ export default function Statistics() {
   );
 }
 
-const metersToMiles = (meters) => {
-  if (meters) {
+const metersToMiles = (meters) =>
+{
+  if (meters)
+  {
     return meters / 1609.344;
   }
   return 0;
 };
 
-const secsToHours = (secs) => {
-  if (secs) {
+const secsToHours = (secs) =>
+{
+  if (secs)
+  {
     return secs / 3600;
   }
   return 0;

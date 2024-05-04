@@ -2,7 +2,8 @@ import Head from "next/head";
 import { NavBar } from "../components/NavBar";
 import { ProjectsDisplay } from "../components/ProjectsDisplay";
 import { Footer } from "../components/Footer";
-import {
+import
+{
   Container,
   Heading,
   Box,
@@ -13,7 +14,8 @@ import {
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
-export default function Home() {
+export default function Home()
+{
   const { colorMode } = useColorMode();
   const textColor = {
     light: "#15161a",
@@ -58,23 +60,23 @@ export default function Home() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.5 }}
         >
-          <ProjectsDisplay title="websites" itemType="website" />
+          <ProjectsDisplay title="Websites" itemType="website" />
 
           <Box h={1} my={5} />
 
-          <ProjectsDisplay title="apps" itemType="app" />
+          <ProjectsDisplay title="Apps" itemType="app" />
 
           <Box h={1} my={5} />
 
-          <ProjectsDisplay title="bots" itemType="bot" />
+          <ProjectsDisplay title="Bots" itemType="bot" />
 
           <Box h={1} my={5} />
 
-          <ProjectsDisplay title="workshops" itemType="workshops" />
+          <ProjectsDisplay title="Workshops" itemType="workshops" />
 
           <Box h={1} my={5} />
 
-          <ProjectsDisplay title="misc" itemType="misc" />
+          <ProjectsDisplay title="Other" itemType="misc" />
         </motion.div>
 
         <Footer />

@@ -1,19 +1,20 @@
-import { Box, Flex, Text, useColorMode } from '@chakra-ui/react'
-import * as React from 'react'
-import { NavContent } from './NavContent'
-import { motion } from "framer-motion"
+import { Box, Flex, Text, useColorMode } from '@chakra-ui/react';
+import * as React from 'react';
+import { NavContent } from './NavContent';
+import { motion } from "framer-motion";
 
-export const NavBar = (props) => {
-    const { colorMode } = useColorMode()
+export const NavBar = (props) =>
+{
+    const { colorMode } = useColorMode();
     const textColors = {
         light: '#15161a',
         dark: 'white'
-    }
+    };
 
     const bgColors = {
         dark: '#15161a',
         light: 'white'
-    }
+    };
     return (
         <Box pt="1" bg={bgColors[colorMode]} position="sticky" top="0" zIndex="100">
             <motion.div
@@ -48,7 +49,7 @@ export const NavBar = (props) => {
                                     fontWeight="extrabold"
                                     maxW="48rem"
                                     display="inline"
-                                >ganning</Text>
+                                >Ganning</Text>
                                 <Text
                                     as="h1"
                                     // size="3xl"
@@ -58,7 +59,7 @@ export const NavBar = (props) => {
                                     display="inline"
                                     color={textColors[colorMode]}
 
-                                > xu</Text>
+                                > Xu</Text>
                             </motion.a>
 
 
@@ -81,5 +82,5 @@ export const NavBar = (props) => {
                 </Box>
             </motion.div>
         </Box>
-    )
-}
+    );
+};

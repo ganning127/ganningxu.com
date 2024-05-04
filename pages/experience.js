@@ -6,12 +6,15 @@ import { Volunteering } from "../components/Volunteering";
 import SkillList from "../data/skills.json";
 import AwardsList from "../data/awards.json";
 import CourseList from "../data/courses.json";
+import ScholarshipList from "../data/scholarships.json";
+
 import { Research } from "../components/Research";
 import { Footer } from "../components/Footer";
 import { Container } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-export default function Experience() {
-  let aList = AwardsList.reverse();
+export default function Experience()
+{
+  // let aList = AwardsList.reverse();
   return (
     <>
       <Head>
@@ -33,12 +36,13 @@ export default function Experience() {
         transition={{ duration: 0.7, delay: 0.5 }}
       >
         <Container maxW="container.xl" px="8">
-          <AutoGridHTML list={aList} heading="awards" />
-          <AutoGridHTML list={SkillList} heading="tools" />
-          <AutoGridHTML list={CourseList} heading="courses" />
+          <AutoGridHTML list={AwardsList} heading="Awards" />
+          <AutoGridHTML list={ScholarshipList} heading="Scholarships" />
+          <AutoGridHTML list={SkillList} heading="Tools" />
+          <AutoGridHTML list={CourseList} heading="Courses" />
           <Research />
           <Organizations />
-          <Volunteering />
+          {/* <Volunteering /> */}
           <Footer />
         </Container>
       </motion.div>

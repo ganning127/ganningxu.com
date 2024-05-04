@@ -1,12 +1,13 @@
-import { Box, Heading, SimpleGrid, Text } from '@chakra-ui/react'
-import VolunteeringList from "../../data/volunteering.json"
-import { VolunteerCard } from './VolunteerCard'
-export const Volunteering = () => {
+import { Box, Heading, SimpleGrid, Text } from '@chakra-ui/react';
+import VolunteeringList from "../../data/volunteering.json";
+import { VolunteerCard } from './VolunteerCard';
+export const Volunteering = () =>
+{
 
     return (
         <Box color="white" mt="8">
             <Heading fontSize="5xl" fontWeight="bold" mt="8" color="blue.light">
-                volunteering
+                Volunteering
             </Heading>
 
             <Text my="2" fontWeight="semibold" fontSize="lg" fontStyle="italic">(210+ hours)</Text>
@@ -19,5 +20,5 @@ export const Volunteering = () => {
                 }
             </SimpleGrid>
         </Box>
-    )
-}
+    );
+};

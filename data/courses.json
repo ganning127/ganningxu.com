@@ -1,41 +1,17 @@
 [
   {
-    "title": "Data Structures with C"
+    "title": "CS 1332 - Data Structures & Algorithms"
   },
   {
-    "title": "Python I"
+    "title": "CS 2110 - Computer Organization & Programming"
   },
   {
-    "title": "AP Computer Science Principles"
+    "title": "CS 2340 - Objects & Design"
   },
   {
-    "title": "Computer Vision"
+    "title": "CS 2050 - Discrete Math"
   },
   {
-    "title": "Theory and Methods of Natural Language Processing"
-  },
-  {
-    "title": "Foundations of Data Sciences"
-  },
-  {
-    "title": "Intro to Cybersecurity"
-  },
-  {
-    "title": "Research in Computational Science I"
-  },
-  {
-    "title": "JavaScript Algorithms and Data Structures"
-  },
-  {
-    "title": "Object Oriented Programming in Python"
-  },
-  {
-    "title": "Research in Mathematics"
-  },
-  {
-    "title": "Data Science for Finance with Credit Suisse"
-  },
-  {
-    "title": "Machine Learning with Python"
+    "title": "Research in Computational Science"
   }
 ]

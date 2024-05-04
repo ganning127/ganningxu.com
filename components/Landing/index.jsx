@@ -1,4 +1,5 @@
-import {
+import
+{
   Box,
   Text,
   Link,
@@ -13,7 +14,8 @@ import TypeIt from "typeit-react";
 import { motion } from "framer-motion";
 import { ProjectCard } from "../Cards/ProjectCard";
 
-export const Landing = () => {
+export const Landing = () =>
+{
   const { colorMode } = useColorMode();
   const textColor = {
     light: "#15161a",
@@ -28,7 +30,7 @@ export const Landing = () => {
         transition={{ duration: 0.7, delay: 0.5 }}
       >
         <Heading fontSize="6xl" as="h1" color={textColor[colorMode]}>
-          hello, I&apos;m <chakra.span color="blue.light">Ganning Xu</chakra.span>.
+          Hello, I&apos;m <chakra.span color="blue.light">Ganning Xu</chakra.span>.
         </Heading>
 
         {/* <Text fontSize="xl" fontWeight="semibold" mt="4">
@@ -68,7 +70,17 @@ export const Landing = () => {
             >
               Georgia Institute of Technology
             </Link>
-            . I fell in love with programming in 9th grade, and I love being
+            . At GT, I&apos;m part of the tech team at <Link
+              color="purple.light"
+              _hover={{ color: "purple.hover" }}
+              href="https://hexlabs.org/"
+              isExternal
+            >HexLabs</Link> and an officer for <Link
+              color="purple.light"
+              _hover={{ color: "purple.hover" }}
+              href="https://gt-webdev-website.vercel.app/"
+              isExternal
+            >Web Development Club</Link>. I fell in love with programming in 9th grade, and I love being
             able to make a difference in the lives of others through code. These
             days, I&apos;m developing{" "}
             <Link
@@ -114,7 +126,7 @@ export const Landing = () => {
             >
               swimming, biking, and running
             </Link>
-            ! Anyways, I&apos;ll let you get back to what you came here for.
+            ! I also really love airplanes and want to get my private pilot license one day. Anyways, I&apos;ll let you get back to what you came here for.
             Feel free to poke around this site, and please{" "}
             <Link
               color="purple.light"
@@ -154,7 +166,7 @@ export const Landing = () => {
               glow={false}
               image="/project-focale.png"
               alt="Picture of the Focale chrome extension popup"
-              desc="Focale is a chrome extension designed to help students time and pace their studies efficiently."
+              desc="Focale is a chrome extension designed to help students time and pace their studies efficiently. 1000+ active users."
               github="https://github.com/ganning127/focale"
               link="https://chrome.google.com/webstore/detail/focale-study-pal/khjidjdpidalladedmkjibjkklanhcnc"
               timeframe="Summer 2021"
@@ -199,8 +211,7 @@ export const Landing = () => {
           transition={{ duration: 0.7, delay: 2.1 }}
         >
           <Text mt="8" fontSize="xl" fontWeight={600}>
-            Feel free to <chakra.span color="purple.light">connect</chakra.span>{" "}
-            with me below!
+            Feel free to connect with me below!
           </Text>
 
           <Stack spacing={4} direction={{ base: "column", md: "row" }} mt="1">
@@ -210,7 +221,7 @@ export const Landing = () => {
                 fontSize="2xl"
                 _hover={{ bg: "blue.light" }}
               >
-                email
+                Email
               </Button>
             </Link>
 
@@ -220,7 +231,7 @@ export const Landing = () => {
                 fontSize="2xl"
                 _hover={{ bg: "blue.light" }}
               >
-                github
+                GitHub
               </Button>
             </Link>
 
@@ -234,9 +245,9 @@ export const Landing = () => {
                 fontSize="2xl"
                 _hover={{ bg: "blue.light" }}
               >
-                linkedin
+                LinkedIn
               </Button>
-              
+
             </Link>
 
             <Link
@@ -249,9 +260,9 @@ export const Landing = () => {
                 fontSize="2xl"
                 _hover={{ bg: "blue.light" }}
               >
-                resume
+                Resume
               </Button>
-              
+
             </Link>
           </Stack>
         </motion.div>

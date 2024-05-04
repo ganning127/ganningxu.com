@@ -1,20 +1,21 @@
-import { Box, Heading, Text, useColorMode } from '@chakra-ui/react'
-import OrganizationsList from "../../data/orgs.json"
+import { Box, Heading, Text, useColorMode } from '@chakra-ui/react';
+import OrganizationsList from "../../data/orgs.json";
 
-export const Organizations = () => {
-    const { colorMode } = useColorMode()
+export const Organizations = () =>
+{
+    const { colorMode } = useColorMode();
     const textColors = {
         light: "purple.light",
         dark: "white"
-    }
+    };
     const headingColors = {
         light: 'purple.dark',
         dark: 'purple.light'
-    }
+    };
     return (
         <Box color="white" mt="8">
             <Heading fontSize="5xl" fontWeight="bold" mt="8" color="blue.light" mb="1">
-                organizations
+                Organizations
             </Heading>
             {
                 OrganizationsList.map((organization, i) => (
@@ -38,5 +39,5 @@ export const Organizations = () => {
                 ))
             }
         </Box >
-    )
-}
+    );
+};

@@ -2,7 +2,8 @@ import { Box, SimpleGrid, Heading, Button } from "@chakra-ui/react";
 import Projects from "../../data/projects.json";
 import { ProjectCard } from "../Cards/ProjectCard";
 import { useState } from "react";
-export const ProjectsDisplay = ({ title, itemType }) => {
+export const ProjectsDisplay = ({ title, itemType }) =>
+{
   const INIT_NUM = 3;
 
   const [items, setItems] = useState(
@@ -15,12 +16,15 @@ export const ProjectsDisplay = ({ title, itemType }) => {
     (project) => project.type === itemType
   ).length;
 
-  const handleItem = () => {
-    if (items.length === INIT_NUM) {
+  const handleItem = () =>
+  {
+    if (items.length === INIT_NUM)
+    {
       setItems(
         Projects.filter((project) => project.type === itemType).reverse()
       );
-    } else {
+    } else
+    {
       setItems(
         Projects.filter((project) => project.type === itemType)
           .reverse()
@@ -61,7 +65,7 @@ export const ProjectsDisplay = ({ title, itemType }) => {
       </SimpleGrid>
       {totalNum > 3 && (
         <Button colorScheme="blue" onClick={handleItem} mt={4} mx="auto">
-          {items.length === 3 ? `show more ${title}` : `show less ${title}`}
+          {items.length === 3 ? `show more ${title.toLowerCase()}` : `show less ${title.toLowerCase()}`}
         </Button>
       )}
     </Box>
