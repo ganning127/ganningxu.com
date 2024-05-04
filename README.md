@@ -1,13 +1,6 @@
-# ganning.me
+# ganningxu.com
 
-<img width="1884" alt="Screen Shot 2022-04-06 at 12 21 49 AM" src="https://user-images.githubusercontent.com/62436772/161895149-cdaee906-4864-4560-8b04-cafee5d793b0.png">
+<img width="1773" alt="Screenshot 2024-05-04 at 6 18 58 PM" src="https://github.com/ganning127/ganning.me/assets/62436772/e39aa334-86ff-4550-aa5d-8031e8743da6">
 
 ### Technologies Used
-
-
-- React.js
-- Next.js
-- Typeit.js
-- Chakra UI
-
-Created by **Ganning in 2021**
+`React.js`, `Next.js`, `Typeit.js`, `Chakra UI`
