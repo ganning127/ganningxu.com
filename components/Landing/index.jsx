@@ -66,16 +66,16 @@ export const Landing = () =>
           transition={{ duration: 0.7, delay: 0.9 }}
         >
           <Text mt="8" fontSize="xl" fontWeight={600}>
-            I&apos;m a first year (2026 expected graduation) at the{" "}
+            I&apos;m a student at the{" "}
             <Link
               href="https://www.gatech.edu/"
               color="purple.light"
               _hover={{ color: "purple.hover" }}
               isExternal
             >
-              Georgia Institute of Technology
+              Georgia Institute of Technology {" "}
             </Link>
-            . At GT, I&apos;m part of the tech team at <Link
+            (2026 expected graduation). At GT, I&apos;m part of the tech team at <Link
               color="purple.light"
               _hover={{ color: "purple.hover" }}
               href="https://hexlabs.org/"
