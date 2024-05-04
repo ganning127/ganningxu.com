@@ -1,28 +1,33 @@
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+import
+  {
+    VerticalTimeline,
+    VerticalTimelineElement,
+  } from "react-vertical-timeline-component";
 import { MdWork, MdSchool, MdStars } from "react-icons/md";
 import { FaBaby } from "react-icons/fa";
 import "react-vertical-timeline-component/style.min.css";
 import timelineData from "../../data/timelineData";
-import {
-  Image,
-  Heading,
-  Text,
-  Stack,
-  Box,
-  Badge,
-  chakra,
-  useColorMode,
-  SimpleGrid,
-} from "@chakra-ui/react";
+import
+  {
+    Image,
+    Heading,
+    Text,
+    Stack,
+    Box,
+    Badge,
+    chakra,
+    useColorMode,
+    SimpleGrid,
+  } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
-export const TimelineComponent = () => {
+export const TimelineComponent = () =>
+{
   const [width, setWidth] = useState();
 
-  useEffect(() => {
-    function handleResize() {
+  useEffect(() =>
+  {
+    function handleResize()
+    {
       setWidth(window.innerWidth);
     }
 
@@ -30,7 +35,8 @@ export const TimelineComponent = () => {
 
     handleResize();
 
-    return () => {
+    return () =>
+    {
       window.removeEventListener("resize", handleResize);
     };
   }, [setWidth]);
@@ -64,7 +70,8 @@ export const TimelineComponent = () => {
         {timelineData
           .slice(0)
           .reverse()
-          .map((item, index) => {
+          .map((item, index) =>
+          {
             return (
               <VerticalTimelineElement
                 key={index}
@@ -113,7 +120,8 @@ export const TimelineComponent = () => {
                   direction="row-reverse"
                   p={0}
                 >
-                  {item.skills?.map((skill, index) => {
+                  {item.skills?.map((skill, index) =>
+                  {
                     return (
                       <Box key={index} p={0} m={0}>
                         <Badge colorScheme="teal">{skill}</Badge>

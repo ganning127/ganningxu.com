@@ -39,7 +39,7 @@ export default function Home()
 
       <Container maxW="container.xl" px="8">
         <Heading fontSize="5xl" as="h1" color={textColor[colorMode]}>
-          <chakra.span color="blue.light">projects</chakra.span>
+          <chakra.span color="blue.light">Projects</chakra.span>
         </Heading>
         <Text mt="2" fontSize="xl" fontWeight={600}>
           I&apos;d love to work on a project with you! Whether it be creating a
@@ -52,6 +52,7 @@ export default function Home()
           >
             {" "}
             reach out
+            {" "}
           </Link>
           :)
         </Text>

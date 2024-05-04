@@ -1,69 +1,5 @@
 [
   {
-    "headline": "Student at Panther Creek High School",
-    "type": "school",
-    "desc": "I started my freshman year of high school at Panther Creek. Some classes I took include Python Programming I and Microsoft Excel.",
-    "date": "Aug 2019",
-    "img": "https://i.imgur.com/D2FExyY.png",
-    "alt": "Panther Creek High Logo"
-  },
-  {
-    "headline": "Co-Founded Panther Creek Aviation Club",
-    "type": "school",
-    "desc": "During fall of my sophomore year, I started the Panther Creek Aviation Club, with a mission of guiding fellow students into a career in aviation.",
-    "date": "Aug 2020",
-    "img": "https://i.imgur.com/thuyGuV.png",
-    "alt": "Panther Creek High Aviation Club Logo",
-    "skills": [
-      "weebly",
-      "outreach",
-      "management"
-    ]
-  },
-  {
-    "headline": "Team Member at Chick-fil-A",
-    "type": "work",
-    "desc": " My first job during my sophomore year was at Chick-Fil-A. I made sandwiches, nuggets, fries, cookies, brownies. Additionally, I trained new team members about Chick-Fil-A's policies.",
-    "date": "Jan 2021",
-    "img": "https://i.imgur.com/V8GWIGw.png",
-    "alt": "Chick-Fil-A Logo",
-    "skills": [
-      "details",
-      "service",
-      "love"
-    ]
-  },
-  {
-    "headline": "Business Development Intern at Oppti",
-    "type": "work",
-    "desc": "My first internship! Working with Oppti has both helped my interpersonal and communication skills. I've learned both marketing and business skills during this. I used to be terrified of speaking up in meetings, and this internship has helped me work better with others, and be more outgoing!",
-    "date": "Feb 2021",
-    "img": "https://i.imgur.com/msDAnzZ.png",
-    "skills": [
-      "figma",
-      "canva",
-      "facebook ads",
-      "writing",
-      "outreach",
-      "management"
-    ],
-    "alt": "Oppti Logo"
-  },
-  {
-    "headline": "Intern at The Coding Foundation",
-    "type": "work",
-    "desc": " The Coding Foundation provided me with the opportunity to start my first Computer Science internship. I created a curriculum taught to 100+ students about the fundamentals of JavaScript.",
-    "date": "May 2021",
-    "img": "https://i.imgur.com/6w3cKWi.png",
-    "alt": "The Coding Foundation Logo",
-    "skills": [
-      "leadership",
-      "react.js",
-      "next.js",
-      "chakra-ui"
-    ]
-  },
-  {
     "headline": "Intern at UNC-CH RENCI",
     "type": "work",
     "desc": "Summer 2021 intern on University of North Carolina Renaissance Computing Institute's Helping to End Addiction Long-term Team (HEAL).",
@@ -78,29 +14,6 @@
       "twitter-api",
       "nlp"
     ]
-  },
-  {
-    "headline": "Qoom Creator",
-    "type": "work",
-    "desc": "Created MaskUp, a web app that features live mask detection, data visualizations, and Covid-19 symptom tracking.",
-    "date": "Jul 2021",
-    "img": "https://i.imgur.com/OiryFpf.png",
-    "alt": "Qoom Logo",
-    "skills": [
-      "azure",
-      "bootstrap",
-      "html",
-      "css",
-      "js"
-    ]
-  },
-  {
-    "headline": "NC School of Science and Math",
-    "type": "school",
-    "desc": "I'm a junior at NCSSM, a public residential high school. I plan on delving deeper into the world of computer science during time at this school.",
-    "date": "Aug 2021",
-    "img": "https://i.imgur.com/JijlBMx.png",
-    "alt": "NCSSM Logo"
   },
   {
     "headline": "Director of Engineering at Bit Project",
@@ -121,95 +34,6 @@
       "github actions",
       "octokit",
       "sponsorships"
-    ]
-  },
-  {
-    "headline": "Founded the NCSSM CyberUnicorns",
-    "type": "school",
-    "desc": " CyberUnicorns strives to engage the NCSSM community with cybersecurity through education, capture the flag challenges, and possible scholarships.",
-    "date": "Dec 2021",
-    "img": "https://i.imgur.com/CkxuY6J.png",
-    "alt": "CyberUnicorns Logo",
-    "skills": [
-      "cyberstart",
-      "wireshark",
-      "linux",
-      "ubuntu",
-      "netcat",
-      "binwalk",
-      "sql",
-      "encryption"
-    ]
-  },
-  {
-    "headline": "Director of Web Development",
-    "type": "work",
-    "desc": "Leading a team of 13 Web Development Interns to create a website for The Coding Foundation",
-    "date": "Jan 2022",
-    "img": "https://i.imgur.com/hci9sDT.png",
-    "alt": "The Coding Foundation Logo",
-    "skills": [
-      "leadership",
-      "react.js",
-      "next.js",
-      "chakra-ui"
-    ]
-  },
-  {
-    "headline": "Founder of Verste",
-    "type": "work",
-    "desc": "Verste is a 501(c)(3) nonprofit organization that aims to make technical education more accessible through simplified research papers.",
-    "date": "Feb 2022",
-    "img": "https://i.imgur.com/zc6OCoJ.png",
-    "alt": "Verste Logo",
-    "skills": [
-      "nonprofit",
-      "management",
-      "aws",
-      "wiki.js",
-      "outreach",
-      "grants"
-    ]
-  },
-  {
-    "headline": "Founded the NCSSM Software Development Club",
-    "type": "school",
-    "desc": "Chapter of Hack Club! We build fun and practical applications using code. So far, we've built personal websites, URL shorteners, wordle, and a neural network from scratch.",
-    "date": "Feb 2022",
-    "img": "https://i.imgur.com/JijlBMx.png",
-    "alt": "NCSSM Logo",
-    "skills": [
-      "python",
-      "js",
-      "html",
-      "css",
-      "bootstrap"
-    ]
-  },
-  {
-    "headline": "Stevens Institute of Technology Summer Research Program",
-    "type": "school",
-    "desc": "A six-week, virtual research program, where I'll be working alongside a faculty member from the School of Business and assist them in their research.",
-    "date": "June 2022",
-    "img": "https://i.imgur.com/UDa8ajh.png",
-    "alt": "Stevens Institute of Technology Logo",
-    "skills": [
-      "business",
-      "research"
-    ]
-  },
-  {
-    "headline": "Duke Summer STEM Academy",
-    "type": "school",
-    "desc": "A fully immersive summer program in which I'll be designing, prototyping, and pitching a new product.",
-    "date": "June 2022",
-    "img": "https://i.imgur.com/cKtHiSN.png",
-    "alt": "Duke Logo",
-    "skills": [
-      "engineering",
-      "programming",
-      "business",
-      "pitching"
     ]
   },
   {
@@ -254,7 +78,7 @@
   {
     "headline": "Software Developer Intern @ iRODS",
     "type": "work",
-    "desc": "Working on the Zone Management Tool (ZMT) and NFSRODS.",
+    "desc": "Utilized React.js + HTTP REST to upgrade Zone Management Tool (ZMT); Programmed 8 health checks, 2 new pages, 16 new features in ZMT; Closed 2 issues in NFSRODS",
     "date": "Jun 2023",
     "img": "/logos/irods.png",
     "alt": "iRODS Logo",
@@ -266,5 +90,14 @@
       "REST",
       "docker"
     ]
+  },
+  {
+    "headline": "Software Engineer Intern @ Fidelity Investments",
+    "type": "work",
+    "desc": "On the Fidelity Brokerage Technology team.",
+    "date": "Jun 2024",
+    "img": "/logos/fidelity.png",
+    "alt": "iRODS Logo",
+    "skills": []
   }
 ]

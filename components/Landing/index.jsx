@@ -9,6 +9,7 @@ import
   Stack,
   useColorMode,
   SimpleGrid,
+  Badge,
 } from "@chakra-ui/react";
 import TypeIt from "typeit-react";
 import { motion } from "framer-motion";
@@ -32,6 +33,10 @@ export const Landing = () =>
         <Heading fontSize="6xl" as="h1" color={textColor[colorMode]}>
           Hello, I&apos;m <chakra.span color="blue.light">Ganning Xu</chakra.span>.
         </Heading>
+
+        <Badge py={1} mr={2} mt={2} fontSize='sm' colorScheme='teal'>SWE Intern @ Fidelity Investments</Badge>
+
+        <Badge py={1} mt={2} fontSize='sm' colorScheme='purple'>Fellow @ CREATE-X</Badge>
 
         {/* <Text fontSize="xl" fontWeight="semibold" mt="4">
           <TypeIt
