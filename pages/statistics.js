@@ -57,7 +57,7 @@ export default function Statistics()
             color="blue.light"
             _hover={{ color: "blue.dark" }}
           >
-            strava
+            Strava
           </Link>{" "}
           statistics, updated in real-time.
         </Heading>
@@ -69,29 +69,34 @@ export default function Statistics()
             mt={8}
           >
             <StatsCard
-              title="Longest Bike Ride"
-              value={format(longestRide.toFixed(2)) + " miles"}
-              url="https://www.strava.com/athletes/52460422"
-              type="ride"
-            />
-            <StatsCard
-              title="Number of Bike Rides"
-              value={format(rideCount) + " times"}
-              url="https://www.strava.com/athletes/52460422"
-              type="ride"
-            />
-            <StatsCard
               title="Total Distance Biked"
               value={format(rideDistance.toFixed(2)) + " miles"}
               url="https://www.strava.com/athletes/52460422"
               type="ride"
             />
+
+            <StatsCard
+              title="Number of Bike Rides"
+              value={format(rideCount) + " rides"}
+              url="https://www.strava.com/athletes/52460422"
+              type="ride"
+            />
+
             <StatsCard
               title="Total Time Biked"
               value={format(rideSecs.toFixed(2)) + " hours"}
               url="https://www.strava.com/athletes/52460422"
               type="ride"
             />
+
+            <StatsCard
+              title="Longest Single Bike Ride"
+              value={format(longestRide.toFixed(2)) + " miles"}
+              url="https://www.strava.com/athletes/52460422"
+              type="ride"
+            />
+
+
             <StatsCard
               title="Tracked Swim Distance"
               value={format(swimDistance.toFixed(2)) + " miles"}
