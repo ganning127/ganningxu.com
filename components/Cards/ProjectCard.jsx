@@ -1,10 +1,12 @@
-import {
+import
+{
   Box,
   Text,
   useColorMode,
   Icon,
   HStack,
   Flex,
+  Badge,
   Spacer,
 } from "@chakra-ui/react";
 import { AiOutlineLink, AiOutlineGithub } from "react-icons/ai";
@@ -19,16 +21,21 @@ export const ProjectCard = ({
   isExternal,
   type,
   timeframe,
-}) => {
+}) =>
+{
   let bkgUrl = `url(${image})`;
   const { colorMode } = useColorMode();
   const titleColors = {
     light: "gray.800",
-    dark: "purple.light",
+    dark: "blue.light",
   };
   const descColors = {
     light: "gray.600",
     dark: "gray",
+  };
+  const timeColors = {
+    light: "gray.500",
+    dark: "blue.light",
   };
 
   const bgColors = {
@@ -94,9 +101,9 @@ export const ProjectCard = ({
           </Text>
 
           <Flex alignItems="center" mt={2}>
-            <Text mt={2} fontSize="md" color={descColors[colorMode]}>
+            <Badge mt={2} fontSize="md" color={timeColors[colorMode]}>
               {timeframe}
-            </Text>
+            </Badge>
             <Spacer />
             <HStack justify="center" spacing={4}>
               {github && (
@@ -117,7 +124,7 @@ export const ProjectCard = ({
                   <Icon
                     as={AiOutlineLink}
                     fontSize="2xl"
-                    color="blue.300"
+                    color="blue.light"
                     _hover={{
                       color: "blue.600",
                       fontSize: "3xl",

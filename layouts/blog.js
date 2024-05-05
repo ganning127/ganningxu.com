@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react'
-import Head from 'next/head'
-import {
+import React, { useEffect, useState } from 'react';
+import Head from 'next/head';
+import
+{
     Flex,
     Stack,
     Img,
@@ -12,58 +13,63 @@ import {
     Link,
     Heading,
     useColorMode,
-} from '@chakra-ui/react'
-import { Icon } from '@chakra-ui/react'
+} from '@chakra-ui/react';
+import { Icon } from '@chakra-ui/react';
 import { IoLogoTwitter } from "react-icons/io";
-import { useRouter } from 'next/router'
-import { NavBar } from '../components/NavBar'
-import { Footer } from '../components/Footer'
-import PageViews from '../pages/api/getBlogViews'
-import { motion } from 'framer-motion'
-import { NextSeo, ArticleJsonLd } from 'next-seo'
+import { useRouter } from 'next/router';
+import { NavBar } from '../components/NavBar';
+import { Footer } from '../components/Footer';
+import PageViews from '../pages/api/getBlogViews';
+import { motion } from 'framer-motion';
+import { NextSeo, ArticleJsonLd } from 'next-seo';
 
 const tweetUrl = (title, slug) =>
-    `https://twitter.com/intent/tweet?text=Check out this blog by Ganning Xu: ${title} - http://ganning.me/blog${slug}`
+    `https://twitter.com/intent/tweet?text=Check out this blog by Ganning Xu: ${title} - http://ganning.me/blog${slug}`;
 
-export default function BlogLayout({ children, frontMatter }) {
+export default function BlogLayout({ children, frontMatter })
+{
     const router = useRouter();
-    const slug = router.asPath.replace('/blog', '')
+    const slug = router.asPath.replace('/blog', '');
 
-    useEffect(() => {
+    useEffect(() =>
+    {
         fetch(`/api/views/${slug}`, {
             method: 'POST'
         });
     }, [slug]);
 
-    const [width, setWidth] = useState(1)
-    const handleScroll = () => {
+    const [width, setWidth] = useState(1);
+    const handleScroll = () =>
+    {
         let scrollTop = window.scrollY;
         let docHeight = document.body.offsetHeight;
         let winHeight = window.innerHeight;
         let scrollPercent = scrollTop / (docHeight - winHeight);
         let scrollPercentRounded = Math.round(scrollPercent * 100);
-        setWidth(scrollPercentRounded)
-    }
+        setWidth(scrollPercentRounded);
+    };
 
-    useEffect(() => {
+    useEffect(() =>
+    {
         window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll)
-        }
-    })
+        return () =>
+        {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    });
 
     const views = PageViews(frontMatter.slug);
-    const date = new Date(frontMatter.publishedAt).toISOString()
-    const { colorMode } = useColorMode()
+    const date = new Date(frontMatter.publishedAt).toISOString();
+    const { colorMode } = useColorMode();
     const descColors = {
         light: '#15161a',
         dark: 'white'
-    }
+    };
 
     const titleColors = {
         dark: 'blue.light',
         light: '#15161a'
-    }
+    };
 
 
 
@@ -139,7 +145,7 @@ export default function BlogLayout({ children, frontMatter }) {
                                     </Box>
                                     <Spacer />
                                     <Box>
-                                        <Text alignSelf="center" fontWeight="semibold" fontSize="xl">{views}</Text>
+                                        <Text alignSelf="center" fontWeight="semibold" fontSize="xl">{frontMatter.publishedAt}</Text>
                                     </Box>
                                 </Flex>
 
@@ -163,5 +169,5 @@ export default function BlogLayout({ children, frontMatter }) {
             </Box>
 
         </>
-    )
+    );
 }

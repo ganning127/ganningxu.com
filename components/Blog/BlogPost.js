@@ -1,4 +1,5 @@
-import {
+import
+{
     Box,
     Text,
     Heading,
@@ -7,19 +8,20 @@ import {
     Spacer,
     useColorMode,
     Img
-} from '@chakra-ui/react'
-import * as React from 'react'
-import PageViews from '../../pages/api/getBlogViews'
-export const BlogPost = ({ title, image, link, desc, isExternal, publishedAt, slug, readingTime }) => {
+} from '@chakra-ui/react';
+import * as React from 'react';
+// import PageViews from '../../pages/api/getBlogViews';
+export const BlogPost = ({ title, image, link, desc, isExternal, publishedAt, slug, readingTime }) =>
+{
     // let bkgUrl = `url(${image})`
 
-    const { colorMode } = useColorMode()
+    const { colorMode } = useColorMode();
     const headingColors = {
         light: '#15161a',
         dark: 'white'
-    }
+    };
 
-    let views = PageViews(slug);
+    // let views = PageViews(slug);
     return (
         <Box
             overflow="hidden"
@@ -35,7 +37,7 @@ export const BlogPost = ({ title, image, link, desc, isExternal, publishedAt, sl
                     <Box>
                         <Heading fontSize="3xl" color={headingColors[colorMode]} _hover={{ color: "purple.light" }}>{title}</Heading>
                         <Text color="gray.500" fontSize="md" noOfLines={1}>{desc}</Text>
-                        <Text fontWeight="semibold" color="gray.300">{views} • {publishedAt} • {readingTime.text}</Text>
+                        <Text fontWeight="semibold" color="gray.300">{publishedAt} • {readingTime.text}</Text>
                     </Box>
                     <Spacer />
                     {/* only display the image when greater than sm device size */}
@@ -52,5 +54,5 @@ export const BlogPost = ({ title, image, link, desc, isExternal, publishedAt, sl
 
         </Box>
 
-    )
-}
+    );
+};
