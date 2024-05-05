@@ -30,7 +30,7 @@ export const Landing = () =>
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, delay: 0.5 }}
       >
-        <Heading fontSize="6xl" as="h1" color={textColor[colorMode]}>
+        <Heading fontSize={{ base: "3xl", md: "6xl" }} as="h1" color={textColor[colorMode]}>
           Hello, I&apos;m <chakra.span color="blue.light">Ganning Xu</chakra.span>.
         </Heading>
 
