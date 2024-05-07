@@ -285,5 +285,15 @@
     "github": "https://github.com/kambhani/aire",
     "timeframe": "Spring 2024",
     "type": "website"
+  },
+  {
+    "title": "Airvata MFT UI",
+    "img": "/project-airavata.png",
+    "alt": "Thumbnail of the homepage of Airvata MFT UI",
+    "text": "Allows users to list storages and browse files inside each MFT storage.",
+    "link": "",
+    "github": "https://github.com/ganning127/mft-ui-nextjs",
+    "timeframe": "Spring 2024",
+    "type": "app"
   }
 ]
