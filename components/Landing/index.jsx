@@ -11,17 +11,34 @@ import
   SimpleGrid,
   Badge,
 } from "@chakra-ui/react";
-import TypeIt from "typeit-react";
 import { motion } from "framer-motion";
 import { ProjectCard } from "../Cards/ProjectCard";
+import { useEffect, useState } from "react";
 
 export const Landing = () =>
 {
+  const [age, setAge] = useState(19);
   const { colorMode } = useColorMode();
   const textColor = {
     light: "#15161a",
     dark: "white",
   };
+
+  useEffect(() =>
+  {
+    function updateAge()
+    {
+      var start = new Date('12/06/2004 01:23 PM');
+      var now = new Date();
+      var age = now.getTime() - start.getTime();
+      var year = (age / 31556926000); // seconds in a year * 1000
+      // console.log(year.toFixed(9));
+      setAge(year.toFixed(9));
+    }
+
+    var timer = setInterval(updateAge, 1);
+    // return () => clearInterval(timer);
+  }, []);
 
   return (
     <Box color={textColor[colorMode]} mt="8">
@@ -37,6 +54,7 @@ export const Landing = () =>
         <Badge py={1} mr={2} mt={2} fontSize='sm' colorScheme='teal'>SWE Intern @ Fidelity Investments</Badge>
 
         <Badge py={1} mt={2} fontSize='sm' colorScheme='purple'>Fellow @ CREATE-X</Badge>
+
 
         {/* <Text fontSize="xl" fontWeight="semibold" mt="4">
           <TypeIt
@@ -66,7 +84,7 @@ export const Landing = () =>
           transition={{ duration: 0.7, delay: 0.9 }}
         >
           <Text mt="8" fontSize="xl" fontWeight={600}>
-            I&apos;m a student at the{" "}
+            I&apos;m a student (age: {<chakra.span width='142px' textAlign='left' d='inline-block'>{age}</chakra.span>}) at the{" "}
             <Link
               href="https://www.gatech.edu/"
               color="purple.light"
