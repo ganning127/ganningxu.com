@@ -84,7 +84,7 @@ export const Landing = () =>
           transition={{ duration: 0.7, delay: 0.9 }}
         >
           <Text mt="8" fontSize="xl" fontWeight={600}>
-            I&apos;m a student (age: {<chakra.span width='142px' textAlign='left' d='inline-block'>{age}</chakra.span>}) at the{" "}
+            I&apos;m a student (age: <chakra.span width='142px' textAlign='left' d='inline-block'>{age}</chakra.span> years) at the{" "}
             <Link
               href="https://www.gatech.edu/"
               color="purple.light"
