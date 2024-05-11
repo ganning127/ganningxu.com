@@ -87,7 +87,7 @@
       "react.js",
       "java",
       "nfs",
-      "REST",
+      "rest",
       "docker"
     ]
   },
@@ -107,6 +107,10 @@
     "date": "Jun 2024",
     "img": "/logos/gsoc.png",
     "alt": "Google Summer of Code Logo",
-    "skills": []
+    "skills": [
+      "javascript",
+      "electron.js",
+      "rest"
+    ]
   }
 ]

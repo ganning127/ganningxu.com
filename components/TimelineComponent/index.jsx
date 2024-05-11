@@ -1,24 +1,24 @@
 import
-  {
-    VerticalTimeline,
-    VerticalTimelineElement,
-  } from "react-vertical-timeline-component";
+{
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
 import { MdWork, MdSchool, MdStars } from "react-icons/md";
 import { FaBaby } from "react-icons/fa";
 import "react-vertical-timeline-component/style.min.css";
 import timelineData from "../../data/timelineData";
 import
-  {
-    Image,
-    Heading,
-    Text,
-    Stack,
-    Box,
-    Badge,
-    chakra,
-    useColorMode,
-    SimpleGrid,
-  } from "@chakra-ui/react";
+{
+  Image,
+  Heading,
+  Text,
+  Stack,
+  Box,
+  Badge,
+  chakra,
+  useColorMode,
+  SimpleGrid,
+} from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 export const TimelineComponent = () =>
 {
@@ -120,7 +120,7 @@ export const TimelineComponent = () =>
                   direction="row-reverse"
                   p={0}
                 >
-                  {item.skills?.map((skill, index) =>
+                  {item.skills?.reverse().map((skill, index) =>
                   {
                     return (
                       <Box key={index} p={0} m={0}>
