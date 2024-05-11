@@ -97,7 +97,16 @@
     "desc": "On the Fidelity Brokerage Technology team.",
     "date": "Jun 2024",
     "img": "/logos/fidelity.png",
-    "alt": "iRODS Logo",
+    "alt": "Fidelity Logo",
+    "skills": []
+  },
+  {
+    "headline": "Contributor @ Google Summer of Code 2024",
+    "type": "work",
+    "desc": "On the Apache Airavata team.",
+    "date": "Jun 2024",
+    "img": "/logos/gsoc.png",
+    "alt": "Google Summer of Code Logo",
     "skills": []
   }
 ]
