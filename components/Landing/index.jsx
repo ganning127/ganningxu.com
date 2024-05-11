@@ -14,7 +14,7 @@ import
 import { motion } from "framer-motion";
 import { ProjectCard } from "../Cards/ProjectCard";
 import { useEffect, useState } from "react";
-
+import { CustomLink } from "../CustomLink";
 export const Landing = () =>
 {
   const [age, setAge] = useState(19);
@@ -53,26 +53,9 @@ export const Landing = () =>
 
         <Badge py={1} mr={2} mt={2} fontSize='sm' colorScheme='teal'>SWE Intern @ Fidelity Investments</Badge>
 
-        <Badge py={1} mt={2} fontSize='sm' colorScheme='purple'>Fellow @ CREATE-X</Badge>
+        <Badge py={1} mr={2} mt={2} fontSize='sm' colorScheme='purple'>Fellow @ CREATE-X</Badge>
 
-
-        {/* <Text fontSize="xl" fontWeight="semibold" mt="4">
-          <TypeIt
-            element={Heading}
-            options={{
-              startDelay: 2300,
-              speed: 100,
-            }}
-            getBeforeInit={(instance) => {
-              instance.type(
-                "I am the Co-Founder @ Verste, Director of Engineering @ Bit Project, Director of IT @ NCSSM SG, and SG representative in NCSSM's Web Advisory Council."
-              );
-
-              // Remember to return it!
-              return instance;
-            }}
-          />
-        </Text> */}
+        <Badge py={1} mt={2} fontSize='sm' colorScheme='yellow'>Contributor @ Google Summer of Code</Badge>
 
         <Text></Text>
       </motion.div>
@@ -85,79 +68,54 @@ export const Landing = () =>
         >
           <Text mt="8" fontSize="xl" fontWeight={600}>
             I&apos;m a student (age: <chakra.span width='142px' textAlign='left' d='inline-block'>{age}</chakra.span> years) at the{" "}
-            <Link
+            <CustomLink
               href="https://www.gatech.edu/"
-              color="purple.light"
-              _hover={{ color: "purple.hover" }}
-              isExternal
             >
               Georgia Institute of Technology {" "}
-            </Link>
-            (2026 expected graduation). At GT, I&apos;m part of the tech team at <Link
-              color="purple.light"
-              _hover={{ color: "purple.hover" }}
+            </CustomLink>
+            (2026 expected graduation). At GT, I&apos;m part of the tech team at <CustomLink
               href="https://hexlabs.org/"
-              isExternal
-            >HexLabs</Link> and an officer for <Link
-              color="purple.light"
-              _hover={{ color: "purple.hover" }}
+            >HexLabs</CustomLink> and an officer for <CustomLink
               href="https://gt-webdev-website.vercel.app/"
-              isExternal
-            >Web Development Club</Link>. I fell in love with programming in 9th grade, and I love being
+            >Web Development Club</CustomLink>. I fell in love with programming in 9th grade, and I love being
             able to make a difference in the lives of others through code. These
             days, I&apos;m developing{" "}
-            <Link
-              color="purple.light"
-              _hover={{ color: "purple.hover" }}
+            <CustomLink
               href="https://chrome.google.com/webstore/detail/focale-study-pal/khjidjdpidalladedmkjibjkklanhcnc"
-              isExternal
             >
               Chrome extensions
-            </Link>
+            </CustomLink>
             , mobile{" "}
-            <Link
+            <CustomLink
               href="https://price.house.gov/newsroom/press-releases/rep-price-announces-winner-2021-congressional-app-challenge"
-              color="purple.light"
-              _hover={{ color: "purple.hover" }}
-              isExternal
             >
               apps
-            </Link>
+            </CustomLink>
             ,{" "}
-            <Link
+            <CustomLink
               href="https://www.bitproject.org/"
-              color="purple.light"
-              _hover={{ color: "purple.hover" }}
-              isExternal
             >
               websites
-            </Link>{" "}
+            </CustomLink>{" "}
             for non-profits, and{" "}
-            <Link
+            <CustomLink
               href="https://easybag98.qoom.space/~/MaskUp/detect"
-              color="purple.light"
-              _hover={{ color: "purple.hover" }}
-              isExternal
             >
               machine learning
-            </Link>{" "}
+            </CustomLink>{" "}
             models. In my free time, I love{" "}
-            <Link
+            <CustomLink
               href="/statistics"
-              color="purple.light"
-              _hover={{ color: "purple.hover" }}
             >
               swimming, biking, and running
-            </Link>
+            </CustomLink>
             ! I also really love airplanes and want to get my private pilot license one day. Anyways, I&apos;ll let you get back to what you came here for.
             Feel free to poke around this site, and please{" "}
-            <Link
-              color="purple.light"
-              _hover={{ color: "purple.hover" }}
+            <CustomLink
               href="mailto:ganning.xu@gatech.edu"
             >
               reach out
-            </Link>{" "}
+            </CustomLink>{" "}
             if you want to talk about anything :)
           </Text>
         </motion.div>
@@ -169,13 +127,11 @@ export const Landing = () =>
         >
           <Text mt="8" fontSize="xl" fontWeight={600}>
             Some fun projects I&apos;ve built (you can find more{" "}
-            <Link
+            <CustomLink
               href="/projects"
-              color="purple.light"
-              _hover={{ color: "purple.hover" }}
             >
               here
-            </Link>
+            </CustomLink>
             ):
           </Text>
           <SimpleGrid
