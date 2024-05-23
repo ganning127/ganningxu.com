@@ -53,9 +53,9 @@ export const Landing = () =>
 
         <Badge py={1} mr={2} mt={2} fontSize='sm' colorScheme='teal'>SWE Intern @ Fidelity Investments</Badge>
 
-        <Badge py={1} mr={2} mt={2} fontSize='sm' colorScheme='purple'>Fellow @ CREATE-X</Badge>
+        {/* <Badge py={1} mr={2} mt={2} fontSize='sm' colorScheme='purple'>Fellow @ CREATE-X</Badge>
 
-        <Badge py={1} mt={2} fontSize='sm' colorScheme='yellow'>Contributor @ Google Summer of Code</Badge>
+        <Badge py={1} mt={2} fontSize='sm' colorScheme='yellow'>Contributor @ Google Summer of Code</Badge> */}
 
         <Text></Text>
       </motion.div>
