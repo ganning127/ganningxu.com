@@ -1,5 +1,4 @@
-import
-{
+import {
   Box,
   Text,
   Link,
@@ -15,8 +14,7 @@ import { motion } from "framer-motion";
 import { ProjectCard } from "../Cards/ProjectCard";
 import { useEffect, useState } from "react";
 import { CustomLink } from "../CustomLink";
-export const Landing = () =>
-{
+export const Landing = () => {
   const [age, setAge] = useState(19);
   const { colorMode } = useColorMode();
   const textColor = {
@@ -24,10 +22,8 @@ export const Landing = () =>
     dark: "white",
   };
 
-  useEffect(() =>
-  {
-    function updateAge()
-    {
+  useEffect(() => {
+    function updateAge() {
       var start = new Date('12/06/2004 01:23 PM');
       var now = new Date();
       var age = now.getTime() - start.getTime();
@@ -53,10 +49,10 @@ export const Landing = () =>
 
         <Badge py={1} mr={2} mt={2} fontSize='sm' colorScheme='teal'>SWE Intern @ Fidelity Investments</Badge>
 
-        {/* <Badge py={1} mr={2} mt={2} fontSize='sm' colorScheme='purple'>Fellow @ CREATE-X</Badge>
+        {/* <Badge py={1} mr={2} mt={2} fontSize='sm' colorScheme='purple'>Fellow @ CREATE-X</Badge>*/}
 
-        <Badge py={1} mt={2} fontSize='sm' colorScheme='yellow'>Contributor @ Google Summer of Code</Badge> */}
 
+        <Badge py={1} mt={2} fontSize='sm' colorScheme='yellow'>Contributor @ Google Summer of Code</Badge>
         <Text></Text>
       </motion.div>
 
