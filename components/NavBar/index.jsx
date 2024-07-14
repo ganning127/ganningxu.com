@@ -3,9 +3,9 @@ import * as React from 'react';
 import { NavContent } from './NavContent';
 import { motion } from "framer-motion";
 
-export const NavBar = (props) =>
-{
+export const NavBar = (props) => {
     const { colorMode } = useColorMode();
+    const [shadow, setShadow] = React.useState("");
     const textColors = {
         light: '#15161a',
         dark: 'white'
@@ -15,8 +15,28 @@ export const NavBar = (props) =>
         dark: '#15161a',
         light: 'white'
     };
+
+    React.useEffect(() => {
+        // only show navbar shadow when scrolled
+        const handleScroll = () => {
+            const currentScrollPos = window.pageYOffset;
+            const visible = currentScrollPos > 0;
+            const navbar = document.querySelector('header');
+            if (navbar) {
+                if (visible) {
+                    setShadow("dark-lg");
+                } else {
+                    setShadow("");
+                }
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
-        <Box pt="1" bg={bgColors[colorMode]} position="sticky" top="0" zIndex="100">
+        <Box pt="1" bg={bgColors[colorMode]} position="sticky" top="0" zIndex="100" shadow={shadow}>
             <motion.div
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}

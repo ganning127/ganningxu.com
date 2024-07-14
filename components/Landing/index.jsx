@@ -9,32 +9,19 @@ import {
   useColorMode,
   SimpleGrid,
   Badge,
+  Flex,
+  Avatar,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { ProjectCard } from "../Cards/ProjectCard";
 import { useEffect, useState } from "react";
 import { CustomLink } from "../CustomLink";
 export const Landing = () => {
-  const [age, setAge] = useState(19);
   const { colorMode } = useColorMode();
   const textColor = {
     light: "#15161a",
     dark: "white",
   };
-
-  useEffect(() => {
-    function updateAge() {
-      var start = new Date('12/06/2004 01:23 PM');
-      var now = new Date();
-      var age = now.getTime() - start.getTime();
-      var year = (age / 31556926000); // seconds in a year * 1000
-      // console.log(year.toFixed(9));
-      setAge(year.toFixed(9));
-    }
-
-    var timer = setInterval(updateAge, 1);
-    // return () => clearInterval(timer);
-  }, []);
 
   return (
     <Box color={textColor[colorMode]} mt="8">
@@ -43,14 +30,16 @@ export const Landing = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, delay: 0.5 }}
       >
-        <Heading fontSize={{ base: "3xl", md: "6xl" }} as="h1" color={textColor[colorMode]}>
-          Hello, I&apos;m <chakra.span color="blue.light">Ganning Xu</chakra.span>.
-        </Heading>
+        <Flex align='center' gap={4}>
+          <Avatar src="/Xu.Ganning.Headshot.jpg" name="Ganning Xu" size="lg" />
 
-        <Badge py={1} mr={2} mt={2} fontSize='sm' colorScheme='teal'>SWE Intern @ Fidelity Investments</Badge>
+          <Heading fontSize={{ base: "3xl", md: "6xl" }} as="h1" color={textColor[colorMode]}>
+            Hello, I&apos;m <chakra.span color="blue.light">Ganning Xu</chakra.span>.
+          </Heading>
 
-        {/* <Badge py={1} mr={2} mt={2} fontSize='sm' colorScheme='purple'>Fellow @ CREATE-X</Badge>*/}
+        </Flex>
 
+        <Badge py={1} mr={2} mt={2} fontSize='sm' colorScheme='green'>SWE Intern @ Fidelity Investments</Badge>
 
         <Badge py={1} mt={2} fontSize='sm' colorScheme='yellow'>Contributor @ Google Summer of Code</Badge>
         <Text></Text>
@@ -63,13 +52,19 @@ export const Landing = () => {
           transition={{ duration: 0.7, delay: 0.9 }}
         >
           <Text mt="8" fontSize="xl" fontWeight={600}>
-            I&apos;m a student (age: <chakra.span width='142px' textAlign='left' d='inline-block'>{age}</chakra.span> years) at the{" "}
+            I&apos;m a <CustomLink
+              href="https://www.tacobellfoundation.org/live-mas-scholarship/"
+            >Live Más Scholar</CustomLink> and Computer Science student at the{" "}
             <CustomLink
               href="https://www.gatech.edu/"
             >
               Georgia Institute of Technology {" "}
             </CustomLink>
-            (2026 expected graduation). At GT, I&apos;m part of the tech team at <CustomLink
+            (spring 2026 graduation). At Fidelity, I'm on the Brokerage Technology team, working on unit test coverage for an internal tool. At Google Summer of Code, I'm working with the Apache Software Foundation by developing a desktop application to transfer files to and manage files on supercomputers.
+          </Text>
+
+          <Text mt="4" fontSize="xl" fontWeight={600}>
+            At Georgia Tech, I&apos;m part of the tech team at <CustomLink
               href="https://hexlabs.org/"
             >HexLabs</CustomLink> and an officer for <CustomLink
               href="https://gt-webdev-website.vercel.app/"
