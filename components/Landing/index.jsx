@@ -60,7 +60,7 @@ export const Landing = () => {
             >
               Georgia Institute of Technology {" "}
             </CustomLink>
-            (spring 2026 graduation). At Fidelity, I'm on the Brokerage Technology team, working on unit test coverage for an internal tool. At Google Summer of Code, I'm working with the Apache Software Foundation by developing a desktop application to transfer files to and manage files on supercomputers.
+            (spring 2026 graduation). At Fidelity, I&apos;m on the Brokerage Technology team, working on unit test coverage for an internal tool. At Google Summer of Code, I&apos;m working with the Apache Software Foundation by developing a desktop application to transfer files to and manage files on supercomputers.
           </Text>
 
           <Text mt="4" fontSize="xl" fontWeight={600}>
