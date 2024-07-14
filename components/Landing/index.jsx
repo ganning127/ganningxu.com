@@ -117,71 +117,7 @@ export const Landing = () => {
           transition={{ duration: 0.7, delay: 1.3 }}
         >
           <Text mt="8" fontSize="xl" fontWeight={600}>
-            Some fun projects I&apos;ve built (you can find more{" "}
-            <CustomLink
-              href="/projects"
-            >
-              here
-            </CustomLink>
-            ):
-          </Text>
-          <SimpleGrid
-            columns={{ base: 1, md: 2, lg: 3 }}
-            spacing="60px"
-            justifyContent="center"
-            mt="4"
-          >
-            <ProjectCard
-              title="Focale"
-              glow={false}
-              image="/project-focale.png"
-              alt="Picture of the Focale chrome extension popup"
-              desc="Focale is a chrome extension designed to help students time and pace their studies efficiently. 1000+ active users."
-              github="https://github.com/ganning127/focale"
-              link="https://chrome.google.com/webstore/detail/focale-study-pal/khjidjdpidalladedmkjibjkklanhcnc"
-              timeframe="Summer 2021"
-              type="misc"
-            />
-            <ProjectCard
-              title="UNCW Wang Lab Website"
-              glow={false}
-              image="/project-wang-lab.png"
-              alt="Picture of The Wang Lab's home page"
-              desc="Designed, developed, and tested The Wang Lab's website in collaboration with another developer."
-              github="https://github.com/ganning127/uncw-wang-lab"
-              link="https://www.thewanglab.org/"
-              timeframe="Spring 2022"
-              type="website"
-            />
-            <ProjectCard
-              title="CounselorBot"
-              glow={false}
-              alt="Picture of The Wang Lab's home page"
-              image="/project-counselorbot.png"
-              desc="Helped develop the serverless version of CounselorBot, a GitHub bot that autonomously guides students through GitHub learning repositories."
-              github="https://github.com/bitprj/counselor"
-              link="https://github.com/apps/counselorbot"
-              timeframe="Summer 2021"
-              type="bot"
-            />
-          </SimpleGrid>
-        </motion.div>
-
-        <motion.div
-          initial={{ y: -20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.7, delay: 1.7 }}
-        >
-          <Text mt="8" fontSize="xl" fontWeight={600}></Text>
-        </motion.div>
-
-        <motion.div
-          initial={{ y: -20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.7, delay: 2.1 }}
-        >
-          <Text mt="8" fontSize="xl" fontWeight={600}>
-            Feel free to connect with me below!
+            Feel free to connect with me!
           </Text>
 
           <Stack spacing={4} direction={{ base: "column", md: "row" }} mt="1">
@@ -235,6 +171,62 @@ export const Landing = () => {
 
             </Link>
           </Stack>
+        </motion.div>
+
+        <motion.div
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.7, delay: 1.7 }}
+        >
+          <Text mt="8" fontSize="xl" fontWeight={600}>
+            Some fun projects I&apos;ve built (you can find more{" "}
+            <CustomLink
+              href="/projects"
+            >
+              here
+            </CustomLink>
+            ):
+          </Text>
+          <SimpleGrid
+            columns={{ base: 1, md: 2, lg: 3 }}
+            spacing="60px"
+            justifyContent="center"
+            mt="4"
+          >
+            <ProjectCard
+              title="Focale"
+              glow={false}
+              image="/project-focale.png"
+              alt="Picture of the Focale chrome extension popup"
+              desc="Focale is a chrome extension designed to help students time and pace their studies efficiently. 1000+ active users."
+              github="https://github.com/ganning127/focale"
+              link="https://chrome.google.com/webstore/detail/focale-study-pal/khjidjdpidalladedmkjibjkklanhcnc"
+              timeframe="Summer 2021"
+              type="misc"
+            />
+            <ProjectCard
+              title="UNCW Wang Lab Website"
+              glow={false}
+              image="/project-wang-lab.png"
+              alt="Picture of The Wang Lab's home page"
+              desc="Designed, developed, and tested The Wang Lab's website in collaboration with another developer."
+              github="https://github.com/ganning127/uncw-wang-lab"
+              link="https://www.thewanglab.org/"
+              timeframe="Spring 2022"
+              type="website"
+            />
+            <ProjectCard
+              title="CounselorBot"
+              glow={false}
+              alt="Picture of The Wang Lab's home page"
+              image="/project-counselorbot.png"
+              desc="Helped develop the serverless version of CounselorBot, a GitHub bot that autonomously guides students through GitHub learning repositories."
+              github="https://github.com/bitprj/counselor"
+              link="https://github.com/apps/counselorbot"
+              timeframe="Summer 2021"
+              type="bot"
+            />
+          </SimpleGrid>
         </motion.div>
       </Box>
     </Box>
