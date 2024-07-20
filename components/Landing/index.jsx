@@ -41,7 +41,7 @@ export const Landing = () => {
 
         <Badge py={1} mr={2} mt={2} fontSize='sm' colorScheme='green'>SWE Intern @ Fidelity Investments</Badge>
 
-        <Badge py={1} mt={2} fontSize='sm' colorScheme='yellow'>Contributor @ Google Summer of Code</Badge>
+        <Badge py={1} mt={2} fontSize='sm' colorScheme='yellow'>Google Summer of Code (Apache Software Foundation)</Badge>
         <Text></Text>
       </motion.div>
 
