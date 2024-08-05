@@ -1,13 +1,12 @@
-import { Box, Text, Link, SimpleGrid, Image, Heading, chakra, useColorMode } from '@chakra-ui/react'
+import { Box, Text, Link, SimpleGrid, Image, Heading, chakra, useColorMode } from '@chakra-ui/react';
 
 export const AutoGridHTML = ({ list, heading }) => {
 
-    const { colorMode } = useColorMode()
+    const { colorMode } = useColorMode();
     const textColors = {
-
         light: '#15161a',
         dark: 'white'
-    }
+    };
     return (
         <Box color={textColors[colorMode]} mt="8">
             <Heading fontSize="5xl" fontWeight="bold" color="blue.light" mt="8" mb="1">
@@ -27,7 +26,7 @@ export const AutoGridHTML = ({ list, heading }) => {
                                     </Box>
                                 </Link>
                             </Box>
-                        )
+                        );
                     else
                         return (
                             <Box key={i}>
@@ -37,10 +36,10 @@ export const AutoGridHTML = ({ list, heading }) => {
                                     {item.img && <Image d="inline" src={item.img} alt={item.title} boxSize='30px' objectFit='cover' />}
                                 </Box>
                             </Box>
-                        )
+                        );
                 }
                 )}
             </SimpleGrid>
         </Box>
-    )
-}
+    );
+};

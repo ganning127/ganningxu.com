@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
-import
-{
+import {
     Flex,
     Stack,
     Img,
@@ -19,28 +18,19 @@ import { IoLogoTwitter } from "react-icons/io";
 import { useRouter } from 'next/router';
 import { NavBar } from '../components/NavBar';
 import { Footer } from '../components/Footer';
-import PageViews from '../pages/api/getBlogViews';
 import { motion } from 'framer-motion';
 import { NextSeo, ArticleJsonLd } from 'next-seo';
 
 const tweetUrl = (title, slug) =>
     `https://twitter.com/intent/tweet?text=Check out this blog by Ganning Xu: ${title} - http://ganning.me/blog${slug}`;
 
-export default function BlogLayout({ children, frontMatter })
-{
+export default function BlogLayout({ children, frontMatter }) {
     const router = useRouter();
     const slug = router.asPath.replace('/blog', '');
 
-    useEffect(() =>
-    {
-        fetch(`/api/views/${slug}`, {
-            method: 'POST'
-        });
-    }, [slug]);
 
     const [width, setWidth] = useState(1);
-    const handleScroll = () =>
-    {
+    const handleScroll = () => {
         let scrollTop = window.scrollY;
         let docHeight = document.body.offsetHeight;
         let winHeight = window.innerHeight;
@@ -49,16 +39,13 @@ export default function BlogLayout({ children, frontMatter })
         setWidth(scrollPercentRounded);
     };
 
-    useEffect(() =>
-    {
+    useEffect(() => {
         window.addEventListener('scroll', handleScroll);
-        return () =>
-        {
+        return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     });
 
-    const views = PageViews(frontMatter.slug);
     const date = new Date(frontMatter.publishedAt).toISOString();
     const { colorMode } = useColorMode();
     const descColors = {
@@ -90,7 +77,6 @@ export default function BlogLayout({ children, frontMatter })
                         url: frontMatter.url,
                         title: `${frontMatter.title} – Ganning Xu`,
                         description: frontMatter.summary,
-                        images: [frontMatter.image]
                     }}
                 />
                 <ArticleJsonLd
@@ -98,7 +84,6 @@ export default function BlogLayout({ children, frontMatter })
                     dateModified={date}
                     datePublished={date}
                     description={frontMatter.summary}
-                    images={[frontMatter.image]}
                     publisherLogo="/favicon.ico"
                     publisherName="Ganning Xu"
                     title={frontMatter.title}
@@ -137,9 +122,12 @@ export default function BlogLayout({ children, frontMatter })
                                 maxWidth="800px"
                                 w="100%"
                             >
-                                <Heading as="h1" color={titleColors[colorMode]} fontWeight="bold" fontSize={{ base: '2xl', md: '5xl' }}>{frontMatter.title}</Heading>
-                                <Img src={frontMatter.image} borderRadius="10" my="8" />
-                                <Flex color={descColors[colorMode]}>
+                                <Heading as="h1" color={descColors[colorMode]} fontWeight="bold" fontSize={{ base: '2xl', md: '5xl' }}>{frontMatter.title}</Heading>
+                                {
+                                    frontMatter.image &&
+                                    <Img src={frontMatter.image} borderRadius="10" my="8" />
+                                }
+                                <Flex color={titleColors[colorMode]}>
                                     <Box >
                                         <Text fontWeight="semibold" fontSize="xl">{frontMatter.readingTime.text}</Text>
                                     </Box>
