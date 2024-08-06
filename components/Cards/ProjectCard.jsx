@@ -1,5 +1,4 @@
-import
-{
+import {
   Box,
   Text,
   useColorMode,
@@ -21,8 +20,7 @@ export const ProjectCard = ({
   isExternal,
   type,
   timeframe,
-}) =>
-{
+}) => {
   let bkgUrl = `url(${image})`;
   const { colorMode } = useColorMode();
   const titleColors = {
@@ -79,29 +77,28 @@ export const ProjectCard = ({
         _hover={{
           boxShadow: `0px 0px 40px 1px ${shadowColors[type][colorMode]}`,
         }}
-        pb="6"
+        pb={4}
         target={isExternal ? "_blank" : "_self"}
       >
         {image && (
           <Box
-            h="15rem"
+            h="10rem"
             bgImage={bkgUrl}
             bgPosition="center"
             bgRepeat="no-repeat"
             backgroundSize="cover"
           ></Box>
         )}
-        {!image && <Box h={1} />}
-        <Box fontWeight="semibold" mx="4" mt={image ? "6" : "2"}>
+        <Box mx="4" mt={2}>
           <Text fontSize="2xl" fontWeight="800" color={titleColors[colorMode]}>
             {title}
           </Text>
-          <Text fontSize="md" color={descColors[colorMode]}>
+          <Text color={descColors[colorMode]}>
             {desc}
           </Text>
 
           <Flex alignItems="center" mt={2}>
-            <Badge mt={2} fontSize="md" color={timeColors[colorMode]}>
+            <Badge mt={2} color={timeColors[colorMode]}>
               {timeframe}
             </Badge>
             <Spacer />

@@ -1,23 +1,11 @@
-import Head from 'next/head';
 import React, { useState } from 'react';
 import { getAllFilesFrontMatter } from '../../lib/mdx';
-import
-{
-    Container,
-    Box,
-    Heading,
-    Text,
-    InputGroup,
-    InputRightElement,
-    VStack,
-    StackDivider,
-    useColorMode,
-    chakra
+import {
+    Text, useColorMode
 } from '@chakra-ui/react';
 
 
-export function BlogMore({ posts })
-{
+export function BlogMore({ posts }) {
     const [searchValue, setSearchValue] = useState('');
     const { colorMode } = useColorMode();
     const headingColors = {
@@ -39,20 +27,16 @@ export function BlogMore({ posts })
         <>
             <Text>{posts}</Text>
 
-
-
         </>
     );
 }
 
-export async function getStaticProps()
-{
+export async function getStaticProps() {
 
     const categories = ['blog'];
     const finalPosts = [];
 
-    for (var i = 0; i < categories.length; i++)
-    {
+    for (var i = 0; i < categories.length; i++) {
         const retrievedPosts = await getAllFilesFrontMatter(categories[i]);
         finalPosts.push(...retrievedPosts);
     }

@@ -1,8 +1,6 @@
 import Head from "next/head";
 import { NavBar } from "../components/NavBar";
 import { AutoGridHTML } from "../components/AutoGridHTML";
-import { Organizations } from "../components/Organizations";
-import { Volunteering } from "../components/Volunteering";
 import SkillList from "../data/skills.json";
 import AwardsList from "../data/awards.json";
 import CourseList from "../data/courses.json";
@@ -12,9 +10,7 @@ import { Research } from "../components/Research";
 import { Footer } from "../components/Footer";
 import { Container } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-export default function Experience()
-{
-  // let aList = AwardsList.reverse();
+export default function Experience() {
   return (
     <>
       <Head>
@@ -41,8 +37,6 @@ export default function Experience()
           <AutoGridHTML list={SkillList} heading="Tools" />
           <AutoGridHTML list={CourseList} heading="Courses" />
           <Research />
-          <Organizations />
-          {/* <Volunteering /> */}
           <Footer />
         </Container>
       </motion.div>

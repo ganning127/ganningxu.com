@@ -1,10 +1,6 @@
-import { extendTheme } from "@chakra-ui/react"
+import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
-    /*
-        light = .300
-        dark = .600
-    */
     colors: {
         yellow: {
             "light": "#ffffe0",
@@ -16,8 +12,9 @@ const theme = extendTheme({
             "hover": "#d3b0ff",
         },
         blue: {
-            light: "#00DAC4",
+            light: "#02c2ae",
             dark: "#00998a",
+            hover: "#018c7e",
         },
         bkg: {
             dark: "#15161a",
@@ -26,7 +23,7 @@ const theme = extendTheme({
     },
     initalColorMode: 'dark',
     useSystemColorMode: false,
-})
+});
 
 
-export default theme
+export default theme;

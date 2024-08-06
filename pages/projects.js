@@ -2,8 +2,7 @@ import Head from "next/head";
 import { NavBar } from "../components/NavBar";
 import { ProjectsDisplay } from "../components/ProjectsDisplay";
 import { Footer } from "../components/Footer";
-import
-{
+import {
   Container,
   Heading,
   Box,
@@ -14,8 +13,7 @@ import
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
-export default function Home()
-{
+export default function Home() {
   const { colorMode } = useColorMode();
   const textColor = {
     light: "#15161a",
@@ -38,10 +36,10 @@ export default function Home()
       <NavBar active="projects" />
 
       <Container maxW="container.xl" px="8">
-        <Heading fontSize="5xl" as="h1" color={textColor[colorMode]}>
+        <Heading fontSize="4xl" as="h1" color={textColor[colorMode]}>
           <chakra.span color="blue.light">Projects</chakra.span>
         </Heading>
-        <Text mt="2" fontSize="xl" fontWeight={600}>
+        <Text mt="2" fontSize='lg'>
           I&apos;d love to work on a project with you! Whether it be creating a
           website, developing an app, or just creating something for fun, all
           you have to do is{" "}

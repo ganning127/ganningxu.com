@@ -1,13 +1,12 @@
 import { Link } from "@chakra-ui/react";
 
-export const CustomLink = ({ href, children }) =>
-{
+export const CustomLink = ({ href, children }) => {
     return (
         <Link
             href={href}
-            color="purple.light"
-            _hover={{ color: "purple.hover" }}
-            isExternal
+            color="blue.light"
+            _hover={{ color: "blue.hover" }}
+            isExternal={href.startsWith("http")}
         >
             {children}
         </Link>

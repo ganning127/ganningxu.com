@@ -24,7 +24,7 @@ export const NavBar = (props) => {
             const navbar = document.querySelector('header');
             if (navbar) {
                 if (visible) {
-                    setShadow("dark-lg");
+                    setShadow(colorMode === 'light' ? 'md' : 'dark-lg');
                 } else {
                     setShadow("");
                 }
@@ -36,7 +36,7 @@ export const NavBar = (props) => {
     }, []);
 
     return (
-        <Box pt="1" bg={bgColors[colorMode]} position="sticky" top="0" zIndex="100" shadow={shadow}>
+        <Box pt="1" bg={bgColors[colorMode]} position="sticky" top="0" zIndex="100" shadow={shadow} transition='all .2s'>
             <motion.div
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}

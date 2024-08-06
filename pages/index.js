@@ -1,8 +1,8 @@
-import Head from 'next/head'
-import { NavBar } from '../components/NavBar'
-import { Landing } from '../components/Landing'
-import { Footer } from '../components/Footer'
-import { Container } from '@chakra-ui/react'
+import Head from 'next/head';
+import { NavBar } from '../components/NavBar';
+import { Landing } from '../components/Landing';
+import { Footer } from '../components/Footer';
+import { Container } from '@chakra-ui/react';
 
 export default function Home() {
   return (
@@ -22,5 +22,5 @@ export default function Home() {
         <Footer />
       </Container>
     </>
-  )
+  );
 }

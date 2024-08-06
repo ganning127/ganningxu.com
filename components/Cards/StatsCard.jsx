@@ -1,13 +1,8 @@
 import {
   Box,
   Text,
-  useColorMode,
-  Icon,
-  HStack,
-  Flex,
-  Spacer,
+  useColorMode
 } from "@chakra-ui/react";
-import { AiOutlineLink, AiOutlineGithub } from "react-icons/ai";
 import * as React from "react";
 const shadowColors = {
   swim: {

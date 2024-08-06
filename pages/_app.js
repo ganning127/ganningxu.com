@@ -10,14 +10,12 @@ import SEO from '../next-seo.config';
 import { prismLightTheme, prismDarkTheme } from '../styles/prism';
 import MDXComponents from '../components/MDXComponents';
 
-const GlobalStyle = ({ children }) =>
-{
+const GlobalStyle = ({ children }) => {
   let { colorMode } = useColorMode();
 
   let scrollbarStyles = ``;
 
-  if (colorMode === 'dark')
-  {
+  if (colorMode === 'dark') {
     scrollbarStyles = `
       
       /* width */
@@ -64,13 +62,13 @@ const GlobalStyle = ({ children }) =>
 };
 
 
-function MyApp({ Component, pageProps })
-{
+function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
       <MDXProvider components={MDXComponents}>
         <GlobalStyle>
           <DefaultSeo {...SEO} />
+
           <Component {...pageProps} />
 
         </GlobalStyle>

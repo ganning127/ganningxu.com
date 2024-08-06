@@ -14,7 +14,6 @@ import {
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { ProjectCard } from "../Cards/ProjectCard";
-import { useEffect, useState } from "react";
 import { CustomLink } from "../CustomLink";
 export const Landing = () => {
   const { colorMode } = useColorMode();
@@ -30,18 +29,17 @@ export const Landing = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, delay: 0.5 }}
       >
-        <Flex align='center' gap={4}>
+        <Flex align='center' gap={4} mb={2}>
           <Avatar src="/Xu.Ganning.Headshot.jpg" name="Ganning Xu" size="lg" />
 
           <Heading fontSize={{ base: "3xl", md: "6xl" }} as="h1" color={textColor[colorMode]}>
             Hello, I&apos;m <chakra.span color="blue.light">Ganning Xu</chakra.span>.
           </Heading>
-
         </Flex>
 
         <Badge py={1} mr={2} mt={2} fontSize='sm' colorScheme='green'>SWE Intern @ Fidelity Investments</Badge>
 
-        <Badge py={1} mt={2} fontSize='sm' colorScheme='yellow'>Google Summer of Code (Apache Software Foundation)</Badge>
+        <Badge py={1} mt={2} fontSize='sm' colorScheme='yellow'>Google Summer of Code</Badge>
         <Text></Text>
       </motion.div>
 
@@ -51,7 +49,7 @@ export const Landing = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.9 }}
         >
-          <Text mt="8" fontSize="xl" fontWeight={600}>
+          <Text mt="8" fontSize='lg'>
             I&apos;m a <CustomLink
               href="https://www.tacobellfoundation.org/live-mas-scholarship/"
             >Live Más Scholar</CustomLink> and Computer Science student at the{" "}
@@ -63,7 +61,7 @@ export const Landing = () => {
             (spring 2026 graduation). At Fidelity, I&apos;m on the Brokerage Technology team, working on unit test coverage for an internal tool. At Google Summer of Code, I&apos;m working with the Apache Software Foundation by developing a desktop application to transfer files to and manage files on supercomputers.
           </Text>
 
-          <Text mt="4" fontSize="xl" fontWeight={600}>
+          <Text mt="4" fontSize="lg" >
             At Georgia Tech, I&apos;m part of the tech team at <CustomLink
               href="https://hexlabs.org/"
             >HexLabs</CustomLink> and an officer for <CustomLink
@@ -116,7 +114,7 @@ export const Landing = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.7, delay: 1.3 }}
         >
-          <Text mt="8" fontSize="xl" fontWeight={600}>
+          <Text mt="8" fontSize='lg'>
             Feel free to connect with me!
           </Text>
 
@@ -124,7 +122,8 @@ export const Landing = () => {
             <Link href="mailto:ganning.xu@gatech.edu" _hover={{}} isExternal>
               <Button
                 bg="blue.dark"
-                fontSize="2xl"
+                size='md'
+                px={2}
                 _hover={{ bg: "blue.light" }}
               >
                 Email
@@ -133,8 +132,8 @@ export const Landing = () => {
 
             <Link href="https://github.com/ganning127" _hover={{}} isExternal>
               <Button
+                px={2}
                 bg="blue.dark"
-                fontSize="2xl"
                 _hover={{ bg: "blue.light" }}
               >
                 GitHub
@@ -148,7 +147,7 @@ export const Landing = () => {
             >
               <Button
                 bg="blue.dark"
-                fontSize="2xl"
+                px={2}
                 _hover={{ bg: "blue.light" }}
               >
                 LinkedIn
@@ -163,7 +162,7 @@ export const Landing = () => {
             >
               <Button
                 bg="blue.dark"
-                fontSize="2xl"
+                px={2}
                 _hover={{ bg: "blue.light" }}
               >
                 Resume
@@ -178,12 +177,12 @@ export const Landing = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.7, delay: 1.7 }}
         >
-          <Text mt="8" fontSize="xl" fontWeight={600}>
-            Some fun projects I&apos;ve built (you can find more{" "}
+          <Text mt="8" fontSize="lg">
+            Some fun projects I&apos;ve built (
             <CustomLink
               href="/projects"
             >
-              here
+              more
             </CustomLink>
             ):
           </Text>
@@ -229,6 +228,6 @@ export const Landing = () => {
           </SimpleGrid>
         </motion.div>
       </Box>
-    </Box>
+    </Box >
   );
 };
