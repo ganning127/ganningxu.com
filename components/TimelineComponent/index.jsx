@@ -57,6 +57,7 @@ export const TimelineComponent = () => {
         <VerticalTimeline
           lineColor={lineColors[colorMode]}
           layout="1-column"
+          animate={width > 768}
         >
           {timelineData
             .slice(0)
