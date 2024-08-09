@@ -125,6 +125,7 @@ export const Landing = () => {
                 size='md'
                 px={2}
                 _hover={{ bg: "blue.light" }}
+                color='white'
               >
                 Email
               </Button>
@@ -135,6 +136,7 @@ export const Landing = () => {
                 px={2}
                 bg="blue.dark"
                 _hover={{ bg: "blue.light" }}
+                color='white'
               >
                 GitHub
               </Button>
@@ -149,6 +151,7 @@ export const Landing = () => {
                 bg="blue.dark"
                 px={2}
                 _hover={{ bg: "blue.light" }}
+                color='white'
               >
                 LinkedIn
               </Button>
@@ -164,6 +167,7 @@ export const Landing = () => {
                 bg="blue.dark"
                 px={2}
                 _hover={{ bg: "blue.light" }}
+                color='white'
               >
                 Resume
               </Button>

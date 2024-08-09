@@ -60,7 +60,8 @@ export const ProjectsDisplay = ({ title, itemType }) => {
         ))}
       </SimpleGrid>
       {totalNum > 3 && (
-        <Button bg='blue.dark' _hover={{ bg: 'blue.light' }} onClick={handleItem} mt={2} mx="auto">
+        <Button bg='blue.dark' color='white'
+          _hover={{ bg: 'blue.light' }} onClick={handleItem} mt={2} mx="auto">
           {items.length === 3 ? `show more ${title.toLowerCase()}` : `show less ${title.toLowerCase()}`}
         </Button>
       )}
