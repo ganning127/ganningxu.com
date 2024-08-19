@@ -37,9 +37,29 @@ export const Landing = () => {
           </Heading>
         </Flex>
 
-        <Badge py={1} mr={2} mt={2} fontSize='sm' colorScheme='green'>SWE Intern @ Fidelity Investments</Badge>
+        <Badge py={1} mr={2} mt={2} fontSize='sm' colorScheme='blue'>CS 2110 Teaching Assistant @ Georgia Tech</Badge>
 
-        <Badge py={1} mt={2} fontSize='sm' colorScheme='yellow'>Google Summer of Code</Badge>
+        <Text mt={4} fontWeight='bold'>
+          Previously:
+        </Text>
+
+        <Stack
+          spacing={2}
+          direction={{
+            base: "column", md: "row"
+          }}
+          mt={2}
+        >
+          <Box>
+            <Badge py={1} size='xs' colorScheme='green'>SWE Intern @ Fidelity Investments</Badge>
+          </Box>
+          <Box>
+            <Badge py={1} size='xs' colorScheme='yellow'>SWE Intern @ Apache Software Foundation</Badge>
+          </Box>
+          <Box>
+            <Badge py={1} size='xs' colorScheme='purple'>SWE Intern @ iRODS</Badge>
+          </Box>
+        </Stack>
         <Text></Text>
       </motion.div>
 
@@ -58,7 +78,7 @@ export const Landing = () => {
             >
               Georgia Institute of Technology {" "}
             </CustomLink>
-            (spring 2026 graduation). At Fidelity, I&apos;m on the Brokerage Technology team, working on unit test coverage for an internal tool. At Google Summer of Code, I&apos;m working with the Apache Software Foundation by developing a desktop application to transfer files to and manage files on supercomputers.
+            (spring 2026 graduation). Last summer, at Fidelity, I&apos;m on the Brokerage Technology team, working on unit test coverage for an internal tool. I also worked with the Apache Software Foundation by developing a desktop application to transfer files to and manage files on supercomputers. At iRODS, I heavily upgraded the Zone Management Tool and NFSRODS.
           </Text>
 
           <Text mt="4" fontSize="lg" >

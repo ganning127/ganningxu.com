@@ -295,5 +295,25 @@
     "github": "https://github.com/ganning127/mft-ui-nextjs",
     "timeframe": "Spring 2024",
     "type": "app"
+  },
+  {
+    "title": "GT Class Reviews",
+    "img": "/project-gtclassreviews.png",
+    "alt": "Thumbnail of the homepage of GT Class Reviews",
+    "text": "A Covid-19 tracker that provides real-time data on cases, deaths, and recoveries.",
+    "link": "https://gtclassreviews.ganningxu.com",
+    "github": "https://github.com/ganning127/gt-class-reviews",
+    "timeframe": "Summer 2024",
+    "type": "website"
+  },
+  {
+    "title": "GT Academic Calendars",
+    "img": "/project-gtacademiccalendars.png",
+    "alt": "Thumbnail of the homepage of GT Academic Calendars",
+    "text": "Visualize GT's academic calendar. On Student Government's website.",
+    "link": "https://gtacademiccalendar.ganningxu.com",
+    "github": "https://github.com/ganning127/gt-academic-calendars",
+    "timeframe": "Summer 2024",
+    "type": "website"
   }
 ]
