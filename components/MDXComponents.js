@@ -10,6 +10,7 @@ import {
   OrderedList,
   UnorderedList,
   Text,
+  Img
 } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import React from "react";
@@ -158,6 +159,14 @@ const ColoredOrderedList = (props) => {
   );
 };
 
+const CustImage = (props) => {
+  return (
+    <Box>
+      <Img {...props} my={4} rounded='md' />
+    </Box>
+  );
+};
+
 
 
 const MDXComponents = {
@@ -190,7 +199,8 @@ const MDXComponents = {
   ol: (props) => <ColoredOrderedList as="ol" pl={4}  {...props} />,
   li: (props) => <li as="li" pb={1} fontSize="md" {...props} />,
   code: (props) => <code {...props} />,
-  blockquote: Quote
+  blockquote: Quote,
+  img: CustImage,
 };
 
 export default MDXComponents;
