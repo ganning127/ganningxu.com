@@ -78,7 +78,7 @@ export const Landing = () => {
             >
               Georgia Institute of Technology {" "}
             </CustomLink>
-            (spring 2026 graduation). Last summer, at Fidelity, I&apos;m on the Brokerage Technology team, working on unit test coverage for an internal tool. I also worked with the Apache Software Foundation by developing a desktop application to transfer files to and manage files on supercomputers. At iRODS, I heavily upgraded the Zone Management Tool and NFSRODS.
+            (spring 2026 graduation). This past summer I was on the Fidelity Investments Brokerage Technology team, working on unit test coverage for an internal tool. I also worked with the Apache Software Foundation by developing a desktop application to transfer files to and manage files on supercomputers. Last summer, at iRODS, I was heavily upgraded the Zone Management Tool and NFSRODS.
           </Text>
 
           <Text mt="4" fontSize="lg" >
