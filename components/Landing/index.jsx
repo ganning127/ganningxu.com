@@ -96,7 +96,7 @@ export const Landing = () => {
             </CustomLink>
             , mobile{" "}
             <CustomLink
-              href="https://price.house.gov/newsroom/press-releases/rep-price-announces-winner-2021-congressional-app-challenge"
+              href="https://testflight.apple.com/join/7PgrTufq"
             >
               apps
             </CustomLink>
