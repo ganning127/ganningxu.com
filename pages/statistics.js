@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { NavBar } from "../components/NavBar";
-import
-{
+import {
   Container,
   SimpleGrid,
   useColorMode,
@@ -14,9 +13,9 @@ import { StatsCard } from "../components/Cards/StatsCard";
 import useSWR from "swr";
 import fetcher from "../scripts/fetcher";
 import format from "comma-number";
+import { Footer } from "../components/Footer";
 
-export default function Statistics()
-{
+export default function Statistics() {
   const { colorMode } = useColorMode();
   const textColor = {
     light: "#15161a",
@@ -115,28 +114,27 @@ export default function Statistics()
               url="https://www.strava.com/athletes/52460422"
               type="swim"
             />
+
+
           </SimpleGrid>
         ) : (
           <Spinner />
         )}
+        <Footer />
       </Container>
     </>
   );
 }
 
-const metersToMiles = (meters) =>
-{
-  if (meters)
-  {
+const metersToMiles = (meters) => {
+  if (meters) {
     return meters / 1609.344;
   }
   return 0;
 };
 
-const secsToHours = (secs) =>
-{
-  if (secs)
-  {
+const secsToHours = (secs) => {
+  if (secs) {
     return secs / 3600;
   }
   return 0;

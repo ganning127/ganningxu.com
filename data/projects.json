@@ -297,6 +297,16 @@
     "type": "app"
   },
   {
+    "title": "Cybershuttle Local Agent",
+    "img": "/project-cybershuttle.png",
+    "alt": "Thumbnail of the homepage of Cybershuttle Local Agent UI",
+    "text": "Used by 300 scientists. Submit and manage jobs running on supercomputers.",
+    "link": "",
+    "github": "https://github.com/apache/airavata/tree/master/airavata-local-agent",
+    "timeframe": "Summer 2024",
+    "type": "app"
+  },
+  {
     "title": "GT Class Reviews",
     "img": "/project-gtclassreviews.png",
     "alt": "Thumbnail of the homepage of GT Class Reviews",
@@ -310,10 +320,20 @@
     "title": "GT Academic Calendars",
     "img": "/project-gtacademiccalendars.png",
     "alt": "Thumbnail of the homepage of GT Academic Calendars",
-    "text": "Visualize GT's academic calendar. On Student Government's website.",
+    "text": "Used by 5,000 Georgia Tech students. Visualizes GT's Academic Calendar.",
     "link": "https://gtacademiccalendar.ganningxu.com",
     "github": "https://github.com/ganning127/gt-academic-calendars",
     "timeframe": "Summer 2024",
     "type": "website"
+  },
+  {
+    "title": "Bike Rack Finder",
+    "img": "/project-bikefinder.PNG",
+    "alt": "Bike Rack Finder homepage",
+    "text": "Find bicycle racks near you! In iOS beta testing.",
+    "link": "",
+    "github": "",
+    "timeframe": "Fall 2024",
+    "type": "app"
   }
 ]

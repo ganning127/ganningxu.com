@@ -94,13 +94,7 @@ export const Landing = () => {
             >
               Chrome extensions
             </CustomLink>
-            , mobile{" "}
-            <CustomLink
-              href="https://testflight.apple.com/join/7PgrTufq"
-            >
-              apps
-            </CustomLink>
-            ,{" "}
+            , mobile apps, {" "}
             <CustomLink
               href="https://www.bitproject.org/"
             >
@@ -108,7 +102,7 @@ export const Landing = () => {
             </CustomLink>{" "}
             for non-profits, and{" "}
             <CustomLink
-              href="https://easybag98.qoom.space/~/MaskUp/detect"
+              href="https://devfolio.co/projects/aire-f70b"
             >
               machine learning
             </CustomLink>{" "}
@@ -221,32 +215,32 @@ export const Landing = () => {
               glow={false}
               image="/project-focale.png"
               alt="Picture of the Focale chrome extension popup"
-              desc="Focale is a chrome extension designed to help students time and pace their studies efficiently. 1000+ active users."
+              desc="1,000 weekly users. Chrome extension to help students time and pace their studies efficiently."
               github="https://github.com/ganning127/focale"
               link="https://chrome.google.com/webstore/detail/focale-study-pal/khjidjdpidalladedmkjibjkklanhcnc"
               timeframe="Summer 2021"
               type="misc"
             />
             <ProjectCard
-              title="UNCW Wang Lab Website"
+              title="GT Academic Calendars"
               glow={false}
-              image="/project-wang-lab.png"
+              image="/project-gtacademiccalendars.png"
               alt="Picture of The Wang Lab's home page"
-              desc="Designed, developed, and tested The Wang Lab's website in collaboration with another developer."
-              github="https://github.com/ganning127/uncw-wang-lab"
-              link="https://www.thewanglab.org/"
-              timeframe="Spring 2022"
+              desc="Used by 5,000 Georgia Tech students. Visualizes GT's Academic Calendar."
+              github="https://github.com/ganning127/gt-academic-calendars"
+              link="https://gtacademiccalendar.ganningxu.com"
+              timeframe="Summer 2024"
               type="website"
             />
             <ProjectCard
-              title="CounselorBot"
+              title="Cybershuttle Local Agent"
               glow={false}
-              alt="Picture of The Wang Lab's home page"
-              image="/project-counselorbot.png"
-              desc="Helped develop the serverless version of CounselorBot, a GitHub bot that autonomously guides students through GitHub learning repositories."
-              github="https://github.com/bitprj/counselor"
-              link="https://github.com/apps/counselorbot"
-              timeframe="Summer 2021"
+              alt="Picture of Cybershuttle Local Agent UI"
+              image="/project-cybershuttle.png"
+              desc="Used by 300 computational scientists. Built for Apache Software Foundation."
+              github="https://github.com/apache/airavata/tree/master/airavata-local-agent"
+              link=""
+              timeframe="Summer 2024"
               type="bot"
             />
           </SimpleGrid>

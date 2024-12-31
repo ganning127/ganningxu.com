@@ -6,6 +6,7 @@
     "date": "Jun 2021",
     "img": "https://i.imgur.com/AGk3iVG.png",
     "alt": "UNC Logo",
+    "noShow": true,
     "skills": [
       "research",
       "python",
@@ -22,6 +23,7 @@
     "date": "Aug 2021",
     "img": "https://i.imgur.com/y7Xl4rv.png",
     "alt": "Bit Project Logo",
+    "noShow": true,
     "skills": [
       "azure",
       "cosmos-db",
@@ -43,6 +45,7 @@
     "date": "Aug 2022",
     "img": "https://i.imgur.com/JijlBMx.png",
     "alt": "NCSSM Logo",
+    "noShow": true,
     "skills": [
       "google-sites",
       "student-gov",
@@ -50,37 +53,42 @@
     ]
   },
   {
-    "headline": "Research Intern @ NC State University",
-    "type": "work",
-    "desc": "Researching identifying provocative at NC State University. We created a 7000-sentence dataset and trained 18 machine learning models on our dataset to determine the best method for provocative sentence detection.",
-    "date": "Jan 2022",
-    "img": "https://i.imgur.com/hIIVxLT.png",
-    "alt": "NC State Logo",
-    "skills": [
-      "nlp",
-      "python",
-      "machine-learning"
-    ]
-  },
-  {
-    "headline": "Intern @ NCBCE",
+    "headline": "Lead Web Developer",
+    "company": "North Carolina Department of Public Instruction",
     "type": "work",
     "desc": "Paid internship with the North Carolina Business Committee for Education's Ready Set App team. I'll be organizing the competition and mentoring teams as they build a fully functional app from scratch.",
     "date": "Nov 2022",
     "img": "https://i.imgur.com/yn98d5y.png",
     "alt": "NCBCE Logo",
     "skills": [
-      "mentor",
-      "javascript",
-      "python"
+      "react.js",
+      "next.js",
+      "chakra-ui",
+      "google sheets api"
     ]
   },
   {
-    "headline": "Software Developer Intern @ iRODS",
+    "headline": "Machine Learning Intern",
+    "company": "North Carolina State University",
+    "type": "work",
+    "desc": "Researching identifying provocative at NC State University. We created a 7000-sentence dataset and trained 18 machine learning models on our dataset to determine the best method for provocative sentence detection.",
+    "date": "Jan 2022",
+    "img": "https://media.licdn.com/dms/image/v2/C4D0BAQGaD7AuaL571Q/company-logo_100_100/company-logo_100_100/0/1645128364859/north_carolina_state_university_logo?e=1743638400&v=beta&t=jlSdR40FbY9iUqiJBMg3EiHsi3-XBR19eNM-t7-0_LE",
+    "alt": "NC State Logo",
+    "skills": [
+      "python",
+      "tensorflow",
+      "machine learning",
+      "natural language processing"
+    ]
+  },
+  {
+    "headline": "Software Developer Intern",
+    "company": "iRODS",
     "type": "work",
     "desc": "Utilized React.js + HTTP REST to upgrade Zone Management Tool (ZMT); Programmed 8 health checks, 2 new pages, 16 new features in ZMT; Closed 2 issues in NFSRODS",
     "date": "Jun 2023",
-    "img": "/logos/irods.png",
+    "img": "https://media.licdn.com/dms/image/v2/D560BAQH3FrUuv-F3Eg/company-logo_200_200/company-logo_200_200/0/1731979485753/renaissance_computing_institute_logo?e=1743638400&v=beta&t=wgmJV8E_yWspNDNL1vpYMDqjwoBWBCXDliRORdSf07w",
     "alt": "iRODS Logo",
     "skills": [
       "javascript",
@@ -92,25 +100,66 @@
     ]
   },
   {
-    "headline": "Contributor @ Google Summer of Code 2024",
+    "headline": "Software Engineering Intern",
+    "company": "Apache Software Foundation",
     "type": "work",
     "desc": "On the Apache Airavata team.",
     "date": "Jun 2024",
-    "img": "/logos/gsoc.png",
+    "img": "https://media.licdn.com/dms/image/v2/C4D0BAQHJvZ24dgZcHg/company-logo_100_100/company-logo_100_100/0/1631347221668?e=1743638400&v=beta&t=SppVaol51l5WgSMZX0z4zplIAN6zUNKLW1IJTg5TTPo",
     "alt": "Google Summer of Code Logo",
     "skills": [
       "javascript",
       "electron.js",
-      "rest"
+      "docker",
+      "rest api"
     ]
   },
   {
-    "headline": "Software Engineer Intern @ Fidelity Investments",
+    "headline": "Software Engineer Intern",
+    "company": "Fidelity Investments",
     "type": "work",
     "desc": "On the Fidelity Brokerage Technology team.",
     "date": "Jun 2024",
-    "img": "/logos/fidelity.png",
+    "img": "https://media.licdn.com/dms/image/v2/D4E0BAQF6iwa5VSk-PQ/company-logo_100_100/company-logo_100_100/0/1724950881853/fidelity_investments_logo?e=1743638400&v=beta&t=ruzeqi7y9mCoUrz_IT9B62AIUdeCoBiY2kCstjl8Wm8",
     "alt": "Fidelity Logo",
-    "skills": []
+    "skills": [
+      "java",
+      "spring boot",
+      "angular.js",
+      "junit",
+      "mockit",
+      "jest",
+      "jira",
+      "jenkins"
+    ]
+  },
+  {
+    "headline": "Undergraduate Teaching Assistant (CS 2110)",
+    "company": "Georgia Tech College of Computing",
+    "type": "work",
+    "desc": "",
+    "date": "Aug 2024",
+    "img": "https://media.licdn.com/dms/image/v2/C4E0BAQFuhLQoh5_7yA/company-logo_100_100/company-logo_100_100/0/1640110532212/georgia_institute_of_technology_logo?e=1743638400&v=beta&t=ooiO9mRumsw51lZOjqzy69pajBVzCFkyTxDdKprXOGM",
+    "alt": "Fidelity Logo",
+    "skills": [
+      "c",
+      "assembly",
+      "teaching"
+    ]
+  },
+  {
+    "headline": "Director of Technology",
+    "company": "HexLabs (hosting HackGT for 2,000 students yearly)",
+    "type": "work",
+    "desc": "",
+    "date": "Jan 2024",
+    "img": "https://media.licdn.com/dms/image/v2/C560BAQHPu6tGSfQj_w/company-logo_100_100/company-logo_100_100/0/1668275165859/thehexlabs_logo?e=1743638400&v=beta&t=Jc4UzbxbwCknRxdLvRZvui8zPCmAbQBwcDK-VfzjFXc",
+    "alt": "Fidelity Logo",
+    "skills": [
+      "javascript",
+      "express.js",
+      "node.js",
+      "mongodb"
+    ]
   }
 ]

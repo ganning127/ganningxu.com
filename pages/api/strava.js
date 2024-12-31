@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 export default async (req, res) => {
   const headers = {
     Accept: "application/json, text/plain, */*",
@@ -21,11 +22,10 @@ export default async (req, res) => {
   );
 
   const reAuthJson = await reauthorizeResponse.json();
-  // console.log(reAuthJson)
 
   const response = await fetch(
     "https://www.strava.com/api/v3/athletes/52460422/stats?access_token=" +
-      reAuthJson.access_token
+    reAuthJson.access_token
   );
 
   const json = await response.json();

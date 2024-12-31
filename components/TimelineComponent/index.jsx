@@ -16,6 +16,8 @@ import {
   chakra,
   useColorMode,
   SimpleGrid,
+  Img,
+  Code,
 } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 export const TimelineComponent = () => {
@@ -38,6 +40,11 @@ export const TimelineComponent = () => {
   const { colorMode } = useColorMode();
   const lineColors = {
     light: "#15161a",
+    dark: "#4a4a4a",
+  };
+
+  const textColors = {
+    light: "#15161a",
     dark: "white",
   };
 
@@ -53,81 +60,60 @@ export const TimelineComponent = () => {
 
   return (
     <>
-      <Box maxW='container.md' mx='auto'>
-        <VerticalTimeline
-          lineColor={lineColors[colorMode]}
-          layout="1-column"
-          animate={width > 768}
-        >
-          {timelineData
-            .slice(0)
-            .reverse()
-            .map((item, index) => {
-              return (
-                <VerticalTimelineElement
-                  key={index}
-                  className="vertical-timeline-element--work"
-                  date={item.date}
-                  contentStyle={{
-                    background: bgColors[colorMode],
-                    color: lineColors[colorMode],
-                  }}
-                  contentArrowStyle={{
-                    borderRight: "7px solid " + bgColors[colorMode],
-                  }}
-                  iconStyle={{ background: "#242323", color: "#fff" }}
-                  icon={typeIcons[item.type]}
+      <Stack maxW='container.md' mx='auto' gap={2}>
+        {timelineData
+          .slice(0)
+          .reverse()
+          .map((item, index) => {
+            if (item.noShow) return;
+            return (
+              <Box key={index} border={`1px solid ${lineColors[colorMode]}`}
+                p={2}
+                rounded="md">
+                <Box d="flex" alignItems="center" gap={4}
                 >
-                  <Box d="flex" alignItems="center">
-                    <Image
-                      d="inline"
-                      src={item.img}
-                      alt={item.alt}
-                      boxSize="60px"
-                      objectFit="cover"
-                      mr="2"
-                    />
-                    <Box alignSelf="center">
-                      <Heading
-                        fontSize="xl"
-                        fontWeight="bold"
-                        color="white"
-                        className="vertical-timeline-element-title"
-                      >
-                        <chakra.span color={lineColors[colorMode]}>
-                          {item.headline}
-                        </chakra.span>
-                      </Heading>
-                    </Box>
+                  <Img
+                    d="inline"
+                    src={item.img}
+                    alt={item.alt}
+                    maxH='70px'
+                    rounded='md'
+                  />
+                  <Box>
+                    <Text
+                      fontSize="lg"
+                      fontWeight="bold"
+                    >
+                      {item.headline}
+                    </Text>
+                    <Text
+                      color={textColors[colorMode]}
+                      fontSize='sm'
+                    >
+                      {item.company}
+                    </Text>
+                    <Stack
+                      spacing={2}
+                      mt={1}
+                      justify="flex-end"
+                      wrap="wrap"
+                      direction="row-reverse"
+                      p={0}
+                    >
+                      {item.skills?.reverse().map((skill, index) => {
+                        return (
+                          <Box key={index} p={0} m={0}>
+                            <Code colorScheme="teal" fontSize='xs'>{skill}</Code>
+                          </Box>
+                        );
+                      })}
+                    </Stack>
                   </Box>
-
-                  <Text color={lineColors[colorMode]}>{item.desc}</Text>
-
-                  <Stack
-                    mt={4}
-                    spacing={2}
-                    justify="flex-end"
-                    wrap="wrap"
-                    direction="row-reverse"
-                    p={0}
-                  >
-                    {item.skills?.reverse().map((skill, index) => {
-                      return (
-                        <Box key={index} p={0} m={0}>
-                          <Badge colorScheme="teal">{skill}</Badge>
-                        </Box>
-                      );
-                    })}
-                  </Stack>
-                </VerticalTimelineElement>
-              );
-            })}
-          <VerticalTimelineElement
-            iconStyle={{ background: "rgb(255, 157, 0)", color: "#fff" }}
-            icon={<FaBaby />}
-          />
-        </VerticalTimeline>
-      </Box>
+                </Box>
+              </Box>
+            );
+          })}
+      </Stack>
     </>
   );
 };
