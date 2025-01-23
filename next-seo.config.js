@@ -1,6 +1,6 @@
-const title = "Ganning Xu - Developer, Student, Aviation Enthusiast.";
+const title = "Ganning Xu";
 const description =
-  "Personal website for Ganning Xu, a high school senior at the North Carolina School of Science and Mathematics.";
+  "Personal website for Ganning Xu, a Computer Science student at Georgia Tech.";
 
 const SEO = {
   title,
