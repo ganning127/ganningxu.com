@@ -1,0 +1,66 @@
+[
+  {
+    "title": "JavaScript",
+    "img": "https://i.imgur.com/40snW1A.png"
+  },
+  {
+    "title": "Java",
+    "img": "https://i.imgur.com/HLlskFe.png"
+  },
+  {
+    "title": "Python",
+    "img": "https://i.imgur.com/uSPaotQ.png"
+  },
+  {
+    "title": "C",
+    "img": "https://i.imgur.com/d0JPOCB.png"
+  },
+  {
+    "title": "React.js & React Native",
+    "img": "https://i.imgur.com/dUkzeyK.png"
+  },
+  {
+    "title": "Bootstrap",
+    "img": "https://i.imgur.com/UVFNxYD.png"
+  },
+  {
+    "title": "Tailwind CSS",
+    "img": "https://i.imgur.com/R4Ekrqn.png"
+  },
+  {
+    "title": "Chakra UI",
+    "img": "https://i.imgur.com/giPWOmR.png"
+  },
+  {
+    "title": "Next.js",
+    "img": "https://i.imgur.com/K4g9hjj.png"
+  },
+  {
+    "title": "Node.js",
+    "img": "https://i.imgur.com/uRLD0C2.png"
+  },
+  {
+    "title": "Azure Functions",
+    "img": "https://i.imgur.com/tTFFD5j.png"
+  },
+  {
+    "title": "AWS Lambda",
+    "img": "https://i.imgur.com/rnxWm3x.png"
+  },
+  {
+    "title": "Hasura PostreSQL",
+    "img": "https://i.imgur.com/eUEeHC8.png"
+  },
+  {
+    "title": "SASS",
+    "img": "https://i.imgur.com/X5G1k4y.png"
+  },
+  {
+    "title": "Git & GitHub",
+    "img": "https://i.imgur.com/nIVU7kN.png"
+  },
+  {
+    "title": "Linux",
+    "img": "https://i.imgur.com/HXp47QO.png"
+  }
+]
