@@ -7,7 +7,7 @@ export const Hackathoncard = ({ hackathon }: { hackathon: Hackathon }) => {
 
   return (
     <Link href={hackathon.project}>
-      <div className="flex flex-col md:flex-rowwe gap-4 items-center border-2 border-gray-100 p-1 rounded-md hover:bg-sky-200  transition-colors">
+      <div className="flex flex-col md:flex-row gap-4 items-center border-2 border-gray-100 p-1 rounded-md hover:bg-sky-200  transition-colors">
         <div className="flex-shrink-0">
           <Image
             src={hackathon.logo}
