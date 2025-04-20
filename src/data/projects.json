@@ -1,7 +1,7 @@
 [
   {
     "title": "Covid-19 Tracker",
-    "img": "https://i.ibb.co/3L0pWqT/image.png",
+    "img": "/images/projects/project-covid19updated.jpeg",
     "text": "Texts recipients about the daily number of cases, deaths, death rate, and increase in cases from the day before.",
     "github": "https://github.com/ganning127/covid_19_tracker",
     "timeframe": "Summer 2020",
@@ -9,7 +9,7 @@
   },
   {
     "title": "Meke",
-    "img": "https://i.ibb.co/s9J99tkL/image.png",
+    "img": "/images/projects/project-meke.png",
     "alt": "Picture of Meke's addition skill being played",
     "text": "Helps students in elementary school students gamify learning math!",
     "link": "https://studio.code.org/projects/applab/WTJbCVKc7vU6SmHTJ3OWr61DrGmmQlDVEeZsF-Q453M",
@@ -19,7 +19,7 @@
   },
   {
     "title": "MaskUp",
-    "img": "https://i.ibb.co/yKkDGZs/image.png",
+    "img": "/images/projects/project-mask.png",
     "alt": "Picture of MaskUp's live detection feature.",
     "text": "Check whether you're wearing a mask. Includes data visualization & statistics.",
     "link": "https://easybag98.qoom.space/~/MaskUp",
@@ -29,7 +29,7 @@
   },
   {
     "title": "EnviroHelp",
-    "img": "https://i.ibb.co/DfyjnNrm/image.png",
+    "img": "/images/projects/project-envirohelp.png",
     "alt": "Picture of the homepage of EnviroHelp.",
     "text": "Upload an item and see if it's recyclable!",
     "github": "https://github.com/ganning127/envirohelp",
@@ -39,7 +39,7 @@
   },
   {
     "title": "Focale",
-    "img": "https://i.ibb.co/d0ZmvjBQ/image.png",
+    "img": "/images/projects/project-focale.png",
     "alt": "Picture of the Focale chrome extension popup",
     "text": "Chrome extension designed to help students time and pace their studies efficiently. 1000+ active users.",
     "github": "https://github.com/ganning127/focale",
@@ -49,7 +49,7 @@
   },
   {
     "title": "Spotion",
-    "img": "https://i.ibb.co/xtdX7Y0w/image.png",
+    "img": "/images/projects/project-spotion.png",
     "alt": "Picture of Spotion's landing page",
     "text": "Generate 50-song Spotify playlists from your selfies!",
     "link": "https://spotion.herokuapp.com/",
@@ -59,7 +59,7 @@
   },
   {
     "title": "LiveTranslate",
-    "img": "https://i.ibb.co/hFV3v5hV/image.png",
+    "img": "/images/projects/project-translate.png",
     "alt": "Picture of Live Translate's landing page",
     "text": "Translate from English into 6 different languages, in real time!",
     "github": "https://github.com/ganning127/translate-azure",
@@ -69,7 +69,7 @@
   },
   {
     "title": "AWS Lambda Workshop",
-    "img": "https://i.ibb.co/23SWVsmL/image.png",
+    "img": "/images/projects/project-aws.png",
     "alt": "Screenshot of AWS Lambda Workshop from serverless days",
     "text": "AWS workshop that was presented at the 2021 Serverless Days Student Edition conference. The workshop was designed to teach students how to use AWS Lambda.",
     "github": "https://github.com/ganning127/catti",
@@ -79,7 +79,7 @@
   },
   {
     "title": "CounselorBot",
-    "img": "https://i.ibb.co/ccp8RNsY/image.png",
+    "img": "/images/projects/project-counselorbot.png",
     "alt": "Screenshot of CounselorBot's download page",
     "text": "GitHub bot that autonomously guides students through GitHub learning repositories.",
     "github": "https://github.com/bitprj/counselor",
@@ -89,7 +89,7 @@
   },
   {
     "title": "Valence Robotics Website",
-    "img": "https://i.ibb.co/n83P2w5K/image.png",
+    "img": "/images/projects/project-valence-robotics.png",
     "alt": "Picture of Valence Robotics's landing page",
     "text": "Developed the Valence Robotics website (FRC Team #8429), a non-profit FIRST robotics team in its first year.",
     "link": "https://valencerobotics.org/",
@@ -99,27 +99,17 @@
   },
   {
     "title": "UniHeart",
-    "img": "https://i.ibb.co/hRZX5tsT/Screenshot-2025-04-19-at-1-23-19-PM.png",
+    "img": "/images/projects/project-uniheart.png",
     "alt": "Picture of UniHeart's landing page",
     "text": "Detect heart disease at home using 2 machine learning algorithms, all coded from scratch.",
     "github": "https://github.com/ganning127/UniHeart",
     "link": "https://uni-heart.vercel.app/",
     "timeframe": "Spring 2022",
-    "type": "website"
-  },
-  {
-    "title": "Bit Project Website",
-    "img": "https://i.ibb.co/DP4nRwcS/image.png",
-    "alt": "Picture of Bit Project's landing page",
-    "text": "Built the website for Bit Project, a 501(c)(3) non-profit organization that provides free mentorship programs to students.",
-    "link": "https://www.bitproject.org/",
-    "github": "https://github.com/bbitprj/bitproject_website",
-    "timeframe": "Spring 2022",
-    "type": "website"
+    "type": "web app"
   },
   {
     "title": "#IAmCS Website",
-    "img": "https://i.ibb.co/V06VNt7x/image.png",
+    "img": "/images/projects/project-iam-cs.png",
     "alt": "Picture of #IAmCS's landing page",
     "text": "Built the website for #IAmCS, NC-wide effort providing students exposure to computer science and STEM careers.",
     "link": "https://iamcs-website.vercel.app/",
@@ -129,7 +119,7 @@
   },
   {
     "title": "The Coding Foundation Website",
-    "img": "https://i.ibb.co/mCLWqx2F/image.png",
+    "img": "/images/projects/project-tcf-website.png",
     "alt": "Picture of TCF website",
     "text": "Built the website of The Coding Foundation, a non-profit organization that provides coding lessons to students.",
     "link": "https://thecodingfoundation.org/",
@@ -138,8 +128,18 @@
     "type": "website"
   },
   {
+    "title": "Bit Project Website",
+    "img": "/images/projects/project-bp-web.png",
+    "alt": "Picture of Bit Project's landing page",
+    "text": "Built the website for Bit Project, a 501(c)(3) non-profit organization that provides free mentorship programs to students.",
+    "link": "https://www.bitproject.org/",
+    "github": "https://github.com/bbitprj/bitproject_website",
+    "timeframe": "Spring 2022",
+    "type": "website"
+  },
+  {
     "title": "Durham Meals on Wheels 2021 Report Website",
-    "img": "https://i.ibb.co/pBqm1gcz/image.png",
+    "img": "/images/projects/project-meals-on-wheels.png",
     "alt": "Picture of Durham Meals on Wheels's landing page",
     "text": "Built the 2021 report website for Durham Meals on Wheels, showcasing the impact of their charity work.",
     "link": "https://code4charity-ncssm.github.io/meals-on-wheels/",
@@ -149,7 +149,7 @@
   },
   {
     "title": "University of North Carolina @ Wilmington Wang Lab Website",
-    "img": "https://i.ibb.co/Kx3MCX9Y/image.png",
+    "img": "/images/projects/project-wang-lab.png",
     "alt": "Picture of The Wang Lab's home page",
     "text": "Designed, developed, and tested The Wang Lab's website in collaboration with another developer.",
     "link": "https://www.thewanglab.org/",
@@ -159,17 +159,17 @@
   },
   {
     "title": "RiemannAI",
-    "img": "https://i.ibb.co/wNzqLF82/image.png",
+    "img": "/images/projects/project-riemannai.png",
     "alt": "Picture of RiemanAI' home page",
     "text": "Web app designed to summarize, translate, and save spoken text.",
     "link": "https://riemann-ai.vercel.app/",
     "github": "https://github.com/ganning127/riemann-ai",
     "timeframe": "Summer 2022",
-    "type": "website"
+    "type": "web app"
   },
   {
     "title": "ClimateSafe",
-    "img": "https://i.ibb.co/sv3Sdwz6/image.png",
+    "img": "/images/projects/project-climatesafe.jpg",
     "alt": "Picture of ClimateSafe mounted on a robot dog",
     "text": "Built ClimateSafe, an autonomous air-quality sensing unit that uses a Heltec ESP32 microcontroller.",
     "link": "https://climatesafe.vercel.app/",
@@ -178,8 +178,8 @@
     "type": "bot"
   },
   {
-    "title": "Tuning Your Instrument with Machine Learning",
-    "img": "https://i.ibb.co/60JMr7yy/image.png",
+    "title": "Tuning Your Musical Instrument with Machine Learning",
+    "img": "/images/projects/project-tuning.png",
     "alt": "Thumbnail of workshop slide titled \"Tuning Your Instrument with Machine Learning\"",
     "text": "Created a 45 min workshop for middle school students on how to tune their instruments using machine learning.",
     "link": "https://www.youtube.com/watch?v=8Ib7MGjTpvM",
@@ -189,7 +189,7 @@
   },
   {
     "title": "Text Summarization using Python",
-    "img": "https://i.ibb.co/whmh7SWh/image.png",
+    "img": "/images/projects/project-ts-workshop.png",
     "alt": "Thumbnail of workshop slide titled \"Text Summarization using Python\"",
     "text": "Developed and filmed a workshop for students with no prior programming experience as a gentle intro to NLP.",
     "link": "https://www.youtube.com/watch?v=OPABC5uobUY",
@@ -199,57 +199,57 @@
   },
   {
     "title": "Markdown Parser",
-    "img": "https://i.ibb.co/fd27xWdN/image.png",
+    "img": "/images/projects/project-markdown-parser.png",
     "alt": "Thumbnail of the homepage of Markdown Parser",
     "text": "Developed a markdown parser that converts markdown into HTML. Supports creating, viewing, sharing markdown files",
     "link": "https://markdown-parser-roan.vercel.app/",
     "github": "https://github.com/ganning127/markdown-parser",
     "timeframe": "Spring 2023",
-    "type": "website"
+    "type": "web app"
   },
   {
     "title": "The Internet's Journal",
-    "img": "https://i.ibb.co/KzxGfNj2/image.png",
+    "img": "/images/projects/project-tij.png",
     "alt": "Thumbnail of the homepage of The Internet's Journal",
     "text": "Developed a website that allows users to create and share journal entries with others. Posts can be shared, liked, reported, moderated, and ranked based on popularity",
     "link": "https://tij-ecru.vercel.app/",
     "github": "https://github.com/ganning127/the-internets-journal",
     "timeframe": "Spring 2023",
-    "type": "website"
+    "type": "web app"
   },
   {
     "title": "Caffeine 2.0",
-    "img": "https://i.ibb.co/xSHkGtVJ/image.png",
+    "img": "/images/projects/project-caffeine2.0.png",
     "alt": "Thumbnail of the homepage of Caffeine 2.0",
     "text": "Developed a website that prevents you from falling asleep while at your computer. Plays nasty sounds each time you blink!",
     "link": "",
     "github": "https://github.com/hyusap/caffeine2.0",
     "timeframe": "Summer 2023",
-    "type": "website"
+    "type": "web app"
   },
   {
     "title": "Calendo",
-    "img": "https://i.ibb.co/LhsHtdJ3/image.png",
+    "img": "/images/projects/project-calendo.png",
     "alt": "Thumbnail of the homepage of Calendo",
     "text": "Won Education Track @ HackGT X. Calendo is a gamified todolist built for school systems.",
     "link": "https://calendo-tau.vercel.app/",
     "github": "https://github.com/ganning127/calendo",
     "timeframe": "Fall 2023",
-    "type": "website"
+    "type": "web app"
   },
   {
     "title": "Aire",
-    "img": "https://i.ibb.co/FkDdxz6D/image.png",
+    "img": "/images/projects/project-aire.png",
     "alt": "Thumbnail of the homepage of Aire",
     "text": "Aire generates personalized resumes & cover letters based on job description.",
     "link": "https://useaire.tech/",
     "github": "https://github.com/kambhani/aire",
     "timeframe": "Spring 2024",
-    "type": "website"
+    "type": "web app"
   },
   {
     "title": "Apache Airvata MFT UI",
-    "img": "https://i.ibb.co/BH1CY5C8/image.png",
+    "img": "/images/projects/project-airavata.png",
     "alt": "Thumbnail of the homepage of Airvata MFT UI",
     "text": "Allows users to manage files between cloud and local storage.",
     "link": "",
@@ -259,7 +259,7 @@
   },
   {
     "title": "Cybershuttle Local Agent",
-    "img": "https://i.ibb.co/v5g9gN8/image.png",
+    "img": "/images/projects/project-cybershuttle.png",
     "alt": "Thumbnail of the homepage of Cybershuttle Local Agent UI",
     "text": "Used by 300 scientists to submit and manage experiments running on supercomputers.",
     "link": "https://md.cybershuttle.org/",
@@ -269,27 +269,27 @@
   },
   {
     "title": "GT Class Reviews",
-    "img": "https://i.ibb.co/mrnZ52xX/image.png",
+    "img": "/images/projects/project-gtclassreviews.png",
     "alt": "Thumbnail of the homepage of GT Class Reviews",
     "text": "Allows students to review and rate their classes at Georgia Tech.",
     "link": "https://gtclassreviews.ganningxu.com",
     "github": "https://github.com/ganning127/gt-class-reviews",
     "timeframe": "Summer 2024",
-    "type": "website"
+    "type": "web app"
   },
   {
     "title": "GT Academic Calendars",
-    "img": "https://i.ibb.co/d0VTSyYx/image.png",
+    "img": "/images/projects/project-gtacademiccalendars.png",
     "alt": "Thumbnail of the homepage of GT Academic Calendars",
     "text": "Used by 5,000 Georgia Tech students. Visualizes GT's Academic Calendar.",
     "link": "https://gtacademiccalendar.ganningxu.com",
     "github": "https://github.com/ganning127/gt-academic-calendars",
     "timeframe": "Summer 2024",
-    "type": "website"
+    "type": "web app"
   },
   {
     "title": "Bike Rack Finder",
-    "img": "https://i.ibb.co/nsRF1whQ/image.png",
+    "img": "/images/projects/project-bikefinder.PNG",
     "alt": "Bike Rack Finder homepage",
     "text": "Find bicycle racks near you! In iOS beta testing.",
     "link": "",

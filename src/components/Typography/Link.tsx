@@ -22,7 +22,7 @@ export function Link({ className, ...props }: LinkProps) {
     return (
       <a
         className={cn(
-          "text-blue-600 hover:text-blue-800 transition-colors ",
+          "text-sky-600 hover:text-sky-800 transition-colors ",
           className
         )}
         href={hrefString}
@@ -38,7 +38,7 @@ export function Link({ className, ...props }: LinkProps) {
   return (
     <NextLink
       className={cn(
-        "text-blue-600  hover:textblue-800 transition-colors ",
+        "text-sky-600  hover:sky-800 transition-colors ",
         className
       )}
       {...props}

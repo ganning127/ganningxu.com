@@ -224,13 +224,13 @@ export default function Home() {
                 title="Airplanes"
                 description="and aviation photography"
                 imgSrc="/images/airplane_atl.jpg"
-                href="/aviation"
+                href=""
               />
               <HobbyCard
                 title="Traveling"
                 description="Fun, fun, fun"
                 imgSrc="/images/china_mountains.jpg"
-                href="/travel"
+                href=""
               />
             </div>
           </section>
