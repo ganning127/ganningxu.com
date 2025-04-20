@@ -1,7 +1,7 @@
 import { RideCard } from "@/components/Cards/RideCard";
 import { Link } from "@/components/Typography/Link";
 import { Ride } from "@/interfaces/Ride";
-import { timeAgo } from "@/lib/utils";
+import { formatDistanceToNowStrict } from "date-fns";
 import {
   Carousel,
   CarouselContent,
@@ -28,8 +28,17 @@ export default async function Cycling() {
   const stats = await getStats(access_token);
   const latestActivities = await getLatestActivities(access_token);
 
-  const latestBikeRideDate = new Date(latestActivities[0].start_date);
-  const lastBikeRideAgoFormatted = timeAgo(latestBikeRideDate);
+  const lastBikeRideAgoFormatted = formatDistanceToNowStrict(
+    new Date(latestActivities[0].start_date),
+    {
+      addSuffix: true,
+    }
+  );
+
+  const time = new Date().toLocaleTimeString("en-US", {
+    timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+  });
+
   const totalDistanceBiked = metersToMiles(stats.all_ride_totals.distance);
   const totalTimeBiked = secondsToHours(stats.all_ride_totals.elapsed_time);
   const longestRideDistance = metersToMiles(stats.biggest_ride_distance);
@@ -47,17 +56,20 @@ export default async function Cycling() {
           >
             Strava profile
           </Link>{" "}
-          (last updated {new Date().toLocaleTimeString()})
+          (last updated {time})
         </p>
         <h1 className="text-3xl md:text-5xl mt-4">Cycling</h1>
         <p className="text-gray-500 mt-4">
-          Since I got my Trek Émonda road bike in 2019, the rest is history :)
+          Since I got my Trek Émonda road bike in 2019, it has become my main
+          form of transportation. I bike around campus to classes, to Publix to
+          get groceries, to Chipotle for my favorite burrito, and pretty much
+          everywhere else I go!
         </p>
       </div>
 
-      <section>
+      <section className="hidden md:block">
         <Carousel>
-          <CarouselContent>
+          <CarouselContent className="px-12">
             <CarouselItem className="basis-1/3">
               <video
                 className="rounded-md h-72 mx-auto"
@@ -76,24 +88,19 @@ export default async function Cycling() {
                     src={image}
                     alt="Trek Émonda"
                     fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="rounded-md object-cover object-bottom"
                   />
                 </div>
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="cursor-pointer" />
-          <CarouselNext className="cursor-pointer" />
+          <CarouselPrevious className="ml-12 cursor-pointer" />
+          <CarouselNext className="mr-12 cursor-pointer" />
         </Carousel>
       </section>
 
       <section className="grid grid-row grid-cols-2 md:grid-cols-4 gap-2">
-        <StatsBox
-          title="Last Bike Ride"
-          value={lastBikeRideAgoFormatted}
-          subtext={`on ${latestBikeRideDate.toLocaleString()}`}
-        />
+        <StatsBox title="Last Bike Ride" value={lastBikeRideAgoFormatted} />
         <StatsBox title="Total Time Biked" value={totalTimeBiked} />
 
         <StatsBox
@@ -134,7 +141,7 @@ const StatsBox = ({
   return (
     <div className="flex flex-col text-center justify-center border-2 border-gray-100 p-2 rounded-md hover:shadow-md transition-shadow">
       <h2 className="text-md text-gray-500">{title}</h2>
-      <p className="text-3xl font-bold">{value}</p>
+      <p className="text-xl md:text-3xl font-bold">{value}</p>
       {subtext && <p className="text-sm text-gray-500 mt-1">{subtext}</p>}
     </div>
   );
@@ -210,7 +217,7 @@ function metersToMiles(meters: number) {
 }
 
 function secondsToHours(seconds: number): string {
-  return (seconds / 3600).toFixed(1) + " h"; // 3600 seconds in an hour
+  return (seconds / 3600).toFixed(1) + " hours"; // 3600 seconds in an hour
 }
 
 function milesToTimesAcrossUSA(miles: number): number {

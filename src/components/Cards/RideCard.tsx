@@ -7,7 +7,7 @@ import polyline from "@mapbox/polyline";
 
 import { Ride } from "@/interfaces/Ride";
 import { useEffect, useState } from "react";
-import { timeAgo } from "@/lib/utils";
+import { formatDistanceToNowStrict } from "date-fns";
 
 export const RideCard = ({ ride }: { ride: Ride }) => {
   const [isClient, setIsClient] = useState(false);
@@ -20,13 +20,14 @@ export const RideCard = ({ ride }: { ride: Ride }) => {
 
   const decoded = polyline.decode(ride.map.summary_polyline);
 
-  console.log(decoded);
   return (
     <div className="border-2 border-gray-100 p-3 rounded-md ">
       <div className="flex flex-row justify-between mb-4">
         <h2 className="text-xl font-bold">{ride.name}</h2>
         <p className="text-gray-500 text-sm">
-          {timeAgo(new Date(ride.start_date_local))}
+          {formatDistanceToNowStrict(new Date(ride.start_date), {
+            addSuffix: true,
+          })}
         </p>
       </div>
 
