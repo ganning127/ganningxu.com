@@ -1,5 +1,4 @@
 import { RideCard } from "@/components/Cards/RideCard";
-import { Link } from "@/components/Typography/Link";
 import { Ride } from "@/interfaces/Ride";
 import { formatDistanceToNowStrict } from "date-fns";
 import {
@@ -11,6 +10,7 @@ import {
 } from "@/components/ui/carousel";
 import { Heading } from "@/components/Typography/Heading";
 import Image from "next/image";
+import { LastUpdatedAt } from "@/components/Cards/LastUpdatedAt";
 
 const images = [
   "/images/bike-bridge.jpg",
@@ -35,10 +35,6 @@ export default async function Cycling() {
     }
   );
 
-  const time = new Date().toLocaleTimeString("en-US", {
-    timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
-  });
-
   const totalDistanceBiked = metersToMiles(stats.all_ride_totals.distance);
   const totalTimeBiked = secondsToHours(stats.all_ride_totals.elapsed_time);
   const longestRideDistance = metersToMiles(stats.biggest_ride_distance);
@@ -46,18 +42,7 @@ export default async function Cycling() {
   return (
     <div className="flex flex-col gap-8">
       <div>
-        <p className="text-green-500 font-semibold px-2 bg-green-100 inline-block rounded-md">
-          <span className="animate-pulse">●</span>
-          {"   "}
-          Live data from my{" "}
-          <Link
-            href="https://www.strava.com/athletes/52460422"
-            className="underline text-green-500"
-          >
-            Strava profile
-          </Link>{" "}
-          (last updated {time})
-        </p>
+        <LastUpdatedAt />
         <h1 className="text-3xl md:text-5xl mt-4">Cycling</h1>
         <p className="text-gray-500 mt-4">
           Since I got my Trek Émonda road bike in 2019, it has become my main
