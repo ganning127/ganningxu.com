@@ -12,7 +12,7 @@ export const NavBar = () => {
   };
 
   return (
-    <nav className="flex flex-row items-center justify-between mb-8">
+    <nav className="flex flex-row items-center justify-end mb-8">
       <div className="flex flex-row gap-2">
         {NAV_CONTENTS.map((navContent) => (
           <Link
@@ -26,9 +26,6 @@ export const NavBar = () => {
             {navContent.title}
           </Link>
         ))}
-      </div>
-      <div className="flex flex-row gap-4">
-        <Link href="/resume">Resume</Link>
       </div>
     </nav>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectsJson from "@/data/projects.json";
+import ProjectCategoryDescs from "@/data/project-category-desc.json";
 import { Heading } from "@/components/Typography/Heading";
 import { Project } from "@/interfaces/Project";
 import { ProjectSection } from "@/components/Sections/ProjectSection";
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 export default function Projects() {
-  const projectOrdering = ["website", "app", "bot"];
+  const projectOrdering = ["web app", "website", "app", "bot"];
   const typeToProjects: { [key: string]: Project[] } = {};
   for (const project of ProjectsJson) {
     if (!typeToProjects[project.type]) {
@@ -33,6 +34,9 @@ export default function Projects() {
           <ProjectSection
             type={type}
             projects={typeToProjects[type]}
+            desc={
+              ProjectCategoryDescs[type as keyof typeof ProjectCategoryDescs]
+            }
             key={type}
           />
         ))}

@@ -16,7 +16,6 @@ import { Metadata } from "next";
 const images = [
   "/images/bike-bridge.jpg",
   "/images/bike-city.jpg",
-  "/images/bike-cm.jpg",
   "/images/bike-tilted.jpg",
   "/images/bike-train.jpg",
 ];
