@@ -40,4 +40,8 @@ const NAV_CONTENTS = [
     title: "Projects",
     href: "/projects",
   },
+  {
+    title: "Cycling",
+    href: "/cycling",
+  },
 ];
