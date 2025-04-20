@@ -3,6 +3,11 @@ import ProjectsJson from "@/data/projects.json";
 import { Heading } from "@/components/Typography/Heading";
 import { Project } from "@/interfaces/Project";
 import { ProjectSection } from "@/components/Sections/ProjectSection";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects",
+};
 
 export default function Projects() {
   const projectOrdering = ["website", "app", "bot"];

@@ -11,6 +11,7 @@ import {
 import { Heading } from "@/components/Typography/Heading";
 import Image from "next/image";
 import { LastUpdatedAt } from "@/components/Cards/LastUpdatedAt";
+import { Metadata } from "next";
 
 const images = [
   "/images/bike-bridge.jpg",
@@ -19,6 +20,11 @@ const images = [
   "/images/bike-tilted.jpg",
   "/images/bike-train.jpg",
 ];
+
+export const metadata: Metadata = {
+  title: "Cycling",
+};
+
 export default async function Cycling() {
   const access_token = await getBearerToken();
   if (!access_token) {
