@@ -1,0 +1,58 @@
+[
+  {
+    "hackathon": "HackGT X",
+    "timeframe": "Oct 2023",
+    "place": "1st - Education Track",
+    "logo": "https://i.ibb.co/Xr1J4QH8/image.png",
+    "project": "https://devpost.com/software/calendo"
+  },
+  {
+    "hackathon": "Samsung Solve for Tomorrow",
+    "timeframe": "Mar 2023",
+    "place": "State Winners",
+    "logo": "https://i.ibb.co/JWX0dtkw/Untitled-design-2025-04-19-T163741-841.png",
+    "project": "https://image-us.samsung.com/SamsungUS/home/pdf/2022-2023-Samsung-Solve-for-Tomorrow-State-FinalistsFINALRD1.pdf"
+  },
+  {
+    "hackathon": "LingHacks IV",
+    "timeframe": "Jun 2022",
+    "place": "2nd Overall",
+    "logo": "https://i.ibb.co/fdb2xmcB/image.png",
+    "project": "https://devpost.com/software/riemannai"
+  },
+  {
+    "hackathon": "NC State University Datathon",
+    "timeframe": "Jun 2022",
+    "place": "2nd Overall",
+    "logo": "https://i.ibb.co/vCpvjqgg/Untitled-design-2025-04-19-T165446-666.png",
+    "project": ""
+  },
+  {
+    "hackathon": "Ready, Set, App!",
+    "timeframe": "Apr 2022",
+    "place": "2nd Overall",
+    "logo": "https://i.ibb.co/mrKdZ3Y0/image.png",
+    "project": ""
+  },
+  {
+    "hackathon": "UniHacks",
+    "timeframe": "Feb 2022",
+    "place": "1st - Sustainability Track",
+    "logo": "https://i.ibb.co/4wkxkBwS/Untitled-design-2025-04-19-T163256-468.png",
+    "project": "https://devpost.com/software/uniheart"
+  },
+  {
+    "hackathon": "Hack The Cloud 2.0",
+    "timeframe": "Jul 2021",
+    "place": "9th Overall",
+    "logo": "https://i.ibb.co/8gkqgbpL/Untitled-design-2025-04-19-T164032-941.png",
+    "project": "https://devpost.com/software/spotion"
+  },
+  {
+    "hackathon": "Congressional App Challenge",
+    "timeframe": "Apr 2021",
+    "place": "1st Overall",
+    "logo": "https://i.ibb.co/cKGXNHCv/Untitled-design-2025-04-19-T164251-986.png",
+    "project": ""
+  }
+]
