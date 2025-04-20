@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ganningxu.com
+
+# Sitemaps
+Sitemap: https://ganningxu.com/sitemap.xml
