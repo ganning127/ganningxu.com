@@ -5,6 +5,14 @@ module.exports = {
   siteUrl: 'https://ganningxu.com',
   generateRobotsTxt: true,
   generateIndexSitemap: false,
+  additionalPaths: async () => [
+    {
+      loc: '/cycling',
+      lastmod: new Date().toISOString(),
+      priority: 0.7,
+      changefreq: 'always'
+    },
+  ],
 
   transform: async (config, path) => {
     // Customize priority per route
@@ -14,8 +22,6 @@ module.exports = {
       priority = 1.0;
     } else if (path.startsWith('/projects')) {
       priority = 0.9;
-    } else if (path.startsWith('/cycling')) {
-      priority = 0.7;
     }
 
     return {
