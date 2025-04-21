@@ -20,6 +20,8 @@ export const RideCard = ({ ride }: { ride: Ride }) => {
 
   const decoded = polyline.decode(ride.map.summary_polyline);
 
+  console.log("on card...", ride.start_date);
+
   return (
     <div className="border-2 border-gray-100 p-3 rounded-md ">
       <div className="flex flex-row justify-between mb-4">
