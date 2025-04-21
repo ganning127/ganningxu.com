@@ -35,7 +35,6 @@ export default async function Cycling() {
 
   const stats = await getStats(access_token);
   const latestActivities = await getLatestActivities(access_token);
-  console.log("on stats...", latestActivities[0].start_date);
   const lastBikeRideAgoFormatted = formatDistanceToNowStrict(
     new Date(latestActivities[0].start_date),
     {
