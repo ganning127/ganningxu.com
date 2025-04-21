@@ -37,7 +37,7 @@ export const RideCard = ({ ride }: { ride: Ride }) => {
           value={`${(ride.distance / 1609.34).toFixed(1)} miles`}
         />
         <KeyValuePair
-          title="Moving Time"
+          title="Time"
           value={`${Math.floor(ride.moving_time / 60)} minutes`}
         />
         <KeyValuePair

@@ -8,6 +8,9 @@ export const LastUpdatedAt = () => {
   useEffect(() => {
     const localTime = new Date().toLocaleTimeString("en-US", {
       timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+      hour: "numeric",
+      minute: "2-digit",
+      hour12: true,
     });
     setTime(localTime);
   }, []);

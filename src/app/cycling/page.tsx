@@ -12,6 +12,7 @@ import { Heading } from "@/components/Typography/Heading";
 import Image from "next/image";
 import { LastUpdatedAt } from "@/components/Cards/LastUpdatedAt";
 import { Metadata } from "next";
+import { formatStravaLocalDate } from "@/lib/utils";
 
 const images = [
   "/images/bike-bridge.jpg",
@@ -90,7 +91,17 @@ export default async function Cycling() {
       </section>
 
       <section className="grid grid-row grid-cols-2 md:grid-cols-4 gap-2">
-        <StatsBox title="Last Bike Ride" value={lastBikeRideAgoFormatted} />
+        <StatsBox
+          title="Last Bike Ride"
+          value={lastBikeRideAgoFormatted}
+          subtext={
+            <>
+              at {formatStravaLocalDate(latestActivities[0].start_date_local)}
+              <br />
+              (my local time)
+            </>
+          }
+        />
         <StatsBox title="Total Time Biked" value={totalTimeBiked} />
 
         <StatsBox
@@ -126,7 +137,7 @@ const StatsBox = ({
 }: {
   title: string;
   value: string;
-  subtext?: string;
+  subtext?: string | React.ReactNode;
 }) => {
   return (
     <div className="flex flex-col text-center justify-center border-2 border-gray-100 p-2 rounded-md hover:shadow-md transition-shadow">
