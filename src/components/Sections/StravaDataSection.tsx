@@ -31,7 +31,7 @@ export const StravaDataSection = async () => {
           value={lastBikeRideAgoFormatted}
           subtext={
             <>
-              at {formatStravaLocalDate(latestActivities[0].start_date_local)}
+              on {formatStravaLocalDate(latestActivities[0].start_date_local)}
               <br />
               (my local time)
             </>
@@ -54,7 +54,7 @@ export const StravaDataSection = async () => {
       </section>
 
       <section>
-        <Heading.H2>Latest Rides</Heading.H2>
+        <Heading.H2>Latest 10 Rides</Heading.H2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
           {latestActivities.map((ride: Ride) => {
             return <RideCard ride={ride} key={ride.id} />;

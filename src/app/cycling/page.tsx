@@ -22,8 +22,12 @@ const images = [
 
 export const dynamic = "force-dynamic"; // needs to be dynamic to get latest activities
 
+const siteDesc =
+  "Since I got my Trek Émonda road bike in 2019, it has become my main form of transportation. I bike around campus to classes, to Publix to get groceries, to Chipotle for my favorite burrito, and pretty much everywhere else I go!";
+
 export const metadata: Metadata = {
   title: "Cycling",
+  description: siteDesc,
 };
 
 export default async function Cycling() {
@@ -32,12 +36,7 @@ export default async function Cycling() {
       <div>
         <LastUpdatedAt />
         <h1 className="text-3xl md:text-5xl mt-4">Cycling</h1>
-        <p className="text-gray-500 mt-4">
-          Since I got my Trek Émonda road bike in 2019, it has become my main
-          form of transportation. I bike around campus to classes, to Publix to
-          get groceries, to Chipotle for my favorite burrito, and pretty much
-          everywhere else I go!
-        </p>
+        <p className="text-gray-500 mt-4">{siteDesc}</p>
       </div>
 
       <section className="hidden md:block">

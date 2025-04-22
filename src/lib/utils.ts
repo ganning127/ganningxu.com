@@ -20,7 +20,7 @@ export function formatStravaLocalDate(date: string) {
   hour = hour % 12;
   if (hour === 0) hour = 12;
 
-  return `${monthName} ${day}, ${year} at ${hour}:${minute.toString().padStart(2, "0")} ${period}`;
+  return `${monthName.slice(0, 3)} ${day}, ${year}, ${hour}:${minute.toString().padStart(2, "0")} ${period}`;
 }
 
 function monthToString(month: number): string {

@@ -296,5 +296,15 @@
     "github": "",
     "timeframe": "Fall 2024",
     "type": "app"
+  },
+  {
+    "title": "Airavata Research Service",
+    "img": "/images/projects/project-airavata-catalog.png",
+    "alt": "Airavata Research Catalog homepage",
+    "text": "Funded by NSF research grant. Allows scientists to bundle jupyter notebooks + datasets on HPCs.",
+    "link": "https://cybershuttle.org/",
+    "github": "https://github.com/apache/airavata/tree/cybershuttle-staging/modules/research-framework",
+    "timeframe": "Spring 2025",
+    "type": "web app"
   }
 ]
