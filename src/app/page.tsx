@@ -230,7 +230,7 @@ export default function Home() {
                 title="Traveling"
                 description="Fun, fun, fun"
                 imgSrc="/images/china_mountains.jpg"
-                href=""
+                href="/traveling"
               />
             </div>
           </section>

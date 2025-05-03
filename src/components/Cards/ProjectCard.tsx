@@ -16,7 +16,7 @@ export function ProjectCard({ project }: { project: Project }) {
       <div className="border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition-shadow">
         <Dialog open={open} onOpenChange={setOpen}>
           <DialogTrigger asChild>
-            <div className="h-58 relative cursor-pointer rounded-t-lg overflow-hidden">
+            <div className="h-32 md:h-58 relative cursor-pointer rounded-t-lg overflow-hidden">
               <Image
                 src={project.img}
                 alt={project.alt || project.title}

@@ -116,7 +116,30 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .slide-down-enter {
+    @apply opacity-0 max-h-0 overflow-hidden transition-all duration-300 ease-in-out;
+  }
+
+  .slide-down-enter-active {
+    @apply opacity-100 max-h-96 overflow-hidden;
+  }
+
+  .slide-down-exit {
+    @apply opacity-100 max-h-96 overflow-hidden transition-all duration-300 ease-in-out;
+  }
+
+  .slide-down-exit-active {
+    @apply opacity-0 max-h-0 overflow-hidden;
   }
 }

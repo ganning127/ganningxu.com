@@ -1,0 +1,172 @@
+[
+  {
+    "name": "North Carolina",
+    "lat": 35.782169,
+    "lng": -80.793457,
+    "dates": [
+      "My home state!"
+    ]
+  },
+  {
+    "name": "Georgia",
+    "lat": 33.7490,
+    "lng": -84.3880,
+    "dates": [
+      "Georgia Tech, my school"
+    ]
+  },
+  {
+    "name": "Anchorage, AK",
+    "lat": 61.2176,
+    "lng": -149.8651,
+    "dates": [
+      "2023"
+    ]
+  },
+  {
+    "name": "Quzhou, Zhejiang",
+    "lat": 29.0710,
+    "lng": 118.8782,
+    "dates": [
+      "2024",
+      "2025"
+    ]
+  },
+  {
+    "name": "Beijing, China",
+    "lat": 39.9042,
+    "lng": 116.4074,
+    "dates": [
+      "2024"
+    ]
+  },
+  {
+    "name": "Hangzhou, China",
+    "lat": 30.2741,
+    "lng": 120.1551,
+    "dates": [
+      "2018"
+    ]
+  },
+  {
+    "name": "Shanghai, China",
+    "lat": 31.2304,
+    "lng": 121.4737,
+    "dates": [
+      "2024",
+      "2025"
+    ]
+  },
+  {
+    "name": "Nanjing, Jiangsu",
+    "lat": 32.0603,
+    "lng": 118.7969,
+    "dates": [
+      "2014",
+      "2015"
+    ]
+  },
+  {
+    "name": "Nanchang, Jiangxi",
+    "lat": 28.6820,
+    "lng": 115.8579,
+    "dates": [
+      "2014",
+      "2015",
+      "2024",
+      "2025"
+    ]
+  },
+  {
+    "name": "Singapore",
+    "lat": 1.3521,
+    "lng": 103.8198,
+    "dates": [
+      "Birthplace",
+      "2014"
+    ]
+  },
+  {
+    "name": "San Diego, CA",
+    "lat": 32.7157,
+    "lng": -117.1611,
+    "dates": [
+      "Summer of Connection 2023",
+      "Summer of Connection 2024",
+      "Summer of Connection 2025"
+    ]
+  },
+  {
+    "name": "San Francisco, CA",
+    "lat": 37.7749,
+    "lng": -122.4194,
+    "dates": [
+      "Assemble Hackathon 2023",
+      "Wealthfront Internship 2025"
+    ]
+  },
+  {
+    "name": "Vermont",
+    "lat": 44.5582,
+    "lng": -72.5778,
+    "dates": [
+      "Outernet 2023"
+    ]
+  },
+  {
+    "name": "New York, NY",
+    "lat": 40.7128,
+    "lng": -74.0060,
+    "dates": [
+      "2014"
+    ]
+  },
+  {
+    "name": "Washington, DC",
+    "lat": 38.9072,
+    "lng": -77.0369,
+    "dates": [
+      "Coolidge Senator Conference 2022"
+    ]
+  },
+  {
+    "name": "Honolulu, HI",
+    "lat": 21.3069,
+    "lng": -157.8583,
+    "dates": [
+      "2019"
+    ]
+  },
+  {
+    "name": "Florida",
+    "lat": 27.9949,
+    "lng": -81.7603,
+    "dates": [
+      "2012"
+    ]
+  },
+  {
+    "name": "Chicago, IL",
+    "lat": 41.8781,
+    "lng": -87.6298,
+    "dates": [
+      "2023"
+    ]
+  },
+  {
+    "name": "West Virginia",
+    "lat": 38.5976,
+    "lng": -80.4549,
+    "dates": [
+      "Skiing 2024"
+    ]
+  },
+  {
+    "name": "Nashville, TN",
+    "lat": 36.1627,
+    "lng": -86.7816,
+    "dates": [
+      "Taco Bell Regionals 2024"
+    ]
+  }
+]
