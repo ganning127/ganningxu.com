@@ -221,16 +221,16 @@ export default function Home() {
                 href="/cycling"
               />
               <HobbyCard
-                title="Airplanes"
-                description="and aviation photography"
-                imgSrc="/images/airplane_atl.jpg"
-                href=""
-              />
-              <HobbyCard
                 title="Traveling"
                 description="Fun, fun, fun"
                 imgSrc="/images/china_mountains.jpg"
                 href="/traveling"
+              />
+              <HobbyCard
+                title="Airplanes"
+                description="and aviation photography"
+                imgSrc="/images/airplane_atl.jpg"
+                href="/aviation"
               />
             </div>
           </section>

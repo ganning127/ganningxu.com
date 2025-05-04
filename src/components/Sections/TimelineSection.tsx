@@ -18,7 +18,7 @@ export const TimelineSection = () => {
           <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
             {item.title}
           </h3>
-          <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+          <time className="block mb-2 text-sm font-normal leading-none text-gray-600">
             {item.timeframe}
           </time>
           {item.content}

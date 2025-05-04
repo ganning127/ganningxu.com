@@ -45,8 +45,8 @@ export function ProjectCard({ project }: { project: Project }) {
             {project.text}
           </p>
 
-          <div className="flex place-content-between items-center">
-            <p className="text-sm p-1 bg-sky-100 rounded-md">
+          <div className="md:flex place-content-between items-center">
+            <p className="mb-2 md:mb-0 text-sm p-1 bg-sky-100 rounded-md">
               {project.timeframe}
             </p>
             <div className="flex gap-3">

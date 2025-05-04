@@ -12,6 +12,7 @@ import { Metadata } from "next";
 import { StravaDataSection } from "@/components/Sections/StravaDataSection";
 import { Suspense } from "react";
 import { Skeleton } from "@/components/ui/skeleton";
+import { PageHeader } from "@/components/Sections/PageHeader";
 
 const images = [
   "/images/bike-bridge.jpg",
@@ -35,8 +36,7 @@ export default async function Cycling() {
     <div className="flex flex-col gap-8">
       <div>
         <LastUpdatedAt />
-        <h1 className="text-3xl md:text-5xl mt-4">Cycling</h1>
-        <p className="text-gray-500 mt-4">{siteDesc}</p>
+        <PageHeader title="Cycling" desc={siteDesc} className="mt-2" />
       </div>
 
       <section className="hidden md:block">

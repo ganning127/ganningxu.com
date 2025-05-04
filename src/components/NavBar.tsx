@@ -101,4 +101,8 @@ const NAV_CONTENTS = [
     title: "Traveling",
     href: "/traveling",
   },
+  {
+    title: "Aviation",
+    href: "/aviation",
+  },
 ];

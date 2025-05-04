@@ -7,6 +7,7 @@ import { Place } from "@/interfaces/Place";
 
 import type { GlobeMethods } from "react-globe.gl";
 import { TravelLocationModal } from "@/components/Modals/TravelLocationModal";
+import { Spinner } from "../Util/Spinner";
 
 const places: Place[] = tempPlaces;
 const Globe = dynamic(() => import("react-globe.gl"), { ssr: false });
@@ -16,6 +17,7 @@ export function GlobeSection() {
   const [globeInstance, setGlobeInstance] = useState<GlobeMethods | null>(null);
   const [size, setSize] = useState({ width: 400, height: 400 });
   const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -48,6 +50,12 @@ export function GlobeSection() {
 
   return (
     <div>
+      {loading && (
+        <div className="text-center">
+          <Spinner className="w-12 h-12 mt-8" />
+        </div>
+      )}
+
       {selectedPlace && (
         <div className="mt-6 p-2 rounded-md">
           <h2>
@@ -72,7 +80,6 @@ export function GlobeSection() {
           // @ts-expect-error This is fine
           ref={(node) => {
             if (node && !globeInstance) {
-              console.log("Globe mounted!", node);
               setGlobeInstance(node);
             }
           }}
@@ -94,6 +101,9 @@ export function GlobeSection() {
           }}
           onLabelClick={(place) => {
             setSelectedPlace(place as Place);
+          }}
+          onGlobeReady={() => {
+            setLoading(false);
           }}
         />
       </div>
