@@ -97,7 +97,7 @@ const StravaDataSkeleton = () => {
       </section>
 
       <section>
-        <Heading.H2>Latest Rides</Heading.H2>
+        <Heading.H2>Latest Activities</Heading.H2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
           {Array.from({ length: numRides }).map((_, index) => (
             <div

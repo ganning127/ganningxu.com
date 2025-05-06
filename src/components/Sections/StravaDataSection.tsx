@@ -54,7 +54,7 @@ export const StravaDataSection = async () => {
       </section>
 
       <section>
-        <Heading.H2>Latest 10 Rides</Heading.H2>
+        <Heading.H2>Latest Activities</Heading.H2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
           {latestActivities.map((ride: Ride) => {
             return <RideCard ride={ride} key={ride.id} />;
