@@ -48,8 +48,7 @@ const timelineItems = [
     content: (
       <UnorderedList className="text-gray-500">
         <li>
-          <b>CS 2110 Computer Architecture</b> Teaching Assistant (Aug 2024 -
-          May 2025)
+          <b>CS 2110 Computer Architecture</b> Teaching Assistant
         </li>
         <li>
           <b>Technology Co-Director of HexLabs</b> (we host HackGT for 1000+
