@@ -59,37 +59,6 @@ export default function Home() {
           <section>
             <Heading.H2 className="italic">TLDR...</Heading.H2>
             <TimelineSection />
-
-            {/* <UnorderedList className="mt-2">
-              <li>
-                Studying CS at <b>Georgia Tech</b>
-                <UnorderedList>
-                  <li>CS 2110 (Computer Architecture) Teaching Assistant</li>
-                  <li>
-                    Technology Co-Director of HexLabs (we host HackGT for 1000+
-                    students yearly)
-                  </li>
-                  <li>
-                    <b>Apache Software Foundation</b> Committer for Apache
-                    Airavata
-                  </li>
-                </UnorderedList>
-              </li>
-              <li>
-                Interned at:
-                <UnorderedList>
-                  <li>
-                    <b>Wealthfront</b> (2025 Summer)
-                  </li>
-                  <li>
-                    <b>Fidelity Investments</b> (2024 Summer)
-                  </li>
-                  <li>
-                    <b>iRODS</b> (2023 Summer)
-                  </li>
-                </UnorderedList>
-              </li>
-            </UnorderedList> */}
           </section>
 
           <section>
