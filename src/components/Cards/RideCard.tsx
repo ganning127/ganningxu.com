@@ -21,32 +21,34 @@ export const RideCard = ({ ride }: { ride: Ride }) => {
   const decoded = polyline.decode(ride.map.summary_polyline);
 
   return (
-    <div className="border-2 border-gray-100 p-3 rounded-md ">
-      <div className="flex flex-row justify-between mb-4">
-        <h2 className="text-xl font-bold">{ride.name}</h2>
-        <p className="text-gray-500 text-sm">
-          {formatDistanceToNowStrict(new Date(ride.start_date), {
-            addSuffix: true,
-          })}
-        </p>
-      </div>
+    <div>
+      <div className="border-2 border-gray-100 p-3 rounded-md">
+        <div className="flex flex-row justify-between mb-4">
+          <h2 className="text-xl font-bold">{ride.name}</h2>
+          <p className="text-gray-500 text-sm">
+            {formatDistanceToNowStrict(new Date(ride.start_date), {
+              addSuffix: true,
+            })}
+          </p>
+        </div>
 
-      <div className="grid grid-cols-3 mb-4">
-        <KeyValuePair
-          title="Distance"
-          value={`${(ride.distance / 1609.34).toFixed(1)} miles`}
-        />
-        <KeyValuePair
-          title="Time"
-          value={`${Math.floor(ride.moving_time / 60)} minutes`}
-        />
-        <KeyValuePair
-          title="Average Speed"
-          value={`${(ride.average_speed * 2.23694).toFixed(1)} mph`}
-        />
-      </div>
+        <div className="grid grid-cols-3 mb-4">
+          <KeyValuePair
+            title="Distance"
+            value={`${(ride.distance / 1609.34).toFixed(1)} miles`}
+          />
+          <KeyValuePair
+            title="Time"
+            value={`${Math.floor(ride.moving_time / 60)} minutes`}
+          />
+          <KeyValuePair
+            title="Average Speed"
+            value={`${(ride.average_speed * 2.23694).toFixed(1)} mph`}
+          />
+        </div>
 
-      <RideMap polyline={decoded} />
+        {decoded.length > 0 && <RideMap polyline={decoded} />}
+      </div>
     </div>
   );
 };
