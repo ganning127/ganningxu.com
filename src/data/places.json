@@ -168,5 +168,27 @@
     "dates": [
       "Taco Bell Regionals 2024"
     ]
+  },
+  {
+    "name": "Phoenix, AZ",
+    "lat": 33.4484,
+    "lng": -112.0740,
+    "dates": [
+      "Summer 2025"
+    ]
+  },
+  {
+    "name": "Outer Banks, NC",
+    "lat": 35.5585,
+    "lng": -75.4664,
+    "dates": [
+      "Summer 2019",
+      "Summer 2020",
+      "Summer 2021",
+      "Summer 2022",
+      "Summer 2023",
+      "Summer 2024",
+      "Summer 2025"
+    ]
   }
 ]
