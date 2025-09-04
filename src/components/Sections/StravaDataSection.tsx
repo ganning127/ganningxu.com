@@ -37,11 +37,14 @@ export const StravaDataSection = async () => {
             </>
           }
         />
-        <StatsBox title="Total Time Biked" value={totalTimeBiked} />
+        <StatsBox
+          title="Total Time Biked"
+          value={formatWithCommas(totalTimeBiked)}
+        />
 
         <StatsBox
           title="Total Distance Biked"
-          value={`${totalDistanceBiked.toFixed(0)} miles`}
+          value={`${formatWithCommas(totalDistanceBiked.toFixed(0))} miles`}
           subtext={`or ${milesToTimesAcrossUSA(totalDistanceBiked).toFixed(
             1
           )} times across the USA`}
@@ -164,4 +167,8 @@ function secondsToHours(seconds: number): string {
 function milesToTimesAcrossUSA(miles: number): number {
   const timesAcrossUSA = miles / 2800; // 3000 miles across the USA
   return timesAcrossUSA;
+}
+
+function formatWithCommas(x: string) {
+  return x.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }

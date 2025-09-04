@@ -2,21 +2,13 @@ import { Place } from "@/interfaces/Place";
 import { IoIosClose } from "react-icons/io";
 import { UnorderedList } from "../Typography/UnorderedList";
 
-export const TravelLocationModal = ({
-  place,
-  onClose,
-}: {
-  place: Place;
-  onClose: () => void;
-}) => {
+export const TravelLocationModal = ({ place }: { place: Place | null }) => {
+  if (!place) return null;
+
   return (
-    <div className="mt-2 p-4 border rounded-md max-w-xs">
+    <div className="mt-2 p-4">
       <div className="flex flex-row justify-between items-center">
         <h2 className="text-xl font-bold">{place.name}</h2>
-        <IoIosClose
-          className="h-8 w-8 cursor-pointer hover:text-red-500 transition-colors"
-          onClick={onClose}
-        />
       </div>
       <p>Times I&apos;ve been here:</p>
       <UnorderedList>

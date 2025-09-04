@@ -8,6 +8,13 @@ import { Place } from "@/interfaces/Place";
 import type { GlobeMethods } from "react-globe.gl";
 import { TravelLocationModal } from "@/components/Modals/TravelLocationModal";
 import { Spinner } from "../Util/Spinner";
+import {
+  Dialog,
+  DialogTrigger,
+  DialogContent,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { UnorderedList } from "../Typography/UnorderedList";
 
 const places: Place[] = tempPlaces;
 const Globe = dynamic(() => import("react-globe.gl"), { ssr: false });
@@ -18,6 +25,7 @@ export function GlobeSection() {
   const [size, setSize] = useState({ width: 400, height: 400 });
   const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
   const [loading, setLoading] = useState(true);
+  const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -44,9 +52,16 @@ export function GlobeSection() {
 
       const controls = globeInstance.controls();
       controls.autoRotate = true;
-      controls.autoRotateSpeed = 0.5;
+      controls.autoRotateSpeed = 1;
     }
   }, [globeInstance]);
+
+  useEffect(() => {
+    if (globeInstance) {
+      globeInstance.controls().autoRotate = !selectedPlace;
+      setModalOpen(!!selectedPlace);
+    }
+  }, [selectedPlace]);
 
   return (
     <div>
@@ -56,21 +71,25 @@ export function GlobeSection() {
         </div>
       )}
 
-      {selectedPlace && (
-        <div className="mt-6 p-2 rounded-md">
-          <h2>
-            Seems like you&apos;re interested in stalking. Don&apos;t worry
-            though, I don&apos;t mind nor store this information :)
-          </h2>
-
-          <TravelLocationModal
-            place={selectedPlace}
-            onClose={() => {
-              setSelectedPlace(null);
-            }}
-          />
-        </div>
-      )}
+      <Dialog
+        open={modalOpen}
+        onOpenChange={(newOpen) => {
+          if (!newOpen) setSelectedPlace(null);
+          setModalOpen(newOpen);
+        }}
+      >
+        <DialogContent>
+          <DialogTitle className="text-2xl font-bold mb-4">
+            {selectedPlace?.name}
+          </DialogTitle>
+          <p>Times I&apos;ve been here:</p>
+          <UnorderedList>
+            {selectedPlace?.dates.map((desc, index) => (
+              <li key={index}>{desc}</li>
+            ))}
+          </UnorderedList>
+        </DialogContent>
+      </Dialog>
 
       <div
         ref={containerRef}
