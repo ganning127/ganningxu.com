@@ -6,14 +6,8 @@ import tempPlaces from "@/data/places.json";
 import { Place } from "@/interfaces/Place";
 
 import type { GlobeMethods } from "react-globe.gl";
-import { TravelLocationModal } from "@/components/Modals/TravelLocationModal";
 import { Spinner } from "../Util/Spinner";
-import {
-  Dialog,
-  DialogTrigger,
-  DialogContent,
-  DialogTitle,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { UnorderedList } from "../Typography/UnorderedList";
 
 const places: Place[] = tempPlaces;
