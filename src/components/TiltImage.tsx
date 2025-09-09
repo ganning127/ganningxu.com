@@ -37,8 +37,8 @@ export default function TiltImage() {
     >
       <Image
         ref={imgRef}
-        src="/images/ganning.jpg"
-        alt="Profile Picture"
+        src="/favicon.png"
+        alt="Picture of Ganning Xu in front of an orange sunset"
         width={100}
         height={100}
         className="rounded-full transition-transform"

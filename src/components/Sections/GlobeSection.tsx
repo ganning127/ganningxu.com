@@ -9,21 +9,23 @@ import type { GlobeMethods } from "react-globe.gl";
 import { Spinner } from "../Util/Spinner";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { UnorderedList } from "../Typography/UnorderedList";
+import { FaPauseCircle, FaPlayCircle } from "react-icons/fa";
 
 const places: Place[] = tempPlaces;
 const Globe = dynamic(() => import("react-globe.gl"), { ssr: false });
 
 export function GlobeSection() {
-  const containerRef = useRef(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const [globeInstance, setGlobeInstance] = useState<GlobeMethods | null>(null);
   const [size, setSize] = useState({ width: 400, height: 400 });
   const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
   const [loading, setLoading] = useState(true);
   const [modalOpen, setModalOpen] = useState(false);
+  // ✨ New state to control rotation
+  const [isRotating, setIsRotating] = useState(true);
 
   useEffect(() => {
-    if (!containerRef.current) return;
-    if (typeof window === "undefined") return;
+    if (!containerRef.current || typeof window === "undefined") return;
 
     const observer = new ResizeObserver((entries) => {
       for (const entry of entries) {
@@ -34,28 +36,36 @@ export function GlobeSection() {
 
     observer.observe(containerRef.current);
     return () => observer.disconnect();
-  }, [containerRef]);
+  }, []);
 
   useEffect(() => {
     if (globeInstance) {
-      // Center the globe on USA
+      // Center the globe on USA and set initial speed
       globeInstance.pointOfView(
         { lat: 37.0902, lng: -95.7129, altitude: 2 },
         1000
       );
-
-      const controls = globeInstance.controls();
-      controls.autoRotate = true;
-      controls.autoRotateSpeed = 1;
+      globeInstance.controls().autoRotateSpeed = 0.8; // Adjusted speed slightly
     }
   }, [globeInstance]);
 
   useEffect(() => {
     if (globeInstance) {
-      globeInstance.controls().autoRotate = !selectedPlace;
-      setModalOpen(!!selectedPlace);
+      // Pause if a place is selected, otherwise respect the isRotating state
+      globeInstance.controls().autoRotate = isRotating;
     }
+  }, [isRotating, globeInstance]);
+
+  // ✨ Handle modal state separately
+  useEffect(() => {
+    setModalOpen(!!selectedPlace);
+    setIsRotating(!selectedPlace);
   }, [selectedPlace]);
+
+  // ✨ Toggle function for the button
+  const toggleRotation = () => {
+    setIsRotating((prev) => !prev);
+  };
 
   return (
     <div>
@@ -87,8 +97,23 @@ export function GlobeSection() {
 
       <div
         ref={containerRef}
-        className="w-full h-[500px] md:h-[700px] lg:h-[800px] mt-4"
+        className="w-full h-[500px] md:h-[700px] lg:h-[800px] mt-4 relative"
       >
+        {/* ✨ New Pause/Play Button */}
+        {!loading && (
+          <button
+            onClick={toggleRotation}
+            className="absolute top-4 right-4 z-10 p-2 "
+            aria-label={isRotating ? "Pause rotation" : "Play rotation"}
+          >
+            {isRotating ? (
+              <FaPauseCircle className="w-10 h-10 bg-black/30 backdrop-blur-sm rounded-full text-white hover:bg-black/50 transition-colors focus:outline-none focus:ring-2 focus:ring-white" />
+            ) : (
+              <FaPlayCircle className="w-10 h-10 bg-black/30 backdrop-blur-sm rounded-full text-white hover:bg-black/50 transition-colors focus:outline-none focus:ring-2 focus:ring-white" />
+            )}
+          </button>
+        )}
+
         <Globe
           // @ts-expect-error This is fine
           ref={(node) => {
@@ -97,7 +122,7 @@ export function GlobeSection() {
             }
           }}
           width={size.width}
-          showAtmosphere={false}
+          showAtmosphere={true}
           height={size.height}
           backgroundColor="#ffffff"
           globeTileEngineUrl={(x, y, l) =>
@@ -109,9 +134,7 @@ export function GlobeSection() {
           labelText={(d) => (d as Place).name}
           labelSize={0.4}
           labelDotRadius={0.8}
-          labelColor={() => {
-            return "#a21caf";
-          }}
+          labelColor={() => "#a21caf"}
           onLabelClick={(place) => {
             setSelectedPlace(place as Place);
           }}

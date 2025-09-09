@@ -190,5 +190,13 @@
       "Summer 2024",
       "Summer 2025"
     ]
+  },
+  {
+    "name": "Hong Kong, China",
+    "lat": 22.3193,
+    "lng": 114.1694,
+    "dates": [
+      "when I was really young, I don't remember exactly which year, but I think 2009?"
+    ]
   }
 ]
