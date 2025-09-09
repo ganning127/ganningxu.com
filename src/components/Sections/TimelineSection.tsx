@@ -48,14 +48,14 @@ const timelineItems = [
     content: (
       <UnorderedList className="text-gray-500">
         <li>
-          <b>CS 2110 Computer Architecture</b> Teaching Assistant
+          <b>Technology Co-Director of HexLabs</b> (we host Georgia Tech&apos;s
+          largest hackathon yearly!)
         </li>
         <li>
-          <b>Technology Co-Director of HexLabs</b> (we host HackGT for 1000+
-          students yearly)
+          <b>Apache Software Foundation (Apache Airavata)</b> Software Engineer
         </li>
         <li>
-          <b>Apache Software Foundation</b> Committer for Apache Airavata
+          <b>CS 2110 Computer Organization</b> Teaching Assistant
         </li>
       </UnorderedList>
     ),

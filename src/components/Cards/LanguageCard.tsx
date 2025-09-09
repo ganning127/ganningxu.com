@@ -12,7 +12,7 @@ export const LanguageCard = ({
     <div className="flex flex-row items-center p-2 gap-2 rounded-md hover:shadow-md transition-shadow border-gray-200 border-1">
       <Image src={img} alt={title} width={imgSize} height={imgSize} />
       <div>
-        <p className="text-black font-semibold">{title}</p>
+        <p className="text-black text-sm">{title}</p>
       </div>
     </div>
   );

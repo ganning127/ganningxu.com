@@ -26,7 +26,7 @@ function HoverCardTrigger({
     <HoverCardPrimitive.Trigger
       data-slot="hover-card-trigger"
       className={cn(
-        "hover:cursor-pointer text-sky-600 font-semibold whitespace-nowrap",
+        "hover:cursor-pointer text-sky-600 whitespace-nowrap",
         className
       )}
       {...props}

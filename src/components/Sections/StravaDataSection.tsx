@@ -59,9 +59,8 @@ export const StravaDataSection = async () => {
       <section>
         <Heading.H2>Latest Activities</Heading.H2>
         <p className="text-gray-500 mt-2">
-          Exact start and ends locations are hidden for privacy reasons.
-          Activities that are too short will not show a map (for the same
-          reason).
+          Exact start and ends locations are hidden for my privacy. Activities
+          that are too short will not show a map for the same reason.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
           {latestActivities.map((ride: Ride) => {

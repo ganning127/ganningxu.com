@@ -29,16 +29,13 @@ export const NavBar = () => {
         {/* Desktop Links */}
         <div className="hidden md:flex flex-row gap-2">
           {NAV_CONTENTS.map((navContent) => (
-            <Link
+            <NavLink
               key={navContent.title}
+              title={navContent.title}
               href={navContent.href}
-              className={cn(
-                "text-black text-md bg-white hover:bg-gray-200 px-2 py-1 rounded-md",
-                isActive(navContent.href) && "bg-sky-100"
-              )}
-            >
-              {navContent.title}
-            </Link>
+              external={navContent.external}
+              isActive={isActive(navContent.href)}
+            />
           ))}
         </div>
 
@@ -64,17 +61,13 @@ export const NavBar = () => {
       >
         <div className="flex flex-col gap-2">
           {NAV_CONTENTS.map((navContent) => (
-            <Link
+            <NavLink
               key={navContent.title}
+              title={navContent.title}
               href={navContent.href}
-              className={cn(
-                "text-black text-md bg-white hover:bg-gray-200 px-2 py-1 rounded-md transition-colors",
-                isActive(navContent.href) && "bg-sky-100"
-              )}
-              onClick={() => setMenuOpen(false)}
-            >
-              {navContent.title}
-            </Link>
+              external={navContent.external}
+              isActive={isActive(navContent.href)}
+            />
           ))}
         </div>
       </div>
@@ -84,25 +77,62 @@ export const NavBar = () => {
   );
 };
 
+const NavLink = ({
+  title,
+  href,
+  external,
+  isActive,
+}: {
+  title: string;
+  href: string;
+  external: boolean;
+  isActive: boolean;
+}) => {
+  return (
+    <Link
+      href={href}
+      className={cn(
+        "text-black text-md bg-white hover:bg-gray-200 px-2 py-1 rounded-md",
+        isActive && "bg-sky-100"
+      )}
+      target={external ? "_blank" : "_self"}
+      rel={external ? "noopener noreferrer" : ""}
+      aria-current={isActive ? "page" : undefined}
+    >
+      {title}
+    </Link>
+  );
+};
+
 const NAV_CONTENTS = [
   {
     title: "Home",
     href: "/",
+    external: false,
   },
   {
     title: "Projects",
     href: "/projects",
+    external: false,
+  },
+  {
+    title: "Resume",
+    href: "/GanningXuNewGradResume.pdf",
+    external: true,
   },
   {
     title: "Cycling",
     href: "/cycling",
+    external: false,
   },
   {
     title: "Traveling",
     href: "/traveling",
+    external: false,
   },
   {
     title: "Aviation",
     href: "/aviation",
+    external: false,
   },
 ];
