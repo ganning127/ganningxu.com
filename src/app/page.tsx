@@ -60,7 +60,7 @@ export default function Home() {
               I&apos;ve pulled an unhealthy amount of all-nighters writing new
               features, chasing down bugs, and enjoying free food at hackathons.
               But, I wouldn&apos;t trade these experiences for anything else.
-              From the lifelong firneds I&apos;ve made to the projects we built
+              From the lifelong friends I&apos;ve made to the projects we built
               together, the memories are priceless.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-2">
