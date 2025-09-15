@@ -15,7 +15,7 @@ import { Hackathoncard } from "@/components/Cards/HackathonCard";
 import { IntroSection } from "@/components/Sections/IntroSection";
 
 const projectsToShow = [
-  "Focale",
+  "Bike Rack Finder",
   "GT Academic Calendars",
   "Cybershuttle Local Agent",
 ];
