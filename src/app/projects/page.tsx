@@ -15,7 +15,7 @@ for (const project of ProjectsJson) {
   typeToProjects[project.type].push(project);
 }
 
-const siteDesc = `So far, my projects fall into three categories: ${projectOrdering
+const siteDesc = `So far, my projects fall into four categories: ${projectOrdering
   .map((type) => type + "s")
   .join(
     ", "
