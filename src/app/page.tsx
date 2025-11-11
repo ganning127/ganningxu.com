@@ -16,7 +16,7 @@ import { IntroSection } from "@/components/Sections/IntroSection";
 
 const projectsToShow = [
   "Bike Rack Finder",
-  "GT Academic Calendars",
+  "Flight Time Remaining",
   "Cybershuttle Local Agent",
 ];
 

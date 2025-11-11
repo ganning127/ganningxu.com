@@ -304,5 +304,15 @@
     "github": "https://github.com/apache/airavata/tree/cybershuttle-staging/modules/research-framework",
     "timeframe": "Spring 2025",
     "type": "web app"
+  },
+  {
+    "title": "Flight Time Remaining",
+    "img": "/images/projects/project-flight-time-remaining.png",
+    "alt": "Flight Time Remaining app launch screen",
+    "text": "iOS app that shows flight time remaining during flights with no WiFi.",
+    "link": "https://apps.apple.com/us/app/flight-time-remaining/id6755078870",
+    "github": "",
+    "timeframe": "Fall 2025",
+    "type": "app"
   }
 ]
