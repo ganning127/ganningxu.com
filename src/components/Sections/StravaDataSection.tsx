@@ -138,8 +138,10 @@ async function getLatestActivities(access_token: string) {
   const timestampMilliseconds = date.getTime();
   const timestampSeconds = Math.floor(timestampMilliseconds / 1000);
 
+  // Strava's API can't filter by activity type, so fetch a larger batch and
+  // keep only cycling activities client-side.
   const latestActivitiesResp = await fetch(
-    `https://www.strava.com/api/v3/athlete/activities?before=${timestampSeconds}&per_page=10`,
+    `https://www.strava.com/api/v3/athlete/activities?before=${timestampSeconds}&per_page=50`,
     {
       headers: {
         Authorization: `Bearer ${access_token}`,
@@ -151,7 +153,11 @@ async function getLatestActivities(access_token: string) {
     throw new Error("Failed to fetch latest activities");
   }
   const latestActivities = await latestActivitiesResp.json();
-  return latestActivities;
+  const cyclingActivities = latestActivities.filter(
+    (activity: Ride & { sport_type?: string }) =>
+      activity.sport_type === "Ride"
+  );
+  return cyclingActivities.slice(0, 10);
 }
 
 function metersToMiles(meters: number) {
@@ -160,7 +166,7 @@ function metersToMiles(meters: number) {
 }
 
 function secondsToHours(seconds: number): string {
-  return (seconds / 3600).toFixed(1) + " hours"; // 3600 seconds in an hour
+  return (seconds / 3600).toFixed(0) + " hours"; // 3600 seconds in an hour
 }
 
 function milesToTimesAcrossUSA(miles: number): number {
